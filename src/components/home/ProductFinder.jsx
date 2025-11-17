@@ -1,9 +1,9 @@
 import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-const ProductFinder = () => {
+const ProductFinder = ({isHero}) => {
   return (
-    <div id="product_finder">
+    <div id="product_finder" className={`${isHero ? 'hero':''}`}>
       <div id="product_finder_container">
         <h4>Product Finder</h4>
         <p>
