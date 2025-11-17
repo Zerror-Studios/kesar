@@ -152,13 +152,13 @@ body {
 
 /* Mobile */
 @media (max-width: 480px) {
-  .product_link .button {
+  .product_link .button ,.product_card .button{
     padding: 0.7rem;
   }
-  .product_link .button h6 {
+  .product_link .button h6 ,.product_card .button h6 {
     font-size: 0.5rem !important;
   }
-  .product_link .button svg {
+  .product_link .button svg ,.product_card .button svg {
     font-size: 0.55rem;
   }
 }
