@@ -1070,6 +1070,12 @@
   .product_name {
     font-size: 1.5rem;
   }
+  .button_wrapper_filter{
+    flex-direction: column;
+  }
+  .button_wrapper_filter .button{
+    width: 100%;
+  }
   /* application_section */
   #application_section {
     padding: 0.5rem 1rem;
