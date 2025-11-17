@@ -10,7 +10,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#4464BA"],
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7000 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                category: "Ink",
             },
             {
                 slug: "kpl-blue-7003-d",
@@ -20,7 +21,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3995D0"],
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                category: "Ink",
             },
             {
                 slug: "kpl-blue-7003-wd",
@@ -30,7 +32,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C3AA4", "#3565B9"],
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                category: "Ink",
             },
             {
                 slug: "kp-green-9000-d",
@@ -40,7 +43,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#00681F", "#5BDE69"],
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Green 9000 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                category: "Ink",
             },
         ]
     },
@@ -55,7 +59,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#4464BA"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000WL.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-blue-7000-tx",
@@ -65,7 +70,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2640A5", "#2640A5"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000TX.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-blue-7000-dd",
@@ -75,7 +81,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2640A5", "#2640A5"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000 DD.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-blue-7001-l",
@@ -85,7 +92,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#2640A5"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7001L.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-blue-7003-l",
@@ -95,7 +103,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003L.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-blue-7003-tx",
@@ -105,7 +114,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003TX.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-blue-7003-dd",
@@ -115,7 +125,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003 DD.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
             {
                 slug: "kpl-green-9000-u",
@@ -125,7 +136,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#00A02C", "#5BDE69"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Green 9000U.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                category: "Coating",
             },
         ]
     },
@@ -140,7 +152,9 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#4464BA"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7000 K.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7000 K.pdf`
+                tds: `/product/TDS/TDS KPL Blue 7000 K.pdf`,
+                category: "Plastic",
+
             },
             {
                 slug: "kpl-blue-7001-ak",
@@ -150,7 +164,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#2640A5"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 AK.pdf`
+                tds: `/product/TDS/TDS KPL Blue 7001 AK.pdf`,
+                category: "Plastic",
             },
             {
                 slug: "kpl-blue-7001-bkfv",
@@ -160,7 +175,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#2640A5"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 BKFV.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 BKFV.pdf`
+                tds: `/product/TDS/TDS KPL Blue 7001 BKFV.pdf`,
+                category: "Plastic",
             },
             {
                 slug: "kpl-blue-7001-ckfv",
@@ -170,7 +186,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#2640A5"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 CKFV.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 CKFV.pdf`
+                tds: `/product/TDS/TDS KPL Blue 7001 CKFV.pdf`,
+                category: "Plastic",
             },
             {
                 slug: "kpl-blue-7003-k",
@@ -180,7 +197,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7003 K.pdf`
+                tds: `/product/TDS/TDS KPL Blue 7003 K.pdf`,
+                category: "Plastic",
             },
             {
                 slug: "kpl-blue-7003-kfv",
@@ -190,7 +208,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K FV.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7003 KFV.pdf`
+                tds: `/product/TDS/TDS KPL Blue 7003 KFV.pdf`,
+                category: "Plastic",
             },
             {
                 slug: "kp-green-9000-k",
@@ -200,7 +219,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#00A02C", "#5BDE69"],
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Green 9000 K.pdf`,
-                tds: `/product/TDS/TDS Plastic All Grades.xlsx`
+                tds: `/product/TDS/TDS Plastic All Grades.xlsx`,
+                category: "Plastic",
             },
         ]
     },
@@ -215,7 +235,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#18193C", "#4464BA"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7000 U.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`
+                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                category: "Offset",
             },
             {
                 slug: "kpl-blue-7003-og",
@@ -225,7 +246,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#3347AA", "#3565B9"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OG.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`
+                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                category: "Offset",
             },
             {
                 slug: "kpl-blue-7003-or",
@@ -235,7 +257,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OR.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`
+                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                category: "Offset",
             },
             {
                 slug: "kpl-blue-7003-ogf",
@@ -245,7 +268,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#3347AA", "#3565B9"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OGF.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`
+                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                category: "Offset",
             },
             {
                 slug: "kpl-blue-7003-orf",
@@ -255,7 +279,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 ORF.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`
+                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                category: "Offset",
             },
             {
                 slug: "kp-green-9000-u",
@@ -265,7 +290,8 @@ export const categories = [
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#00A02C", "#5BDE69"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Green 9000 U.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`
+                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                category: "Offset",
             },
         ]
     },
@@ -279,7 +305,8 @@ export const categories = [
                 tags: ["Zn₃(PO₄)₂", "Anti Corrosives"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#FFFFFF"],
-                style: "center"
+                style: "center",
+                category: "Anti Corrosives",
             },
             {
                 slug: "zinc-oxide",
@@ -288,7 +315,8 @@ export const categories = [
                 tags: ["ZnO", "Anti Corrosives"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#FFFFFF"],
-                style: "center"
+                style: "center",
+                category: "Anti Corrosives",
             },
             {
                 slug: "zinc-carbonate",
@@ -297,7 +325,8 @@ export const categories = [
                 tags: ["ZnCO₃", "Anti Corrosives"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#FFFFFF"],
-                style: "center"
+                style: "center",
+                category: "Anti Corrosives",
             },
         ]
     },
@@ -311,7 +340,8 @@ export const categories = [
                 tags: ["(NH₄)₂HPO₄ ", "Fertilizers"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#FFFFFF"],
-                style: "center"
+                style: "center",
+                category: "Fertilizers",
             },
             {
                 slug: "mono-ammonium-phosphate",
@@ -320,7 +350,8 @@ export const categories = [
                 tags: ["NH₄H₂PO₄", "Fertilizers"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#FFFFFF"],
-                style: "center"
+                style: "center",
+                category: "Fertilizers",
             },
             {
                 slug: "zinc-sulphate",
@@ -329,7 +360,8 @@ export const categories = [
                 tags: ["ZnSO₄", "Fertilizers"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#FFFFFF"],
-                style: "center"
+                style: "center",
+                category: "Fertilizers",
             },
         ]
     }

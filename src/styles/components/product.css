@@ -202,14 +202,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5rem;
+  min-width: 5rem;
   padding: 0.4rem;
   border-radius: 5px;
   color: #00000080;
+  white-space: nowrap;
 }
 
 /* Mobile */
 @media (max-width: 480px) {
+  .product_card_desc{
+    font-size: .65rem;
+  }
   #product_hero {
     padding: calc(65px + 4rem) 1rem 0.5rem;
   }

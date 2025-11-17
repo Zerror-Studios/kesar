@@ -1,12 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-const Dropdown = ({ label = "Select", options = [], onSelect }) => {
+const Dropdown = ({ label = "Select", options = [], value, onSelect }) => {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(label);
+  const [selected, setSelected] = useState(value || label);
   const dropdownRef = useRef(null);
 
-  // click outside to close
+  // update internal state when parent value changes
+  useEffect(() => {
+    setSelected(value || label);
+  }, [value, label]);
+
   useEffect(() => {
     const handleOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -17,10 +21,10 @@ const Dropdown = ({ label = "Select", options = [], onSelect }) => {
     return () => document.removeEventListener("click", handleOutside);
   }, []);
 
-  const handleSelect = (option) => {
-    setSelected(option);
+  const handleSelect = (opt) => {
+    setSelected(opt);
     setOpen(false);
-    if (onSelect) onSelect(option); // send selected value to parent
+    if (onSelect) onSelect(opt);
   };
 
   return (

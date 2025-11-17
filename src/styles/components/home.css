@@ -98,8 +98,13 @@
   width: 100%;
   padding: 0.5rem 1.5rem;
 }
-#product_finder .button.blue{
+.button_wrapper_filter {
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 #product_finder.hero {
   padding-top: 65px;
@@ -205,14 +210,16 @@
   background-color: #fff;
   backdrop-filter: blur(10px);
   overflow-y: auto;
+  z-index: 999;
 }
-.dropdown_items h5:last-child{
+.dropdown_items h5:last-child {
   border: none;
 }
- .dropdown_box:nth-child(2) .dropdown_items  ,.dropdown_box:nth-child(3) .dropdown_items {
-  height: 8rem ;
+.dropdown_box:nth-child(2) .dropdown_items,
+.dropdown_box:nth-child(3) .dropdown_items {
+  height: 8rem;
 }
-.dropdown_items::-webkit-scrollbar{
+.dropdown_items::-webkit-scrollbar {
   display: none;
 }
 .dropdown.open .dropdown_items {
@@ -947,17 +954,22 @@
     font-size: 2rem;
   }
   .dropdown_box {
-    width: auto !important;
+    width: 100% !important;
     flex-shrink: 0;
     white-space: nowrap;
   }
   .dropdown {
-    width: 250px;
+    width: 100%;
   }
   #dropdown_container {
-    overflow-x: auto;
     gap: 2rem;
     padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #dropdown_wrapper {
+    flex-direction: column !important;
+    width: 100%;
   }
 
   /* logo section  */
@@ -1200,16 +1212,23 @@
     font-size: 2rem;
   }
   .dropdown_box {
-    width: auto !important;
+    width: calc(50% - .5rem) !important;
     flex-shrink: 0;
     white-space: nowrap;
   }
-  .dropdown {
-    width: 250px;
+  .dropdown_box:first-child {
+    width: 100% !important;
+  }
+  #dropdown_wrapper {
+    width: 100%;
+  }
+  .dropdown_box:first-child .dropdown {
+    width: 50%;
   }
   #dropdown_container {
-    overflow-x: auto;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   /* logo section  */
@@ -1443,18 +1462,24 @@
   #product_finder_container h4 {
     font-size: 2rem;
   }
-  .dropdown_box {
-    width: auto !important;
+    .dropdown_box {
+    width: calc(50% - .5rem) !important;
     flex-shrink: 0;
     white-space: nowrap;
   }
-  .dropdown {
-    width: 250px;
+  .dropdown_box:first-child {
+    width: 100% !important;
+  }
+  #dropdown_wrapper {
+    width: 100%;
+  }
+  .dropdown_box:first-child .dropdown {
+    width: 50%;
   }
   #dropdown_container {
-    overflow-x: auto;
-    gap: 2rem;
-    padding-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   /* logo section  */

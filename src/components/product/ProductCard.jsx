@@ -6,7 +6,7 @@ import { GrNext } from "react-icons/gr";
 const ProductCard = ({ product, currentSlug }) => {
   if (!product) return null; // render nothing if product is undefined
 
-  const isActive = product.slug === currentSlug;
+  const isActive = currentSlug ? product.slug === currentSlug : false;
 
   const content = (
     <div className={`product_list_card ${isActive ? "active" : ""}`}>
@@ -15,7 +15,9 @@ const ProductCard = ({ product, currentSlug }) => {
           {product.shades?.map((shade, idx) => (
             <div
               key={idx}
-              className={`product_sample${idx + 1} ${product.style ? "center" : ""}`}
+              className={`product_sample${idx + 1} ${
+                product.style ? "center" : ""
+              }`}
               style={{ backgroundColor: shade }}
             ></div>
           ))}
@@ -38,7 +40,9 @@ const ProductCard = ({ product, currentSlug }) => {
   return isActive ? (
     content
   ) : (
-    <Link className="product_link" href={`/products/${product.slug}`}>{content}</Link>
+    <Link className="product_link" href={`/products/${product.slug}`}>
+      {content}
+    </Link>
   );
 };
 
