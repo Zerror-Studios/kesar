@@ -1009,6 +1009,9 @@
   #integrated_details h4 {
     font-size: 2rem;
   }
+  #integrated_details p{
+    margin-bottom: 1rem;
+  }
   #integrated_process {
     justify-content: center;
     align-items: center;
@@ -1054,6 +1057,9 @@
   #product_section_title h4 {
     font-size: 2rem;
   }
+  #product_section_title p{
+    margin-bottom: 1rem;
+  }
   .product_card {
     gap: 2rem;
     width: 80%;
@@ -1098,6 +1104,9 @@
   #application_section_header {
     flex-direction: column;
   }
+  #application_section_header p{
+    margin-bottom: 1rem;
+  }
   #application_section_header h4 {
     font-size: 2rem;
   }
@@ -1129,6 +1138,9 @@
   #sustainable_section_header h4 {
     font-size: 2rem;
   }
+  #sustainable_section_header p{
+    margin-bottom: 1rem;
+  }
   #sustainable_section_cards {
     grid-template-columns: repeat(3, 80%);
     margin-top: 1rem;
@@ -1140,6 +1152,7 @@
     width: 90%;
     font-size: .7rem;
   }
+  
   .sustainable_section_card {
     height: auto;
     gap: 2rem;
@@ -1187,6 +1200,9 @@
   }
   #gallery_section_header {
     flex-direction: column;
+  }
+  #gallery_section_header p {
+    margin-bottom: 1rem;
   }
   #gallery_section_header h4 {
     font-size: 2rem;
