@@ -98,6 +98,9 @@
   width: 100%;
   padding: 0.5rem 1.5rem;
 }
+#product_finder .button.blue{
+  margin-top: 1rem;
+}
 #product_finder.hero {
   padding-top: 65px;
 }

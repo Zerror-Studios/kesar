@@ -1,6 +1,8 @@
 import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Dropdown from "../common/Dropdown";
+import { BiFilter } from "react-icons/bi";
+import Button from "../common/Button";
 
 const ProductFinder = ({ isHero }) => {
   return (
@@ -49,6 +51,9 @@ const ProductFinder = ({ isHero }) => {
             />
           </div>
         </div>
+        {!isHero && (
+          <Button title={"Apply Filters"} color={"blue"} icon={<BiFilter />} />
+        )}
       </div>
     </div>
   );
