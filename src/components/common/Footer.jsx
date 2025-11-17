@@ -81,11 +81,22 @@ const Footer = () => {
             404, Naman Centre, C - 31/ G Block, BKC, Bandra (East), <br />{" "}
             Mumbai - 400051, Maharashtra, India
           </a>
-          <a href="tel:+91 (22) 6123-4567">
-            <PiPhoneFill /> +91 (22) 6123-4567
-          </a>
+          <div className="footer_numbers">
+            <a href="tel:+91-22-49637498">
+              <PiPhoneFill /> +91-22-49637498
+            </a>
+            |<a href="tel:+91-22-59637448">+91-22-59637448</a>
+          </div>
+
           <a href="mailto:info@kesarpetroproducts.com">
             <PiEnvelopeFill /> info@kesarpetroproducts.com
+          </a>
+          <h5 className="factory">Factory:</h5>
+          <a href="tel:+919156018271">
+            <PiPhoneFill /> +919156018271
+          </a>
+          <a href="mailto:kesar.factory@gmail.com ">
+            <PiEnvelopeFill /> kesar.factory@gmail.com
           </a>
         </div>
         <div className="footer-right">
@@ -97,7 +108,7 @@ const Footer = () => {
           </p>
           <div className="newsletter">
             <input type="text" placeholder="Enter your email id" />
-            <Button title={"Subscribe"} icon={<GrFormNext />}/>
+            <Button title={"Subscribe"} icon={<GrFormNext />} />
           </div>
         </div>
       </div>

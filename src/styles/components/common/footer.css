@@ -25,6 +25,14 @@ footer a {
   justify-content: space-between;
   padding: 1.8rem 0;
 }
+.footer_numbers{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.factory{
+  margin-top: 1rem;
+}
 
 .footer-left {
   width: 50%;
