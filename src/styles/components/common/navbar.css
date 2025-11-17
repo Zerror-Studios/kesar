@@ -399,7 +399,7 @@ nav {
     display: block;
   }
   nav {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
   .logo-container,
   .input-container {
