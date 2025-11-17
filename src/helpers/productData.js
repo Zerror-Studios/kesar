@@ -8,7 +8,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Ink"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#4464BA"]
+                shades: ["#18193C", "#4464BA"],
+                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7000 D.pdf`,
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
             },
             {
                 slug: "kpl-blue-7003-d",
@@ -16,7 +18,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "INK"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3995D0"]
+                shades: ["#2C2681", "#3995D0"],
+                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 D.pdf`,
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
             },
             {
                 slug: "kpl-blue-7003-wd",
@@ -24,7 +28,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Ink"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C3AA4", "#3565B9"]
+                shades: ["#2C3AA4", "#3565B9"],
+                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
             },
             {
                 slug: "kp-green-9000-d",
@@ -32,7 +38,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PG 7", "Ink"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#00681F", "#5BDE69"]
+                shades: ["#00681F", "#5BDE69"],
+                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Green 9000 D.pdf`,
+                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`
             },
         ]
     },
@@ -45,7 +53,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Coating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#4464BA"]
+                shades: ["#18193C", "#4464BA"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000WL.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7000-tx",
@@ -53,7 +63,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Coating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2640A5", "#2640A5"]
+                shades: ["#2640A5", "#2640A5"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000TX.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7000-dd",
@@ -61,7 +73,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Coating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2640A5", "#2640A5"]
+                shades: ["#2640A5", "#2640A5"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000 DD.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7001-l",
@@ -69,7 +83,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.1", "Ccating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#2640A5"]
+                shades: ["#18193C", "#2640A5"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7001L.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-l",
@@ -77,7 +93,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Coating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003L.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-tx",
@@ -85,7 +103,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Coating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003TX.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-dd",
@@ -93,7 +113,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Coating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003 DD.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
             {
                 slug: "kpl-green-9000-u",
@@ -101,7 +123,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PG 7", "COating"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#00A02C", "#5BDE69"]
+                shades: ["#00A02C", "#5BDE69"],
+                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Green 9000U.pdf`,
+                tds: `/product/TDS/TDS Coating All Grades.xlsx`
             },
         ]
     },
@@ -114,7 +138,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#4464BA"]
+                shades: ["#18193C", "#4464BA"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7000 K.pdf`,
+                tds: `/product/TDS/TDS KPL Blue 7000 K.pdf`
             },
             {
                 slug: "kpl-blue-7001-ak",
@@ -122,7 +148,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.1", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#2640A5"]
+                shades: ["#18193C", "#2640A5"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
+                tds: `/product/TDS/TDS KPL Blue 7001 AK.pdf`
             },
             {
                 slug: "kpl-blue-7001-bkfv",
@@ -130,7 +158,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.1", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#2640A5"]
+                shades: ["#18193C", "#2640A5"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 BKFV.pdf`,
+                tds: `/product/TDS/TDS KPL Blue 7001 BKFV.pdf`
             },
             {
                 slug: "kpl-blue-7001-ckfv",
@@ -138,7 +168,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.1", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#2640A5"]
+                shades: ["#18193C", "#2640A5"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 CKFV.pdf`,
+                tds: `/product/TDS/TDS KPL Blue 7001 CKFV.pdf`
             },
             {
                 slug: "kpl-blue-7003-k",
@@ -146,7 +178,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K.pdf`,
+                tds: `/product/TDS/TDS KPL Blue 7003 K.pdf`
             },
             {
                 slug: "kpl-blue-7003-kfv",
@@ -154,7 +188,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K FV.pdf`,
+                tds: `/product/TDS/TDS KPL Blue 7003 KFV.pdf`
             },
             {
                 slug: "kp-green-9000-k",
@@ -162,7 +198,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PG 7", "Plastic"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#00A02C", "#5BDE69"]
+                shades: ["#00A02C", "#5BDE69"],
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Green 9000 K.pdf`,
+                tds: `/product/TDS/TDS Plastic All Grades.xlsx`
             },
         ]
     },
@@ -175,7 +213,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#18193C", "#4464BA"]
+                shades: ["#18193C", "#4464BA"],
+                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7000 U.pdf`,
+                tds: `/product/TDS/TDS offset All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-og",
@@ -183,7 +223,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#3347AA", "#3565B9"]
+                shades: ["#3347AA", "#3565B9"],
+                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OG.pdf`,
+                tds: `/product/TDS/TDS offset All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-or",
@@ -191,7 +233,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OR.pdf`,
+                tds: `/product/TDS/TDS offset All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-ogf",
@@ -199,7 +243,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#3347AA", "#3565B9"]
+                shades: ["#3347AA", "#3565B9"],
+                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OGF.pdf`,
+                tds: `/product/TDS/TDS offset All Grades.xlsx`
             },
             {
                 slug: "kpl-blue-7003-orf",
@@ -207,7 +253,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#2C2681", "#3565B9"]
+                shades: ["#2C2681", "#3565B9"],
+                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 ORF.pdf`,
+                tds: `/product/TDS/TDS offset All Grades.xlsx`
             },
             {
                 slug: "kp-green-9000-u",
@@ -215,7 +263,9 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PG 7", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#00A02C", "#5BDE69"]
+                shades: ["#00A02C", "#5BDE69"],
+                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Green 9000 U.pdf`,
+                tds: `/product/TDS/TDS offset All Grades.xlsx`
             },
         ]
     },

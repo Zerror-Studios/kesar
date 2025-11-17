@@ -6,6 +6,11 @@ import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 import Button from "../common/Button";
 
 const ProductInformation = ({ product, previousSlug, nextSlug }) => {
+  const handleOnClick = (link) => {
+    if (typeof window === "undefined") return; // safety check
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div id="product_info_section">
       <div id="product_info_section_container">
@@ -63,13 +68,32 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
 
             {/* Buttons */}
             <div className="product_btns">
-              <Button title={"Request Quotation"} color={"blue"} width={"size"} icon={<MdArrowOutward />} />
               <Button
-                title={"MSDS Download"}
-                color={"blue-border"}
-                width={"size"} icon={<MdOutlineFileDownload />}
+                title={"Request Quotation"}
+                color={"blue"}
+                width={"size"}
+                icon={<MdArrowOutward />}
               />
-              <Button title={"TDS Download"} color={"blue-border"} width={"size"} icon={<MdOutlineFileDownload />} />
+              {product?.msds && (
+                <Button
+                  title={"MSDS Download"}
+                  color={"blue-border"}
+                  width={"size"}
+                  icon={<MdOutlineFileDownload />}
+                  link={product?.msds}
+                  newTab={true}
+                />
+              )}
+              {product?.tds && (
+                <Button
+                  title={"TDS Download"}
+                  color={"blue-border"}
+                  width={"size"}
+                  icon={<MdOutlineFileDownload />}
+                  link={product?.tds}
+                  newTab={true}
+                />
+              )}
             </div>
           </div>
         </div>
