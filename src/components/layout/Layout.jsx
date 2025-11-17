@@ -75,6 +75,7 @@ const Layout = ({ children }) => {
   return (
     <div
       ref={layoutRef}
+      id="content_wrapper"
       style={{
         opacity: 0,
         willChange: "opacity, transform",

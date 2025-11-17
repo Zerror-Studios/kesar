@@ -136,8 +136,14 @@ nav {
   color: #00000080;
   overflow: hidden;
   display: inline-block;
+  transform: all ease 0.3s;
 }
 .menu-container-dropdown li.active a {
+  color: #004dff;
+  font-family: para-medium;
+  font-weight: 900;
+}
+.menu-container-dropdown li:hover a {
   color: #004dff;
   font-family: para-medium;
   font-weight: 900;
@@ -153,6 +159,15 @@ nav {
   transform: translateY(0%);
 }
 .menu-container-dropdown li.active span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #004dff;
+}
+.menu-container-dropdown li:hover span::after {
   content: "";
   position: absolute;
   bottom: 0;

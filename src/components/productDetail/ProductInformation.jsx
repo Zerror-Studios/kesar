@@ -9,9 +9,10 @@ import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 import Button from "../common/Button";
 
 const ProductInformation = ({ product, previousSlug, nextSlug }) => {
-  const handleOnClick = (link) => {
-    if (typeof window === "undefined") return; // safety check
-    window.open(link, "_blank", "noopener,noreferrer");
+  const handleClick = () => {
+    const mailtoLink = document.createElement("a");
+    mailtoLink.href = "mailto:sales@kesarpetroproducts.com";
+    mailtoLink.click();
   };
 
   return (
@@ -109,6 +110,7 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
                 color={"blue"}
                 width={"size"}
                 icon={<MdArrowOutward />}
+                onClick={handleClick}
               />
               {product?.msds && (
                 <Button

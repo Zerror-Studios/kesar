@@ -106,12 +106,11 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
 
         <div className="button_wrapper_filter">
           <Button
-            title={"Apply Filters"}
+            title={"Search"}
             color={"blue"}
             icon={ <IoMdArrowDropdown />}
             onClick={handleApply}
           />
-          <Button title={"Clear Filter"} onClick={handleClear}  />
         </div>
       </div>
     </div>

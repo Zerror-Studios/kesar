@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
 import { categories } from "@/helpers/productData";
 
 const SearchBox = () => {
   const [query, setQuery] = useState("");
+  const searchRef = useRef(null);
 
   // --- Filter Logic ---
   const filtered = categories
@@ -41,8 +42,38 @@ const SearchBox = () => {
 
   const hasResults = filtered.length > 0;
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setQuery(""); // close dropdown
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Dim background and change root variable when dropdown is open
+  useEffect(() => {
+    const contentWrapper = document.getElementById("content_wrapper");
+    const root = document.documentElement;
+
+    if (query) {
+      if (contentWrapper) {
+        contentWrapper.style.filter = "brightness(0.7)";
+        contentWrapper.style.transition = "filter 0.3s ease";
+      }
+      root.style.setProperty("--background-color", "#B2B2B2");
+    } else {
+      if (contentWrapper) contentWrapper.style.filter = "brightness(1)";
+      root.style.setProperty("--background-color", "#f3f3f3");
+    }
+  }, [query]);
+
   return (
     <div
+      ref={searchRef}
       className={`input-container ${query ? "open" : ""} ${
         query && !hasResults ? "no-data" : ""
       }`}
@@ -61,7 +92,6 @@ const SearchBox = () => {
       {query && (
         <div className="search-container-dropdown" data-lenis-prevent>
           <div className="search-dropdown-wrapper">
-            {/* Results */}
             {hasResults ? (
               filtered.map((cat) => (
                 <div className="category_box" key={cat.category}>
@@ -69,7 +99,10 @@ const SearchBox = () => {
                   <ul>
                     {cat.products.map((product) => (
                       <li key={product.slug}>
-                        <Link href={`/products/${product.slug}`}  onClick={() => setQuery("")}>
+                        <Link
+                          href={`/products/${product.slug}`}
+                          onClick={() => setQuery("")} // close on click
+                        >
                           {product.name}
                         </Link>
                       </li>

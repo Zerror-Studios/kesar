@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MenuData } from "@/helpers/MenuData";
@@ -7,6 +7,7 @@ import Image from "next/image";
 const Menu = () => {
   const pathname = usePathname() || "/";
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     if (window.innerWidth <= 768) return;
@@ -18,15 +19,46 @@ const Menu = () => {
     setIsOpen(!isOpen);
   };
 
-  // ✅ Close menu when clicking a link on mobile
   const handleLinkClick = () => {
     if (window.innerWidth <= 768) {
       setIsOpen(false);
     }
   };
 
+  // Close menu on clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Dim content and change root variable when menu is open
+  useEffect(() => {
+    const contentWrapper = document.getElementById("content_wrapper");
+    const root = document.documentElement;
+
+    if (isOpen) {
+      if (contentWrapper) {
+        contentWrapper.style.filter = "brightness(0.7)";
+        contentWrapper.style.transition = "filter 0.3s ease";
+      }
+      // Change root CSS variable
+      root.style.setProperty("--background-color", "#B2B2B2");
+    } else {
+      if (contentWrapper) contentWrapper.style.filter = "brightness(1)";
+      // Reset root CSS variable
+      root.style.setProperty("--background-color", "#f3f3f3");
+    }
+  }, [isOpen]);
+
   return (
     <div
+      ref={menuRef}
       className={`menu-container ${isOpen ? "open" : ""}`}
       onClick={toggleMenu}
     >
@@ -61,7 +93,7 @@ const Menu = () => {
               <li
                 key={index}
                 className={isActive ? "active" : ""}
-                onClick={handleLinkClick} // 👈 added
+                onClick={handleLinkClick}
               >
                 <Link href={item.path}>
                   <span>{item.name}</span>
