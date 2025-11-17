@@ -1,9 +1,10 @@
 import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Dropdown from "../common/Dropdown";
 
-const ProductFinder = ({isHero}) => {
+const ProductFinder = ({ isHero }) => {
   return (
-    <div id="product_finder" className={`${isHero ? 'hero':''}`}>
+    <div id="product_finder" className={`${isHero ? "hero" : ""}`}>
       <div id="product_finder_container">
         <h4>Product Finder</h4>
         <p>
@@ -14,29 +15,38 @@ const ProductFinder = ({isHero}) => {
           <div className="dropdown_box">
             <p>Phthalocyanine Pigments</p>
             <div id="dropdown_wrapper">
-              <div className="dropdown">
-                <span>Select Application</span>
-                <IoMdArrowDropdown />
-              </div>
-              <div className="dropdown">
-                <span>Select Colour Index</span>
-                <IoMdArrowDropdown />
-              </div>
+              <Dropdown
+                label="Select Application"
+                options={[
+                  "Inks",
+                  "Coatings",
+                  "Plastic (Master Batch)",
+                  "Offset",
+                ]}
+              />
+              <Dropdown
+                label="Select Colour Index"
+                options={["PB 15.0", "PB 15.1", "PB 15.3", "PG 7"]}
+              />
             </div>
           </div>
           <div className="dropdown_box">
             <p>Anti Corrosives</p>
-            <div className="dropdown">
-              <span>Select Anti Corrosives Product</span>
-              <IoMdArrowDropdown />
-            </div>
+            <Dropdown
+              label="Select Anti Corrosives Product"
+              options={["Zinc Phosphate", "Zinc Oxide", "Zinc Carbonate"]}
+            />
           </div>
           <div className="dropdown_box">
             <p>Fertilizers</p>
-            <div className="dropdown">
-              <span>Select Fertilizers Product</span>
-              <IoMdArrowDropdown />
-            </div>
+            <Dropdown
+              label="Select Fertilizers Product"
+              options={[
+                "Diammonium Phosphate",
+                "Mono Ammonium Phosphate",
+                "Zinc Sulphate",
+              ]}
+            />
           </div>
         </div>
       </div>
