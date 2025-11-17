@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "../common/Button";
 import LeaderCard from "./LeaderCard";
-import { GrNext } from "react-icons/gr";
 
 const Leadership = () => {
   const leaders = [
@@ -59,7 +57,6 @@ Leads Technical ‑ Commercial Strategy and International Growth.`,
               environmental stewardship.
             </p>
           </div>
-          <Button title={"Explore our global presence"} icon={<GrNext />} />
         </div>
         <div id="leadership_section_cards">
           {leaders.map((leader) => (

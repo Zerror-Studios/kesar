@@ -215,7 +215,7 @@
     font-size: .65rem;
   }
   #product_hero {
-    padding: calc(65px + 4rem) 1rem 0.5rem;
+    padding: calc(65px + 4rem) 0.5rem 0.5rem;
   }
   #product_hero_title h4 {
     font-size: 2rem;
@@ -228,7 +228,7 @@
   }
   .product_list {
     width: 100%;
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.5rem;
     overflow: hidden;
   }
   .product_list_container {

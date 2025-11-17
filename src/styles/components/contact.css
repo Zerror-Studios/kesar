@@ -100,7 +100,7 @@
 /* Mobile */
 @media (max-width: 480px) {
   #contact_section {
-    padding: 65px 1rem 0.5rem;
+    padding: 65px 0.5rem 0.25rem;
   }
   #contact_section_container {
     padding: 2rem 1rem;

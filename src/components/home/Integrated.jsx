@@ -35,6 +35,7 @@ const Integrated = () => {
             <Button
               title="Learn More About our Integration"
               icon={<GrNext />}
+              link="/about"
             />
           )}
         </div>
@@ -56,6 +57,7 @@ const Integrated = () => {
           <Button
             title="Learn More About our Integration"
             icon={<GrNext />}
+            link="/about"
           />
         )}
       </div>

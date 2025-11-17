@@ -1,23 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Button from "../common/Button";
+import React from "react";
 import ApplicationCard from "./ApplicationCard";
-import { GrNext } from "react-icons/gr";
 
 const ApplicationSection = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Detect width (no SSR issues)
-  useEffect(() => {
-    const checkWidth = () => {
-      setIsMobile(window.innerWidth <= 480);
-    };
-
-    checkWidth(); // initial load
-
-    window.addEventListener("resize", checkWidth);
-    return () => window.removeEventListener("resize", checkWidth);
-  }, []);
-
   const applications = [
     {
       id: 1,
@@ -56,7 +40,6 @@ const ApplicationSection = () => {
   return (
     <div id="application_section">
       <div id="application_section_container">
-
         <div id="application_section_header">
           <div>
             <h4>Applications & Industries</h4>
@@ -65,11 +48,6 @@ const ApplicationSection = () => {
               proven performance
             </p>
           </div>
-
-          {/* Desktop button */}
-          {!isMobile && (
-            <Button title="Explore more Products" icon={<GrNext />} />
-          )}
         </div>
 
         <div id="application_section_cards">
@@ -77,14 +55,6 @@ const ApplicationSection = () => {
             <ApplicationCard key={index} data={data} index={index} />
           ))}
         </div>
-
-        {/* Mobile button */}
-        {isMobile && (
-           <div className="btn_wrap_mobile">
-             <Button title="Explore more Products" icon={<GrNext />} />
-          </div>
-        )}
-
       </div>
     </div>
   );

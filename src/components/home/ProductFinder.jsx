@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Dropdown from "../common/Dropdown";
-import { BiFilter } from "react-icons/bi";
 import Button from "../common/Button";
 import { useRouter } from "next/router";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const ProductFinder = ({ isHero, initialValues = {} }) => {
   const router = useRouter();
@@ -108,7 +108,7 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
           <Button
             title={"Apply Filters"}
             color={"blue"}
-            icon={<BiFilter />}
+            icon={ <IoMdArrowDropdown />}
             onClick={handleApply}
           />
           <Button title={"Clear Filter"} onClick={handleClear}  />

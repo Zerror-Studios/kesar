@@ -132,7 +132,7 @@
 /* Mobile */
 @media (max-width: 480px) {
   #product_info_section {
-    padding: 65px 1rem 0.5rem;
+    padding: 65px 0.5rem 0.5rem;
   }
   .product_application {
     flex-wrap: wrap;
