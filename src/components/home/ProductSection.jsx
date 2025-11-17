@@ -2,27 +2,28 @@ import React from "react";
 import Button from "../common/Button";
 import ProductCard from "./ProductCard";
 import { GrNext } from "react-icons/gr";
+import { categories } from "@/helpers/productData";
 
-const ProductSection = ({title,des,btn}) => {
+const ProductSection = ({ title, des, btn }) => {
+  // get first product of each category (4 total)
+  const firstProducts = categories.map((cat) => cat.products[0]).slice(0, 4);
+
   return (
     <div id="product_section">
       <div id="product_section_container">
         <div id="product_section_title">
           <div>
             <h4>{title}</h4>
-            <p>
-             {des}
-            </p>
+            <p>{des}</p>
           </div>
           <Button title={btn} link={"/products"} icon={<GrNext />} />
         </div>
-       <div className="product_slider">
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-       </div>
-        
+
+        <div className="product_slider">
+          {firstProducts.map((product, idx) => (
+            <ProductCard key={idx} product={product} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "../common/Button";
 import Image from "next/image";
-import {  GrNext } from "react-icons/gr";
 
 const Sustainability = () => {
   return (
@@ -15,7 +13,6 @@ const Sustainability = () => {
               environmental stewardship.
             </p>
           </div>
-          <Button title={"Explore our global presence"} icon={<GrNext />} />
         </div>
         <div id="sustainable_section_cards">
           <div className="sustainable_section_card">

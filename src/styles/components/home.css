@@ -470,6 +470,15 @@
   letter-spacing: 0.5px;
   line-height: 1.4;
   color: #00000080;
+  color: rgba(0, 0, 0, .5);
+    white-space: nowrap;
+    background-color: rgba(245, 245, 245, .7);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    padding:.3rem .4rem;
+    display: flex;
 }
 
 .product_card img {

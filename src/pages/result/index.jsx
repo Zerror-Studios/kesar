@@ -8,33 +8,48 @@ export default function ResultPage({ meta }) {
   const router = useRouter();
   const { category, tag, antiCorrosive, fertilizer } = router.query;
 
-  // Check if user applied any filter
-  const hasFilters =
-    category || tag || antiCorrosive || fertilizer;
+  // Check if any filter is applied
+  const hasFilters = category || tag || antiCorrosive || fertilizer;
 
   // Flatten products
   const allProducts = categories.flatMap((c) => c.products);
 
-  // FILTERING LOGIC
-  const filtered = hasFilters
-    ? allProducts.filter((p) => {
-        let ok = true;
+  let filtered = [];
 
-        if (category) {
-          ok = ok && p.category.toLowerCase() === category.toLowerCase();
-        }
+  if (hasFilters) {
+    let result = [];
 
-        if (tag) ok = ok && p.tags?.includes(tag);
-        if (antiCorrosive)
-          ok =
-            ok &&
-            p.name.toLowerCase().includes(antiCorrosive.toLowerCase());
-        if (fertilizer)
-          ok = ok && p.name.toLowerCase().includes(fertilizer.toLowerCase());
+    if (category) {
+      result.push(
+        ...allProducts.filter(
+          (p) => p.category.toLowerCase() === category.toLowerCase()
+        )
+      );
+    }
 
-        return ok;
-      })
-    : []; // no filters → no results
+    if (tag) {
+      result.push(...allProducts.filter((p) => p.tags?.includes(tag)));
+    }
+
+    if (antiCorrosive) {
+      result.push(
+        ...allProducts.filter((p) =>
+          p.name.toLowerCase().includes(antiCorrosive.toLowerCase())
+        )
+      );
+    }
+
+    if (fertilizer) {
+      result.push(
+        ...allProducts.filter((p) =>
+          p.name.toLowerCase().includes(fertilizer.toLowerCase())
+        )
+      );
+    }
+
+    // Remove duplicates by slug
+    filtered = Array.from(new Map(result.map((p) => [p.slug, p])).values());
+  }
 
   return (
     <>
