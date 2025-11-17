@@ -54,6 +54,15 @@
   width: 160px;
   height: 160px;
   border-radius: 15px;
+  padding: 1rem;
+    font-family: para-regular;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .product_sample.center {
   box-shadow: 0 0 20px 0 #00000031;
@@ -104,6 +113,14 @@
 .product_application span:nth-child(1) {
   font-family: para-regular;
   font-weight: 400;
+}
+.product_application.use span{
+  font-family: para-regular !important;
+  font-weight: 400 !important;
+}
+.product_application.properties span{
+  font-family: para-regular !important;
+  font-weight: 400 !important;
 }
 
 .product_btns {

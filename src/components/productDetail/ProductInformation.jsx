@@ -1,7 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import { IoIosCheckmarkCircle } from "react-icons/io";
+import {
+  IoIosCheckmarkCircle,
+  IoIosCheckmarkCircleOutline,
+} from "react-icons/io";
 import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 import Button from "../common/Button";
 
@@ -39,7 +42,9 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
                 key={idx}
                 className={`product_sample ${product.style ? "center" : ""}`}
                 style={{ backgroundColor: shade }}
-              ></div>
+              >
+                <span>{idx === 0 ? "FT Shade" : "RT Shade"}</span>
+              </div>
             ))}
           </div>
 
@@ -57,14 +62,45 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
               ))}
             </div>
 
-            <div className="product_application">
-              <span>Application:</span>
-              {product?.application?.map((app, idx) => (
-                <span key={idx}>
-                  <IoIosCheckmarkCircle /> {app}
-                </span>
-              ))}
-            </div>
+            {product?.application && (
+              <div className="product_application">
+                <span>Application:</span>
+                {product?.application?.map((app, idx) => (
+                  <span key={idx}>
+                    <IoIosCheckmarkCircle /> {app}
+                  </span>
+                ))}
+              </div>
+            )}
+            {product?.decorative && (
+              <div className="product_application">
+                <span>Decorative Paint:</span>
+                {product?.decorative?.map((app, idx) => (
+                  <span key={idx}>
+                    <IoIosCheckmarkCircle /> {app}
+                  </span>
+                ))}
+              </div>
+            )}
+            {product?.industrial && (
+              <div className="product_application">
+                <span>Industrial Coating:</span>
+                {product?.industrial?.map((app, idx) => (
+                  <span key={idx}>
+                    <IoIosCheckmarkCircle /> {app}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {product?.Properties && (
+              <div className="product_application properties">
+                <span>Properties:</span>
+                {product?.Properties?.map((pro, idx) => (
+                  <span key={idx}>{pro}</span>
+                ))}
+              </div>
+            )}
 
             {/* Buttons */}
             <div className="product_btns">
@@ -95,6 +131,17 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
                 />
               )}
             </div>
+            {product?.use && (
+              <div className="product_application use">
+                {product?.use?.map((u, idx) => (
+                  <span key={idx}>
+                    {idx === 0 && <IoIosCheckmarkCircle />}
+                    {idx === 1 && <IoIosCheckmarkCircleOutline />}
+                    {u}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
