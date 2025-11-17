@@ -351,29 +351,35 @@ export const categories = [
             {
                 slug: "zinc-phosphate",
                 name: "Zinc Phosphate",
-                desc: "General redder grade with 10% pigment loading",
+                desc: "(also known as Trizinc Phosphate, Trizinc Diphosphate, or Zinc Orthophosphate)",
                 tags: ["Zn₃(PO₄)₂", "Anti Corrosives"],
+                application: ["Corrosion-Resistant Coatings", "Dental Cement", "Industrial Applications", "Pigments"],
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Anti Corrosives",
+                use: ["Suitable", "Potential use"]
             },
             {
                 slug: "zinc-oxide",
                 name: "Zinc Oxide",
-                desc: "General redder grade with 10% pigment loading",
+                desc: "(used in ceramics)",
                 tags: ["ZnO", "Anti Corrosives"],
+                application: ["Cosmetics and Skincare", "Paints and Coatings", "Rubber Industry", "Ceramics and Glass", "Pharmaceuticals", "Electronics", "Agriculture"],
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Anti Corrosives",
+                use: ["Suitable", "Potential use"]
             },
             {
                 slug: "zinc-carbonate",
                 name: "Zinc Carbonate",
-                desc: "General redder grade with 10% pigment loading",
+                desc: "(used in ceramics)",
                 tags: ["ZnCO₃", "Anti Corrosives"],
+                application: ["Cosmetics and Skincare", "Rubber Industry", "Pharmaceuticals", "Pigments and Coatings", "Chemical Synthesis", "Agriculture"],
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Anti Corrosives",
+                use: ["Suitable", "Potential use"]
             },
         ]
     },
@@ -383,29 +389,35 @@ export const categories = [
             {
                 slug: "diammonium-phosphate",
                 name: "Diammonium Phosphate",
-                desc: "General redder grade with 10% pigment loading",
+                desc: "(also known as Diammonium Hydrogen Phosphate or Ammonium Phosphate Dibasic)",
                 tags: ["(NH₄)₂HPO₄ ", "Fertilizers"],
+                application: ["Fertilizers", "Fire Retardants", "Food Industry", "Industrial Applications", "Chemical Synthesis"],
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Fertilizers",
+                use: ["Suitable", "Potential use"]
             },
             {
                 slug: "mono-ammonium-phosphate",
                 name: "Mono Ammonium Phosphate",
-                desc: "General redder grade with 10% pigment loading",
+                desc: "(also known as Ammonium Dihydrogen Phosphate or Ammonium Phosphate Monobasic)",
                 tags: ["NH₄H₂PO₄", "Fertilizers"],
+                application: ["Fertilizers", "Fire Retardants", "Food Industry", "Industrial Applications", "Analytical Chemistry"],
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Fertilizers",
+                use: ["Suitable", "Potential use"]
             },
             {
                 slug: "zinc-sulphate",
                 name: "Zinc Sulphate",
-                desc: "General redder grade with 10% pigment loading",
+                desc: "(also known as Zinc Sulfate)",
                 tags: ["ZnSO₄", "Fertilizers"],
+                application: ["Agriculture", "Animal Feed", "Pharmaceuticals", "Industrial Applications", "Water Treatment", "Chemical Synthesis"],
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Fertilizers",
+                use: ["Suitable", "Potential use"]
             },
         ]
     }

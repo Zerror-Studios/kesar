@@ -23,12 +23,11 @@ export default About;
 
 export async function getStaticProps() {
   const meta = {
-    title:
-      "Kesar Petroproducts Ltd. – Applications & Industries for Petrochemical Solutions",
+    title: "About Us – Kesar Petroproducts Ltd.",
     description:
-      "Discover the wide range of industries and applications powered by Kesar Petroproducts’ high-quality petrochemicals, including plastics, textiles, pharmaceuticals, coatings, automotive and more.",
+      "Kesar Petroproducts Ltd. delivers high-quality petrochemical solutions with a commitment to innovation, sustainability, and serving diverse industries.", // 21 words, 140 characters
     keywords:
-      "petrochemical applications, chemical industries India, industrial chemicals use, Kesar Petroproducts applications, chemical solutions for industries, manufacturing chemicals",
+      "Kesar Petroproducts, petrochemical company, chemical solutions India, industrial chemicals, company mission, sustainability, innovation", // 12 keywords, focused
     author: "Kesar Petroproducts Ltd.",
     robots: "index,follow",
   };
