@@ -1,11 +1,13 @@
 import ProductList from "@/components/product/ProductList";
 import ProductInformation from "@/components/productDetail/ProductInformation";
+import SeoHeader from "@/components/seo/SeoHeader";
 import { categories } from "@/helpers/productData";
 import React from "react";
 
-const ProductDetail = ({ product, categoriesData, previousSlug, nextSlug }) => {
+const ProductDetail = ({ meta, product, categoriesData, previousSlug, nextSlug }) => {
   return (
     <>
+    <SeoHeader meta={meta} />
       <ProductInformation
         product={product}
         previousSlug={previousSlug}
@@ -52,6 +54,7 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       product: productData,
+      meta:productData?.meta,
       categoriesData: categories,
       previousSlug: allProducts[previousIndex].slug,
       nextSlug: allProducts[nextIndex].slug,

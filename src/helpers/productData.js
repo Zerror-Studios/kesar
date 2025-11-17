@@ -12,7 +12,15 @@ export const categories = [
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7000 D.pdf`,
                 tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
                 category: "Ink",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 D – Kesar Petroproducts Ltd. | Ink Product",
+                    description:
+                        "KPL Blue 7000 D is a general redder grade ink with 10% pigment loading, suitable for W.B Ink applications.",
+                    keywords: "KPL Blue 7000 D, PB 15.0, Ink, W.B Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-d",
@@ -24,7 +32,15 @@ export const categories = [
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 D.pdf`,
                 tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
                 category: "Ink",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 D – Kesar Petroproducts Ltd. | Ink Product",
+                    description:
+                        "KPL Blue 7003 D is a general redder grade ink with 10% pigment loading, suitable for NC - PU, NC Alcohol, PA, and Vinyl - EVA applications.",
+                    keywords: "KPL Blue 7003 D, PB 15.3, Ink, NC - PU, NC Alcohol, PA, Vinyl - EVA, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-wd",
@@ -36,7 +52,15 @@ export const categories = [
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
                 tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
                 category: "Ink",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 WD – Kesar Petroproducts Ltd. | Ink Product",
+                    description:
+                        "KPL Blue 7003 WD is a high pigment loading (40-45%) ink with excellent gloss, transparency, and viscosity, suitable for W.B Ink applications.",
+                    keywords: "KPL Blue 7003 WD, PB 15.3, Ink, W.B Ink, high pigment ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kp-green-9000-d",
@@ -48,7 +72,15 @@ export const categories = [
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Green 9000 D.pdf`,
                 tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
                 category: "Ink",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KP Green 9000 D – Kesar Petroproducts Ltd. | Ink Product",
+                    description:
+                        "KP Green 9000 D ink offers good gloss, transparency, and flow. Suitable for W.B Ink, NC - PU, NC - Alcohol, PA, and Vinyl - EVA applications.",
+                    keywords: "KP Green 9000 D, PG 7, Ink, W.B Ink, NC - PU, NC - Alcohol, PA, Vinyl - EVA, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
         ]
     },
@@ -66,7 +98,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000WL.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 WL – Kesar Petroproducts Ltd. | Water Based Coating",
+                    description: "KPL Blue 7000 WL is specially designed for water based emulsion paint systems, providing excellent light fastness and weather resistance.",
+                    keywords: "KPL Blue 7000 WL, PB 15.0, Water Based Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7000-tx",
@@ -79,7 +118,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000TX.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 Tx – Kesar Petroproducts Ltd. | Textile Emulsion Coating",
+                    description: "KPL Blue 7000 Tx is specially formulated for textile emulsion systems, offering excellent light fastness, weather resistance, and heat stability.",
+                    keywords: "KPL Blue 7000 Tx, PB 15.0, Textile Emulsion Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
             {
@@ -93,7 +139,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000 DD.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 DD – Kesar Petroproducts Ltd. | Dry Distemper Coating",
+                    description: "KPL Blue 7000 DD is ideal for dry distemper applications, providing excellent dispersion, color strength, and light fastness.",
+                    keywords: "KPL Blue 7000 DD, PB 15.0, Dry Distemper Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
             {
@@ -108,7 +161,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7001L.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7001 L – Kesar Petroproducts Ltd. | Universal Stainer Coating",
+                    description: "KPL Blue 7001 L is suitable for universal stainer systems, compatible with solvent and water based coatings, and various industrial applications.",
+                    keywords: "KPL Blue 7001 L, PB 15.1, Universal Stainer Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
             {
@@ -123,7 +183,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003L.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 L – Kesar Petroproducts Ltd. | Universal Stainer Coating",
+                    description: "KPL Blue 7003 L is suitable for universal stainer systems, ideal for solvent and water based coatings, and select industrial applications.",
+                    keywords: "KPL Blue 7003 L, PB 15.3, Universal Stainer Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
             {
@@ -137,7 +204,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003TX.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 Tx – Kesar Petroproducts Ltd. | Textile Emulsion Coating",
+                    description: "KPL Blue 7003 Tx is designed for textile emulsion systems, offering bright greener shades with excellent light and weather fastness.",
+                    keywords: "KPL Blue 7003 Tx, PB 15.3, Textile Emulsion Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
             {
@@ -151,7 +225,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003 DD.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 DD – Kesar Petroproducts Ltd. | Dry Distemper Coating",
+                    description: "KPL Blue 7003 DD is ideal for dry distemper applications, providing excellent dispersion, colour strength, and light fastness.",
+                    keywords: "KPL Blue 7003 DD, PB 15.3, Dry Distemper Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
             {
@@ -166,7 +247,14 @@ export const categories = [
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Green 9000U.pdf`,
                 tds: `/product/TDS/TDS Coating All Grades.xlsx`,
                 category: "Coating",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Green 9000 U – Kesar Petroproducts Ltd. | Universal Coating",
+                    description: "KPL Green 9000 U is a universal grade coating suitable for various coating systems, providing excellent light fastness, weather resistance, and heat stability.",
+                    keywords: "KPL Green 9000 U, PG 7, Universal Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
 
             },
         ]
@@ -185,8 +273,14 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7000 K.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7000 K.pdf`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
-
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 K – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPL Blue 7000 K offers good dispersion and color strength, suitable for PVC, PVC Leather, and Rubber applications.",
+                    keywords: "KPL Blue 7000 K, PB 15.0, Plastic Pigment, PVC, Rubber, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7001-ak",
@@ -199,7 +293,14 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7001 AK.pdf`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7001 AK – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPL Blue 7001 AK provides excellent dispersion and color strength, suitable for polyolefins, PVC, PA/ABS, PP Fiber, and Rubber applications.",
+                    keywords: "KPL Blue 7001 AK, PB 15.1, Plastic Pigment, Polyolefins, PVC, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7001-bkfv",
@@ -212,7 +313,14 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 BKFV.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7001 BKFV.pdf`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7001 BkFV – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPL Blue 7001 BkFV offers high heat stability (280°C) and good FPV, suitable for PVC, Nylon 6, PBT/PET, and other plastic applications.",
+                    keywords: "KPL Blue 7001 BkFV, PB 15.1, Plastic Pigment, PVC, Nylon 6, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7001-ckfv",
@@ -225,7 +333,14 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 CKFV.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7001 CKFV.pdf`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7001 CkFV – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPL Blue 7001 CkFV provides excellent color strength and heat stability (300°C) for PVC, Polyolefins, Nylon 6, PBT/PET, and PP Fiber applications.",
+                    keywords: "KPL Blue 7001 CkFV, PB 15.1, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-k",
@@ -238,7 +353,14 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7003 K.pdf`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 K – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPL Blue 7003 K provides good dispersion, color strength, and heat stability (260°C) for a variety of plastic applications including PVC and Polyolefins.",
+                    keywords: "KPL Blue 7003 K, PB 15.3, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-kfv",
@@ -251,7 +373,14 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K FV.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7003 KFV.pdf`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 KFV – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPL Blue 7003 KFV offers excellent dispersion, color strength, and heat stability (300°C) for diverse plastic applications.",
+                    keywords: "KPL Blue 7003 KFV, PB 15.3, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kp-green-9000-k",
@@ -264,9 +393,17 @@ export const categories = [
                 msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Green 9000 K.pdf`,
                 tds: `/product/TDS/TDS Plastic All Grades.xlsx`,
                 category: "Plastic",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KP Green 9000 K – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KP Green 9000 K provides good dispersion, color strength, and moderate heat stability (300°C), suitable for various plastic applications.",
+                    keywords: "KP Green 9000 K, PG 7, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
         ]
+
     },
     {
         category: "Offset",
@@ -281,7 +418,14 @@ export const categories = [
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7000 U.pdf`,
                 tds: `/product/TDS/TDS offset All Grades.xlsx`,
                 category: "Offset",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 U – Kesar Petroproducts Ltd. | Offset Ink",
+                    description: "KPL Blue 7000 U is a cyan offset ink widely used for shade adjustment by ink manufacturers, offering excellent dispersion and print quality.",
+                    keywords: "KPL Blue 7000 U, PB 15.0, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-og",
@@ -293,7 +437,14 @@ export const categories = [
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OG.pdf`,
                 tds: `/product/TDS/TDS offset All Grades.xlsx`,
                 category: "Offset",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 OG – Kesar Petroproducts Ltd. | Offset Ink",
+                    description: "KPL Blue 7003 OG is a cyan offset ink with a greener shade and excellent dispersion for high-quality printing.",
+                    keywords: "KPL Blue 7003 OG, PB 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-or",
@@ -305,7 +456,14 @@ export const categories = [
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OR.pdf`,
                 tds: `/product/TDS/TDS offset All Grades.xlsx`,
                 category: "Offset",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 OR – Kesar Petroproducts Ltd. | Offset Ink",
+                    description: "KPL Blue 7003 OR is a cyan offset ink with a redder shade and excellent dispersion for professional offset printing applications.",
+                    keywords: "KPL Blue 7003 OR, PB 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-ogf",
@@ -317,7 +475,14 @@ export const categories = [
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OGF.pdf`,
                 tds: `/product/TDS/TDS offset All Grades.xlsx`,
                 category: "Offset",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 OGF – Kesar Petroproducts Ltd. | Offset Ink",
+                    description: "KPL Blue 7003 OGF is a greener cyan ink for offset, metal deco, and screen printing with excellent flow and printability.",
+                    keywords: "KPL Blue 7003 OGF, PB 15.3, Offset Ink, Cyan Ink, Screen Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kpl-blue-7003-orf",
@@ -329,7 +494,14 @@ export const categories = [
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 ORF.pdf`,
                 tds: `/product/TDS/TDS offset All Grades.xlsx`,
                 category: "Offset",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7003 ORF – Kesar Petroproducts Ltd. | Offset Ink",
+                    description: "KPL Blue 7003 ORF is a redder cyan offset ink with excellent flow and printability, suitable for offset, metal deco, and screen printing.",
+                    keywords: "KPL Blue 7003 ORF, PB 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "kp-green-9000-u",
@@ -341,7 +513,14 @@ export const categories = [
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Green 9000 U.pdf`,
                 tds: `/product/TDS/TDS offset All Grades.xlsx`,
                 category: "Offset",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KP Green 9000 U – Kesar Petroproducts Ltd. | Offset Ink",
+                    description: "KP Green 9000 U is a green offset ink with good dispersion, suitable for various offset printing applications.",
+                    keywords: "KP Green 9000 U, PG 7, Offset Ink, Green Ink, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
         ]
     },
@@ -357,7 +536,14 @@ export const categories = [
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Anti Corrosives",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "Zinc Phosphate – Kesar Petroproducts Ltd. | Anti Corrosive",
+                    description: "Zinc Phosphate (Trizinc Phosphate, Trizinc Diphosphate, or Zinc Orthophosphate) is used in corrosion-resistant coatings, dental cement, industrial applications, and pigments.",
+                    keywords: "Zinc Phosphate, Trizinc Phosphate, Anti Corrosives, Kesar Petroproducts, Corrosion-Resistant Coatings, Industrial Chemicals",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "zinc-oxide",
@@ -368,7 +554,14 @@ export const categories = [
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Anti Corrosives",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "Zinc Oxide – Kesar Petroproducts Ltd. | Anti Corrosive",
+                    description: "Zinc Oxide is used in ceramics, cosmetics, paints, rubber industry, pharmaceuticals, electronics, and agriculture, providing excellent corrosion resistance.",
+                    keywords: "Zinc Oxide, ZnO, Anti Corrosives, Kesar Petroproducts, Ceramics, Cosmetics, Paints, Rubber Industry",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "zinc-carbonate",
@@ -379,7 +572,14 @@ export const categories = [
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Anti Corrosives",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "Zinc Carbonate – Kesar Petroproducts Ltd. | Anti Corrosive",
+                    description: "Zinc Carbonate is used in ceramics, cosmetics, rubber, pharmaceuticals, pigments, chemical synthesis, and agriculture, offering reliable anti-corrosive properties.",
+                    keywords: "Zinc Carbonate, ZnCO₃, Anti Corrosives, Kesar Petroproducts, Ceramics, Cosmetics, Pigments, Chemical Synthesis",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
         ]
     },
@@ -395,7 +595,14 @@ export const categories = [
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Fertilizers",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "Diammonium Phosphate – Kesar Petroproducts Ltd. | Fertilizers",
+                    description: "Diammonium Phosphate (DAP) is used in fertilizers, fire retardants, food industry, industrial applications, and chemical synthesis, providing essential nutrients for crops.",
+                    keywords: "Diammonium Phosphate, DAP, Fertilizers, Kesar Petroproducts, Industrial Chemicals, Agriculture, Fire Retardants",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "mono-ammonium-phosphate",
@@ -406,7 +613,14 @@ export const categories = [
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Fertilizers",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "Mono Ammonium Phosphate – Kesar Petroproducts Ltd. | Fertilizers",
+                    description: "Mono Ammonium Phosphate (MAP) is widely used in fertilizers, fire retardants, food industry, industrial applications, and analytical chemistry for nutrient-rich formulations.",
+                    keywords: "Mono Ammonium Phosphate, MAP, Fertilizers, Kesar Petroproducts, Agriculture, Fire Retardants, Industrial Chemicals",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
             {
                 slug: "zinc-sulphate",
@@ -417,7 +631,14 @@ export const categories = [
                 shades: ["#FFFFFF"],
                 style: "center",
                 category: "Fertilizers",
-                use: ["Suitable", "Potential use"]
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "Zinc Sulphate – Kesar Petroproducts Ltd. | Fertilizers",
+                    description: "Zinc Sulphate (ZnSO₄) is used in agriculture, animal feed, pharmaceuticals, industrial applications, water treatment, and chemical synthesis, providing essential zinc nutrients.",
+                    keywords: "Zinc Sulphate, ZnSO₄, Fertilizers, Kesar Petroproducts, Agriculture, Pharmaceuticals, Industrial Chemicals, Water Treatment",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
             },
         ]
     }
