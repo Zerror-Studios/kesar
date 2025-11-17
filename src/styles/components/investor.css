@@ -211,7 +211,7 @@
 /* Mobile */
 @media (max-width: 480px) {
   #investor_hero {
-    padding: calc(65px + 4rem) 0.5rem 0.25rem;
+    padding: calc(65px + 4rem) 1rem 0.25rem;
     overflow: hidden;
   }
   #investor_hero_title h4 {
@@ -225,7 +225,7 @@
   #report_section {
     width: 100%;
     height: auto;
-    padding: 2rem 0.5rem 0.25rem;
+    padding: 2rem 1rem 0.25rem;
   }
   #report_header {
     gap: 1rem;
