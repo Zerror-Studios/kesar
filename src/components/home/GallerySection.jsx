@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../common/Button";
 import Image from "next/image";
 import { GrNext } from "react-icons/gr";
 
 const GallerySection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen width
+  useEffect(() => {
+    const checkWidth = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    checkWidth();
+    window.addEventListener("resize", checkWidth);
+
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
+
   return (
     <div id="gallery_section">
       <div id="gallery_section_container">
+
         <div id="gallery_section_header">
           <div>
             <h4>Gallery</h4>
@@ -16,8 +31,13 @@ const GallerySection = () => {
               manufacture.
             </p>
           </div>
-          <Button title={"Full Gallery"} link={"/gallery"} icon={<GrNext />} />
+
+          {/* Desktop button */}
+          {!isMobile && (
+            <Button title={"Full Gallery"} link={"/gallery"} icon={<GrNext />} />
+          )}
         </div>
+
         <div id="gallery_section_cards">
           <div className="gallery_section_card">
             <Image
@@ -33,6 +53,7 @@ const GallerySection = () => {
               </div>
             </div>
           </div>
+
           <div className="gallery_section_card">
             <Image
               width={1000}
@@ -47,6 +68,7 @@ const GallerySection = () => {
               </div>
             </div>
           </div>
+
           <div className="gallery_section_card">
             <Image
               width={1000}
@@ -62,6 +84,14 @@ const GallerySection = () => {
             </div>
           </div>
         </div>
+
+        {/* Mobile button */}
+        {isMobile && (
+          <div className="btn_wrap_mobile">
+            <Button title={"Full Gallery"} link={"/gallery"} icon={<GrNext />} />
+          </div>
+        )}
+
       </div>
     </div>
   );

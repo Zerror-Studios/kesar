@@ -149,6 +149,9 @@ body {
 .button.size {
   width: 220px;
 }
+.btn_wrap_mobile{
+  margin-top: 1rem;
+}
 
 /* Mobile */
 @media (max-width: 480px) {

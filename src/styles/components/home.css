@@ -1191,6 +1191,11 @@
   .latest_news_card_dets h5 {
     width: 100%;
   }
+  .latest_news_card_dets >div{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .3rem;
+  }
   /* gallery_section */
   #gallery_section {
     padding: 0.5rem .5rem;
