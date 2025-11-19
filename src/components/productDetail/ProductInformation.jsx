@@ -97,9 +97,19 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
             {product?.Properties && (
               <div className="product_application properties">
                 <span>Properties:</span>
-                {product?.Properties?.map((pro, idx) => (
-                  <span key={idx}>{pro}</span>
-                ))}
+                {product?.Properties?.map((pro, idx) => {
+                  const updatedText = pro.replace(
+                    /:(.*)/,
+                    ": <strong>$1</strong>"
+                  );
+
+                  return (
+                    <span
+                      key={idx}
+                      dangerouslySetInnerHTML={{ __html: updatedText }}
+                    ></span>
+                  );
+                })}
               </div>
             )}
 
