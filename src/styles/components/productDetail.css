@@ -71,9 +71,9 @@
   margin: 1rem 0 1.5rem;
 }
 .product_title_box h5 {
-  font-family: para-bold;
+  font-family: para-extrabold;
   font-size: 2.8rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.5px;
   color: #000000;
 }
@@ -89,13 +89,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0rem;
 }
 
 .product_application {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin-top: 1.1rem;
+}
+#product_content .product_card_desc{
+  margin-bottom: 1.5rem !important;
+}
+.product_application.properties{
+  margin-top: 2.2rem;
 }
 .product_application span {
   display: flex;
@@ -117,6 +124,8 @@
 .product_application.use span{
   font-family: para-regular !important;
   font-weight: 400 !important;
+  font-size: 0.75rem;
+  color: #00000080;
 }
 .product_application.properties span{
   font-family: para-regular !important;
@@ -127,6 +136,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin: 2rem 0 .5rem;
 }
 
 /* Mobile */

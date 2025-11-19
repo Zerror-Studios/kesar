@@ -24,6 +24,10 @@
   src: url(/fonts/HelveticaNowDisplay-Bold.woff2);
 }
 
+@font-face {
+  font-family: para-extrabold;
+  src: url(/fonts/HelveticaNowDisplay-ExtraBold.ttf);
+}
 :root {
   --background-color: #f3f3f3;
   --primary-color: #4a90e2;
