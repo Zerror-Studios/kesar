@@ -281,6 +281,9 @@
   #product_hero_title h4 {
     font-size: 2rem;
   }
+  #product_hero_title p{
+    margin-bottom: 2rem;
+  }
   #product_filter_wrap {
     width: 100%;
     white-space: nowrap;
@@ -290,6 +293,7 @@
   }
   #product_filters{
     flex-direction: column;
+    gap: 1.5rem;
   }
   .product_filter_drop{
     width: 100%;
@@ -298,6 +302,10 @@
     justify-content: center;
     border: 1px solid rgba(0, 0, 0, .7);
     border-radius: 10px;
+  }
+    #clear{
+    margin-bottom: 1.5rem;
+    display: inline-block;
   }
   .product_list {
     width: 100%;
@@ -352,6 +360,7 @@
     border: 1px solid rgba(0, 0, 0, .7);
     border-radius: 10px;
   }
+
   .product_list {
     width: 100%;
     padding: 1.5rem 1.5rem;
