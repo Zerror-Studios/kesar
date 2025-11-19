@@ -55,6 +55,10 @@ footer a {
 .socail-footer a {
   text-decoration: none;
   color: #000;
+  transition: all ease 0.3s;
+}
+.socail-footer  a:hover{
+  color: #004dff;
 }
 
 #footer-top .footer-right {
@@ -70,6 +74,10 @@ footer a {
   margin-bottom: 0.3rem;
   color: #00000080;
   white-space: nowarp;
+  transition: all ease .3s;
+}
+#footer-top .footer-right a:hover{
+  color: #004dff;
 }
 #footer-mid {
   border-top: 1px solid #00000033;
@@ -80,6 +88,10 @@ footer a {
   align-items: center;
   gap: 0.5rem;
   margin-top: 0.3rem;
+  transition: all ease .3s;
+}
+#footer-mid .footer-left a:hover {
+  color: #004dff;
 }
 #footer-mid .footer-left a svg {
   color: #ff7006;
