@@ -2,8 +2,6 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 const ProductList = ({ categories, currentSlug }) => {
-  console.log(categories);
-  
   return (
     <>
       {categories?.map((categoryItem, index) => (

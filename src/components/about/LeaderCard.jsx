@@ -3,10 +3,10 @@ import React from "react";
 
 const LeaderCard = ({ image, name, position, description, mentors }) => {
   return (
-    <div className={`leadership_section_card ${mentors ? "last":""}`}>
+    <div  className={`leadership_section_card ${mentors ? "last":""}`}>
       {mentors ? (
         mentors.map((m, i) => (
-          <div className="leader_profile_wrap">
+          <div key={i} className="leader_profile_wrap">
             <div className="leader_profile">
               <Image
                 width={1000}

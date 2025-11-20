@@ -745,7 +745,7 @@
   font-size: 2.8rem;
   color: #000000b3;
 }
-.latest_news_dets p {
+/* .latest_news_dets p {
   font-family: para-bold;
   font-weight: 700;
   font-size: 0.9rem;
@@ -753,21 +753,41 @@
   line-height: 1.4;
   color: #000;
   margin-bottom: 1.5rem;
-}
+} */
 .news_arrow {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.news_arrow.active{
+  cursor: default;
 }
 .news_arrow svg {
   color: #ff7006;
   margin-top: 0.1rem;
+  display: none;
 }
-.latest_news_dets .news_arrow p {
+.news_arrow.active svg {
+  color: #ff7006;
+  margin-top: 0.1rem;
+  display: block;
+}
+.latest_news_dets .news_arrow.active p {
   font-family: para-regular;
   font-weight: 400;
-  color: #00000080;
+  color: #00000080 !important;
   margin: 0;
+}
+.latest_news_dets .news_arrow p{
+ font-family: para-bold;
+  font-weight: 700;
+  color: #000;
+  transition: all ease .3s;
+} 
+.latest_news_dets .news_arrow:hover p{
+  color: #004dff;
+
 }
 
 .latest_news_card {

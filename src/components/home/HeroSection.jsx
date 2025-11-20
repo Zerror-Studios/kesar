@@ -108,6 +108,7 @@ const HeroSection = () => {
             height={1000}
             src="/images/home/blue-circle1.webp"
             alt="blue-circle"
+            priority
           />
         ))}
       </div>

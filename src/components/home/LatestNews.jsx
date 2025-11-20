@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { AiFillCaretRight } from "react-icons/ai";
 import gsap from "gsap";
@@ -6,7 +6,34 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Dynamic News Data (you will replace later)
+const newsData = [
+  {
+    title: "New Sustainable Pigment Series Launched for Packaging Industry",
+    date: "March 15, 2024",
+    description:
+      "Revolutionary eco-friendly formulations reduce environmental impact while maintaining superior performance standards.",
+    image: "/images/home/news.webp",
+  },
+  {
+    title: "Global Expansion: New Manufacturing Facility in Southeast Asia",
+    date: "April 20, 2024",
+    description:
+      "A major step toward increasing production capacity with a new strategic facility.",
+    image: "/images/home/news.webp",
+  },
+  {
+    title: "Partnership with Leading Automotive OEM for Next-Gen Coatings",
+    date: "May 8, 2024",
+    description:
+      "Collaborating on advanced coating technologies designed for high-performance vehicles.",
+    image: "/images/home/news.webp",
+  },
+];
+
 const LatestNews = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const imageRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -34,40 +61,41 @@ const LatestNews = () => {
       if (tl.scrollTrigger) tl.scrollTrigger.kill();
       tl.kill();
     };
-  }, []);
+  }, [activeIndex]);
 
   return (
     <div id="latest_news_section">
       <div id="latest_news_section_container">
-        
         <div className="latest_news_dets">
           <div>
             <h4>Latest News</h4>
-            <div className="news_arrow">
-              <AiFillCaretRight />
-              <p>
-                New Sustainable Pigment Series Launched <br /> for Packaging Industry
-              </p>
-            </div>
 
-            <p>Global Expansion: New Manufacturing <br /> Facility in Southeast Asia</p>
-            <p>Partnership with Leading Automotive <br /> OEM for Next-Gen Coatings</p>
+            {/* LEFT NEWS LIST */}
+            {newsData.map((item, index) => (
+              <div
+                key={index}
+                className={`news_arrow ${activeIndex === index ? "active" : ""}`}
+                onClick={() => setActiveIndex(index)}
+              >
+                <AiFillCaretRight />
+                <p>
+                  {item.title.split(" ").slice(0, 5).join(" ")} <br />
+                  {item.title.split(" ").slice(5).join(" ")}
+                </p>
+              </div>
+            ))}
           </div>
-
-       
         </div>
 
+        {/* RIGHT CARD */}
         <div className="latest_news_card">
           <div className="latest_news_card_dets">
             <div>
-              <h5>New Sustainable Pigment Series Launched for Packaging Industry</h5>
-              <p>March 15, 2024</p>
+              <h5>{newsData[activeIndex].title}</h5>
+              <p>{newsData[activeIndex].date}</p>
             </div>
 
-            <p>
-              Revolutionary eco-friendly formulations reduce environmental impact
-              while maintaining superior performance standards.
-            </p>
+            <p>{newsData[activeIndex].description}</p>
           </div>
 
           <div className="latest_news_card_img" ref={sectionRef}>
@@ -75,13 +103,11 @@ const LatestNews = () => {
               ref={imageRef}
               width={1000}
               height={1000}
-              src="/images/home/news.webp"
+              src={newsData[activeIndex].image}
               alt="image"
             />
           </div>
         </div>
-
-
       </div>
     </div>
   );

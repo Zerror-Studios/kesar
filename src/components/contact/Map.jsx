@@ -4,7 +4,7 @@ const Map = () => {
   return (
     <div id="contact_map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15084.114488590341!2d72.8500626466976!3d19.062479145363046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s404%2C%20Naman%20Centre%2C%20C%20-%2031%2F%20G%20Block%2C%20BKC%2C%20Bandra%20(East)%2C%20Mumbai%20-%20400051%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1760639309449!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d30176.164964630174!2d72.84564!3d19.018813!3m2!1i1024!2i768!4f13.1!2m1!1sD-7%2F1%2C%20MIDC%20Industrial%20Area%2C%20Lote%20Parshuram%2C%20Lote%20Ratnagiri%2C%20Ratnagiri%20-%20415722!5e0!3m2!1sen!2sus!4v1763620273776!5m2!1sen!2sus"
         style={{ border: 0 }}
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
