@@ -61,14 +61,28 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
             <div id="dropdown_wrapper">
               <Dropdown
                 label="Select Application"
-                options={["Ink", "Coating", "Plastic", "Offset"]}
+                options={[
+                  "All",
+                  "Ink",
+                  "Coating",
+                  "Plastic",
+                  "Offset",
+                  "Universal",
+                ]}
                 value={category} // 👈 added
                 onSelect={(value) => setCategory(value)}
               />
 
               <Dropdown
                 label="Select Colour Index"
-                options={["PB 15.0", "PB 15.1", "PB 15.3", "PG 7"]}
+                options={[
+                  "All",
+                  "PB 15.0",
+                  "PB 15.1",
+                  "PB 15.3",
+                  "PB 15.4",
+                  "PG 7",
+                ]}
                 value={tag} // 👈 added
                 onSelect={(value) => setTag(value)}
               />
@@ -81,7 +95,12 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
 
             <Dropdown
               label="Select Anti Corrosives Product"
-              options={["Zinc Phosphate", "Zinc Oxide", "Zinc Carbonate"]}
+              options={[
+                "All",
+                "Zinc Phosphate",
+                "Zinc Oxide",
+                "Zinc Carbonate",
+              ]}
               value={antiCorrosive} // 👈 added
               onSelect={(value) => setAntiCorrosive(value)}
             />
@@ -94,6 +113,7 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
             <Dropdown
               label="Select Fertilizers Product"
               options={[
+                "All",
                 "Diammonium Phosphate",
                 "Mono Ammonium Phosphate",
                 "Zinc Sulphate",
@@ -108,7 +128,7 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
           <Button
             title={"Search"}
             color={"blue"}
-            icon={ <IoMdArrowDropdown />}
+            icon={<IoMdArrowDropdown />}
             onClick={handleApply}
           />
         </div>

@@ -203,7 +203,7 @@
   position: absolute;
   top: 106%;
   left: 0;
-  height: 10.5rem;
+  height: 15.8rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   backdrop-filter: blur(10px);
@@ -215,7 +215,7 @@
 }
 .dropdown_box:nth-child(2) .dropdown_items,
 .dropdown_box:nth-child(3) .dropdown_items {
-  height: 8rem;
+  height: 10.6rem;
 }
 .dropdown_items::-webkit-scrollbar {
   display: none;
