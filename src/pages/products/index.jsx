@@ -105,6 +105,8 @@ export default function ResultPage({ meta }) {
     <>
       <SeoHeader meta={meta} />
       <ProductFinder
+      title={"Product Families"}
+      description={"Comprehensive range of Phthalocyanine Pigments Blue and Green engineered for your specific applications."}
         isHero={true}
         initialValues={{ category, tag, antiCorrosive, fertilizer }}
       />

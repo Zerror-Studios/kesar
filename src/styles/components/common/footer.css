@@ -152,6 +152,8 @@ footer a {
   }
   #footer-top .footer-right {
     flex-wrap: wrap;
+    gap: 0;
+    justify-content: flex-start;
   }
   #footer-top .footer-right div {
     width: 50%;
@@ -199,7 +201,9 @@ footer a {
   }
   #footer-top .footer-right {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
+
   #footer-top .footer-right div {
     width: 30%;
     margin-top: 2rem;
@@ -246,6 +250,7 @@ footer a {
   }
   #footer-top .footer-right {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
   #footer-top .footer-right div {
     width: 25%;

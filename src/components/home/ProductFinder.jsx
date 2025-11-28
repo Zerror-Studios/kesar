@@ -4,7 +4,7 @@ import Button from "../common/Button";
 import { useRouter } from "next/router";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-const ProductFinder = ({ isHero, initialValues = {} }) => {
+const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
   const router = useRouter();
 
   const [category, setCategory] = useState(initialValues.category || "");
@@ -47,10 +47,10 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
   return (
     <div id="product_finder" className={`${isHero ? "hero" : ""}`}>
       <div id="product_finder_container">
-        <h4>Product Finder</h4>
+        <h4>{title ?? `Product Finder`}</h4>
         <p>
-          Comprehensive range of Phthalocyanine Pigments Blue and Green
-          engineered for your specific applications.
+          {description ?? `Comprehensive range of Phthalocyanine Pigments Blue and Green
+          engineered for your specific applications.`}
         </p>
 
         <div id="dropdown_container">
