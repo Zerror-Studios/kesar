@@ -51,12 +51,11 @@ const AboutHeroSection = () => {
         {/* Overlay Content */}
         <div
           id="about_hero_overlay"
-          className="relative z-10 text-white flex flex-col justify-center h-screen px-10 md:px-20"
         >
-          <h2 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight">
+          <h2>
             Think Phthalocyanine. <br /> Think Kesar.
           </h2>
-          <div className="about_hero_dets space-y-4 max-w-3xl">
+          <div className="about_hero_dets">
             <p>
               Kesar Petroproducts Ltd. is a technology-driven Phthalocyanine
               pigment manufacturer and one of India’s established producers of

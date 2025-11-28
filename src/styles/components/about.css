@@ -27,6 +27,7 @@
   justify-content: space-between;
   padding: 4rem;
   color: #ffffff;
+  background: linear-gradient(45deg, transparent, #00000080 50%);
 }
 
 #about_hero_overlay h2 {

@@ -64,7 +64,7 @@ const LatestNews = () => {
   }, [activeIndex]);
 
   return (
-    <div id="latest_news_section">
+    <div id="latest-news-section">
       <div id="latest_news_section_container">
         <div className="latest_news_dets">
           <div>
