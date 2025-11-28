@@ -24,7 +24,7 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
 
   const handleApply = () => {
     router.push({
-      pathname: "/result",
+      pathname: "/products",
       query: {
         category,
         tag,
@@ -40,8 +40,8 @@ const ProductFinder = ({ isHero, initialValues = {} }) => {
     setAntiCorrosive("");
     setFertilizer("");
 
-    // Remove all query params → go to /result clean
-    router.push("/result");
+    // Remove all query params → go to /products clean
+    router.push("/products");
   };
 
   return (
