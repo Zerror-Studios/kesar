@@ -431,11 +431,12 @@
 }
 
 .product_card {
-  width: calc(100% / 4 - 1rem);
+  width: calc(100%/3 - .75rem);
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 3rem;
   background-color: #fff;
   padding: 1.5rem;
@@ -463,14 +464,16 @@
 }
 .product_description {
   display: flex;
-  gap: 1rem;
+  gap: .5rem;
   margin-top: 0.8rem;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 
 .product_description span {
   font-family: para-regular;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 0.5px;
   line-height: 1.4;
   color: #00000080;

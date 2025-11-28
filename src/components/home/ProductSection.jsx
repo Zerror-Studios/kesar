@@ -3,6 +3,7 @@ import Button from "../common/Button";
 import ProductCard from "./ProductCard";
 import { GrNext } from "react-icons/gr";
 import { categories } from "@/helpers/productData";
+import { productCards } from "@/helpers/homeProducts";
 
 const ProductSection = ({ title, des, btn }) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,7 +21,7 @@ const ProductSection = ({ title, des, btn }) => {
   }, []);
 
   // first product from each category → 4 total
-  const firstProducts = categories.map(cat => cat.products[0]).slice(0, 4);
+  // const firstProducts = categories.map(cat => cat.products[0]).slice(0, 4);
 
   return (
     <div id="product_section">
@@ -39,7 +40,7 @@ const ProductSection = ({ title, des, btn }) => {
         </div>
 
         <div className="product_slider">
-          {firstProducts.map((product, idx) => (
+          {productCards.map((product, idx) => (
             <ProductCard key={idx} product={product} />
           ))}
         </div>

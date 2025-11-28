@@ -10,8 +10,8 @@ const ProductCard = ({ product }) => {
         <h3 className="product_name">{product?.name}</h3>
 
         <div className="product_description">
-          <span>{product?.tags?.[0]}</span>
-          <span>{product?.category}</span>
+          {product?.tags &&
+            product?.tags.map((t, i) => <span key={i}>{t}</span>)}
         </div>
       </div>
 
@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
           color={"orange"}
           width={"fit"}
           icon={<GrNext />}
-          link={`/products/${product.slug}`}
+          link={`${product.slug}`}
         />
       </div>
     </div>
