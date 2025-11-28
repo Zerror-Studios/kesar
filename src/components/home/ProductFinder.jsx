@@ -4,7 +4,13 @@ import Button from "../common/Button";
 import { useRouter } from "next/router";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
+const ProductFinder = ({
+  isHero,
+  title,
+  description,
+  onClearFilters,
+  initialValues = {},
+}) => {
   const router = useRouter();
 
   const [category, setCategory] = useState(initialValues.category || "");
@@ -34,14 +40,18 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
     });
   };
   const handleClear = () => {
-    // Reset all values
+    // Reset all local state
     setCategory("");
     setTag("");
     setAntiCorrosive("");
     setFertilizer("");
 
-    // Remove all query params → go to /products clean
-    router.push("/products");
+    // Only update URL if currently on /products
+    if (router.pathname === "/products") {
+      router.replace({ pathname: "/products", query: {} }, undefined, {
+        shallow: true,
+      });
+    }
   };
 
   return (
@@ -49,7 +59,8 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
       <div id="product_finder_container">
         <h4>{title ?? `Product Finder`}</h4>
         <p>
-          {description ?? `Comprehensive range of Phthalocyanine Pigments Blue and Green
+          {description ??
+            `Comprehensive range of Phthalocyanine Pigments Blue and Green
           engineered for your specific applications.`}
         </p>
 
@@ -130,6 +141,11 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
             color={"blue"}
             icon={<IoMdArrowDropdown />}
             onClick={handleApply}
+          />
+          <Button
+            title={"Clear"}
+            icon={<IoMdArrowDropdown />}
+            onClick={handleClear}
           />
         </div>
       </div>
