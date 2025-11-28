@@ -20,7 +20,8 @@ const Navbar = () => {
           />
         </Link>
         <p>
-          Phthalocyanine <br /> Pigments
+          Petro
+          <br /> Products
         </p>
       </div>
       <Menu />

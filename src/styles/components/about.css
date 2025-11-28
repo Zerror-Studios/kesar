@@ -163,6 +163,7 @@
 }
 .leadership_section_card.last {
   gap: 2rem;
+  height: fit-content;
 }
 .leader_profile_wrap {
   width: 100%;

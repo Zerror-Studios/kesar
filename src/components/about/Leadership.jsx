@@ -37,11 +37,6 @@ Leads Technical ‑ Commercial Strategy and International Growth.`,
           image: "/images/about/user.png",
           tag:"Mentors (advisory)"
         },
-        {
-          name: "Prof. (Dr.) V. R. Kanetkar",
-          position: "Ex‑Head, Dyestuff Tech, ICT/UDCT",
-          image: "/images/about/user.png",
-        },
       ],
     },
   ];
