@@ -6,6 +6,7 @@ import { RiFacebookFill, RiInstagramFill } from "react-icons/ri";
 import { BsLinkedin } from "react-icons/bs";
 import { GrFormNext, GrNext } from "react-icons/gr";
 import Button from "./Button";
+import { productCards } from "@/helpers/homeProducts";
 
 const Footer = () => {
   return (
@@ -42,36 +43,35 @@ const Footer = () => {
         <div className="footer-right">
           <div>
             <h5>Products</h5>
-            <Link href="/">PB 15.0, 15.1, 15.3</Link>
-            <Link href="/">Pigment Green 7</Link>
-            <Link href="/">Anti Corrosives</Link>
-            <Link href="/">Fertilizers</Link>
-            <Link href="/">CPC Blue</Link>
-            <Link href="/">Technical Downloads</Link>
+            {productCards.map((product, i) => (
+              <Link key={i} href={product.slug}>{product.name}</Link>
+            ))}
           </div>
-          <div>
+          {/* <div>
             <h5>Applications</h5>
             <Link href="/">Inks</Link>
             <Link href="/">Coatings</Link>
             <Link href="/">Plastics (Master Batch)</Link>
             <Link href="/">Offset</Link>
-          </div>
+          </div> */}
           <div>
             <h5>Company</h5>
-            <Link href="/">About Us</Link>
-            <Link href="/">Leadership</Link>
-            <Link href="/">Global Presence</Link>
-            <Link href="/">Certifications</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/">Team</Link>
+            <Link href="/investors">Investors</Link>
+            <Link href="/gallery">Gallery</Link>
+            <Link href="/">News</Link>
+            <Link href="/contact">Contact</Link>
             <Link href="/">Careers</Link>
           </div>
-          <div>
+          {/* <div>
             <h5>Support</h5>
             <Link href="/">Quality</Link>
             <Link href="/">Sustainability</Link>
             <Link href="/">Investor Relations</Link>
             <Link href="/">News</Link>
             <Link href="/">Contact</Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div id="footer-mid">

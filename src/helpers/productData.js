@@ -598,7 +598,7 @@ export const categories = [
                 slug: "kpl-blue-7000-uk",
                 name: "KPL Blue 7000 UK",
                 desc: "Cyan for offset with redder shade and dispersion",
-                tags: ["PB 15.3", "Universal"],
+                tags: ["PB 15.1", "Universal"],
                 application: ["Offset Ink"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OR.pdf`,
