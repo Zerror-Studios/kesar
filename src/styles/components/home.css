@@ -51,7 +51,7 @@
   position: absolute;
   width: 16rem;
   height: 16rem;
-  top: -29%;
+  top: -22%;
   right: 15%;
   opacity: 0.9;
   filter: blur(7px);
@@ -70,28 +70,27 @@
 }
 
 #circle3 {
-  position: absolute;
   width: 10rem;
   height: 10rem;
-  top: 10%;
-  left: 25%;
+  position: absolute;
+  top: 5%;
+  left: 20%;
 }
 #circle4 {
-  position: absolute;
   width: 8rem;
   height: 8rem;
-  bottom: 24%;
-  right: 12%;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
 }
 
 #circle5 {
-  position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  bottom: 23.5%;
-  right: 18.5%;
+  position: absolute;
+  bottom: 15%;
+  right: 16%;
 }
-
 /* product finder */
 
 #product_finder {
@@ -237,9 +236,9 @@
   position: relative;
   width: 100%;
   padding: 0.8rem 1rem;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
-.dropdown_items h5:hover{
+.dropdown_items h5:hover {
   color: #004dff;
 }
 /* logo section  */
@@ -443,12 +442,11 @@
   border-radius: 20px;
   flex-shrink: 0;
   cursor: pointer;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 .product_card:hover {
   box-shadow: 0 4 10 0 #00000033;
-
 }
 .product_details {
   display: flex;
@@ -685,11 +683,10 @@
   background-color: #fff;
   border-radius: 20px;
   cursor: pointer;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .sustainable_section_card:hover {
   box-shadow: 0 4 10 0 #00000033;
-
 }
 .sustainable_section_card img {
   width: auto;
@@ -760,7 +757,7 @@
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
-.news_arrow.active{
+.news_arrow.active {
   cursor: default;
 }
 .news_arrow svg {
@@ -779,15 +776,14 @@
   color: #00000080 !important;
   margin: 0;
 }
-.latest_news_dets .news_arrow p{
- font-family: para-bold;
+.latest_news_dets .news_arrow p {
+  font-family: para-bold;
   font-weight: 700;
   color: #000;
-  transition: all ease .3s;
-} 
-.latest_news_dets .news_arrow:hover p{
+  transition: all ease 0.3s;
+}
+.latest_news_dets .news_arrow:hover p {
   color: #004dff;
-
 }
 
 .latest_news_card {
@@ -907,7 +903,8 @@
 .gallery_section_card:hover img {
   scale: 1.02;
 }
-#gallery_section_cards:has(.gallery_section_card:hover) .gallery_section_card:not(:hover){
+#gallery_section_cards:has(.gallery_section_card:hover)
+  .gallery_section_card:not(:hover) {
   filter: grayscale(1);
 }
 .gallery_section_card_overlay {
@@ -1024,7 +1021,8 @@
     text-align: center;
     padding: 1rem;
   }
-  .logo_card:last-child,.logo_card:nth-last-child(2) {
+  .logo_card:last-child,
+  .logo_card:nth-last-child(2) {
     margin: 0;
   }
 
@@ -1042,7 +1040,7 @@
   #integrated_details h4 {
     font-size: 2rem;
   }
-  #integrated_details p{
+  #integrated_details p {
     margin-bottom: 1rem;
   }
   #integrated_process {
@@ -1090,7 +1088,7 @@
   #product_section_title h4 {
     font-size: 2rem;
   }
-  #product_section_title p{
+  #product_section_title p {
     margin-bottom: 1rem;
   }
   .product_card {
@@ -1137,7 +1135,7 @@
   #application_section_header {
     flex-direction: column;
   }
-  #application_section_header p{
+  #application_section_header p {
     margin-bottom: 1rem;
   }
   #application_section_header h4 {
@@ -1171,7 +1169,7 @@
   #sustainable_section_header h4 {
     font-size: 2rem;
   }
-  #sustainable_section_header p{
+  #sustainable_section_header p {
     margin-bottom: 1rem;
   }
   #sustainable_section_cards {
@@ -1183,9 +1181,9 @@
   }
   .sustainable_section_card p {
     width: 90%;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
-  
+
   .sustainable_section_card {
     height: auto;
     gap: 2rem;
@@ -1193,10 +1191,10 @@
   .sustainable_section_card img {
     width: 60%;
     height: auto;
-}
-.sustainable_section_card h5{
-  text-align: center;
-}
+  }
+  .sustainable_section_card h5 {
+    text-align: center;
+  }
   /* latest_news_section */
   #latest_news_section {
     padding: 0.25rem 0.5rem;
@@ -1224,14 +1222,14 @@
   .latest_news_card_dets h5 {
     width: 100%;
   }
-  .latest_news_card_dets >div{
+  .latest_news_card_dets > div {
     display: flex;
     flex-direction: column-reverse;
-    gap: .3rem;
+    gap: 0.3rem;
   }
   /* gallery_section */
   #gallery_section {
-    padding: 0.25rem .5rem;
+    padding: 0.25rem 0.5rem;
   }
   #gallery_section_container {
     padding: 2rem 1rem;
@@ -1757,8 +1755,8 @@
 /* Tablets + small laptops */
 @media (min-width: 1024px) and (max-width: 1286px) {
   .product_card {
-  width: 360px !important;
-  height: auto;
-  gap: 3rem;
-}
+    width: 360px !important;
+    height: auto;
+    gap: 3rem;
+  }
 }
