@@ -4,11 +4,13 @@ import Button from "../common/Button";
 import { useRouter } from "next/router";
 import { IoMdArrowDropdown } from "react-icons/io";
 
+
 const ProductFinder = ({
   isHero,
   title,
   description,
-  onClearFilters,
+  application,
+  index,
   initialValues = {},
 }) => {
   const router = useRouter();
@@ -72,28 +74,14 @@ const ProductFinder = ({
             <div id="dropdown_wrapper">
               <Dropdown
                 label="Select Application"
-                options={[
-                  "All",
-                  "Ink",
-                  "Coating",
-                  "Plastic",
-                  "Offset",
-                  "Universal",
-                ]}
+                options={application}
                 value={category} // 👈 added
                 onSelect={(value) => setCategory(value)}
               />
 
               <Dropdown
                 label="Select Colour Index"
-                options={[
-                  "All",
-                  "PB 15.0",
-                  "PB 15.1",
-                  "PB 15.3",
-                  "PB 15.4",
-                  "PG 7",
-                ]}
+                options={index}
                 value={tag} // 👈 added
                 onSelect={(value) => setTag(value)}
               />

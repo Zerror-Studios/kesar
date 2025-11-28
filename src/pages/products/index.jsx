@@ -7,7 +7,22 @@ import { useRouter } from "next/router";
 export default function ResultPage({ meta }) {
   const router = useRouter();
   const { category, tag, antiCorrosive, fertilizer } = router.query;
-
+  const applicationOptions = [
+    "All",
+    "Ink",
+    "Coating",
+    "Plastic",
+    "Offset",
+    "Universal",
+  ];
+  const indexOptions = [
+    "All",
+    "PB 15.0",
+    "PB 15.1",
+    "PB 15.3",
+    "PB 15.4",
+    "PG 7",
+  ];
   const allProducts = categories.flatMap((c) => c.products);
   const normalCategories = ["ink", "coating", "plastic", "offset", "universal"];
 
@@ -24,9 +39,8 @@ export default function ResultPage({ meta }) {
     }
 
     if (tag && tag.toLowerCase() !== "all") {
-      products = products.filter(
-        (p) =>
-          p.tags?.some((t) => t.toLowerCase() === tag.toLowerCase())
+      products = products.filter((p) =>
+        p.tags?.some((t) => t.toLowerCase() === tag.toLowerCase())
       );
     }
 
@@ -89,14 +103,20 @@ export default function ResultPage({ meta }) {
       }
     }
 
-    const antiProducts = filterSpecialCategory("Anti Corrosives", antiCorrosive);
+    const antiProducts = filterSpecialCategory(
+      "Anti Corrosives",
+      antiCorrosive
+    );
     if (antiProducts.length) {
       groupedData.push({ category: "Anti Corrosives", products: antiProducts });
     }
 
     const fertilizerProducts = filterSpecialCategory("Fertilizers", fertilizer);
     if (fertilizerProducts.length) {
-      groupedData.push({ category: "Fertilizers", products: fertilizerProducts });
+      groupedData.push({
+        category: "Fertilizers",
+        products: fertilizerProducts,
+      });
     }
   }
 
@@ -105,9 +125,13 @@ export default function ResultPage({ meta }) {
     <>
       <SeoHeader meta={meta} />
       <ProductFinder
-      title={"Product Families"}
-      description={"Comprehensive range of Phthalocyanine Pigments Blue and Green engineered for your specific applications."}
+        title={"Product Families"}
+        description={
+          "Comprehensive range of Phthalocyanine Pigments Blue and Green engineered for your specific applications."
+        }
         isHero={true}
+        application={applicationOptions}
+        index={indexOptions}
         initialValues={{ category, tag, antiCorrosive, fertilizer }}
       />
       {groupedData.map((group, idx) => (

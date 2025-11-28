@@ -11,11 +11,27 @@ import React from 'react'
 import SeoHeader from '../components/seo/SeoHeader'
 
 const Home = ({ meta }) => {
+  const applicationOptions = [
+    "All",
+    "Ink",
+    "Coating",
+    "Plastic",
+    "Offset",
+    "Universal",
+  ]
+  const indexOptions = [
+    "All",
+    "PB 15.0",
+    "PB 15.1",
+    "PB 15.3",
+    "PB 15.4",
+    "PG 7",
+  ]
   return (
     <>
       <SeoHeader meta={meta} />
       <HeroSection />
-      <ProductFinder />
+      <ProductFinder application={applicationOptions} index={indexOptions} />
       <LogoSection />
       <Integrated />
       <ProductSection title={"Our Products"} des={"Comprehensive range of Phthalocyanine Pigments Blue and Green engineered for your specific applications."} btn={"Explore more Products"} />
