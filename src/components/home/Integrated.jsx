@@ -4,6 +4,7 @@ import { GrNext } from "react-icons/gr";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from "gsap/dist/CustomEase";
+import CircleSlider from "./CircleSlider";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -58,6 +59,7 @@ const Integrated = () => {
 
           {!isMobile && (
             <Button
+            color={"blue"}
               title="Learn More About our Integration"
               icon={<GrNext />}
               link="/about"
@@ -65,17 +67,7 @@ const Integrated = () => {
           )}
         </div>
 
-        <div id="integrated_process">
-          <div className="process">
-            <span>Backward Integration</span>
-          </div>
-          <div className="process">
-            <span>Phthalocyanine Pigments</span>
-          </div>
-          <div className="process">
-            <span>Forward Integration</span>
-          </div>
-        </div>
+        <CircleSlider/>
 
         {isMobile && (
           <Button
