@@ -38,6 +38,15 @@
 #contact_section_container .form_group {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.error {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  bottom: -1.2rem;
+  left: 0;
 }
 
 #contact_section_container .form_group label {
