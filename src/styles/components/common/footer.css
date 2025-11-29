@@ -169,6 +169,9 @@ footer a {
   .newsletter {
     flex-wrap: wrap;
   }
+  .newsletter .error{
+    bottom: -1.6rem;
+  }
   .newsletter input {
     width: 100%;
   }
