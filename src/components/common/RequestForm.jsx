@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import gsap from "gsap";
 import Button from "./Button";
 import { categories } from "@/helpers/productData";
+import { toast } from "react-hot-toast";
 
 const RequestForm = ({ open, setOpen }) => {
   const containerRef = useRef(null);
@@ -11,30 +12,21 @@ const RequestForm = ({ open, setOpen }) => {
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
 
-  // Form fields
   const [form, setForm] = useState({ name: "", email: "", phone: "" });
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   /* ================= ANIMATION ================= */
   useEffect(() => {
     if (open) {
-      gsap.to(overlayRef.current, {
-        duration: 0.4,
-        autoAlpha: 1,
-        display: "flex",
-      });
+      gsap.to(overlayRef.current, { duration: 0.4, autoAlpha: 1, display: "flex" });
       gsap.fromTo(
         containerRef.current,
         { y: 80, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }
       );
     } else {
-      gsap.to(containerRef.current, {
-        y: 80,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power3.in",
-      });
+      gsap.to(containerRef.current, { y: 80, opacity: 0, duration: 0.4, ease: "power3.in" });
       gsap.to(overlayRef.current, {
         duration: 0.4,
         autoAlpha: 0,
@@ -61,14 +53,13 @@ const RequestForm = ({ open, setOpen }) => {
   /* ================= PRODUCT SELECTION ================= */
   const toggleProduct = (product) => {
     if (selectedProducts.find((p) => p.slug === product.slug)) {
-      setSelectedProducts(
-        selectedProducts.filter((p) => p.slug !== product.slug)
-      );
+      setSelectedProducts(selectedProducts.filter((p) => p.slug !== product.slug));
     } else {
       setSelectedProducts([...selectedProducts, product]);
     }
     setProductDropdownOpen(false);
   };
+
   const removeProduct = (slug) => {
     setSelectedProducts(selectedProducts.filter((p) => p.slug !== slug));
   };
@@ -76,37 +67,53 @@ const RequestForm = ({ open, setOpen }) => {
   /* ================= FORM HANDLERS ================= */
   const handleChange = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value });
-    setErrors({ ...errors, [e.target.id]: "" }); // clear error on change
+    setErrors({ ...errors, [e.target.id]: "" });
   };
 
   const validate = () => {
     const newErrors = {};
     if (!form.name.trim()) newErrors.name = "Name is required";
     if (!form.email.trim()) newErrors.email = "Email is required";
-    else if (!/^\S+@\S+\.\S+$/.test(form.email))
-      newErrors.email = "Invalid email";
+    else if (!/^\S+@\S+\.\S+$/.test(form.email)) newErrors.email = "Invalid email";
     if (!form.phone.trim()) newErrors.phone = "Phone is required";
-    else if (!/^\d{10}$/.test(form.phone))
-      newErrors.phone = "Invalid phone number";
-    if (selectedProducts.length === 0)
-      newErrors.products = "Select at least one product";
+    else if (!/^\d{10}$/.test(form.phone)) newErrors.phone = "Invalid phone number";
+    if (selectedProducts.length === 0) newErrors.products = "Select at least one product";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!validate()) return;
 
-    // Extract only the names of the selected products
+    setLoading(true);
     const productNames = selectedProducts.map((p) => p.name);
+    const formData = { ...form, products: productNames };
 
-    console.log("Form Submitted:", { ...form, products: productNames });
-    alert("Request submitted successfully!");
+    try {
+      const response = await fetch("/api/submitEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setForm({ name: "", email: "", phone: "" });
-    setSelectedProducts([]);
-    setOpen(false);
+      const data = await response.json();
+
+      if (response.ok) {
+        setForm({ name: "", email: "", phone: "" });
+        setSelectedProducts([]);
+        setErrors({});
+        toast.success("Form submitted successfully!");
+        setOpen(false);
+      } else {
+        toast.error(data.error || "Submission failed");
+      }
+    } catch (error) {
+      toast.error("An error occurred.");
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -116,11 +123,7 @@ const RequestForm = ({ open, setOpen }) => {
       style={{ display: "none", opacity: 0 }}
       onClick={handleOverlayClick}
     >
-      <div
-        id="request_form_container"
-        ref={containerRef}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div id="request_form_container" ref={containerRef} onClick={(e) => e.stopPropagation()}>
         <h2>Request Quotation</h2>
         <p>
           Please fill the details below for further communication.
@@ -131,50 +134,27 @@ const RequestForm = ({ open, setOpen }) => {
         <div>
           <div className="input-wrapper">
             <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Your Name"
-              value={form.name}
-              onChange={handleChange}
-            />
+            <input type="text" id="name" placeholder="Your Name" value={form.name} onChange={handleChange} />
             {errors.name && <p className="error">{errors.name}</p>}
           </div>
 
           <div className="input-wrapper">
             <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Your Email"
-              value={form.email}
-              onChange={handleChange}
-            />
+            <input type="email" id="email" placeholder="Your Email" value={form.email} onChange={handleChange} />
             {errors.email && <p className="error">{errors.email}</p>}
           </div>
 
           <div className="input-wrapper">
             <label htmlFor="phone">Phone</label>
-            <input
-              type="text"
-              id="phone"
-              placeholder="Your Phone"
-              value={form.phone}
-              onChange={handleChange}
-            />
+            <input type="text" id="phone" placeholder="Your Phone" value={form.phone} onChange={handleChange} />
             {errors.phone && <p className="error">{errors.phone}</p>}
           </div>
 
           <div className="input-wrapper">
             <label htmlFor="product">Select Product</label>
             <div className="product_multiselect">
-              <div
-                className="dropdown_input"
-                onClick={() => setProductDropdownOpen(!productDropdownOpen)}
-              >
-                {selectedProducts.length === 0
-                  ? "Select Product(s)"
-                  : `${selectedProducts.length} Product(s) Selected`}
+              <div className="dropdown_input" onClick={() => setProductDropdownOpen(!productDropdownOpen)}>
+                {selectedProducts.length === 0 ? "Select Product(s)" : `${selectedProducts.length} Product(s) Selected`}
               </div>
 
               {productDropdownOpen && (
@@ -187,11 +167,7 @@ const RequestForm = ({ open, setOpen }) => {
                           <li
                             key={prod.slug}
                             onClick={() => toggleProduct(prod)}
-                            className={
-                              selectedProducts.find((p) => p.slug === prod.slug)
-                                ? "selected"
-                                : ""
-                            }
+                            className={selectedProducts.find((p) => p.slug === prod.slug) ? "selected" : ""}
                           >
                             {prod.name}
                           </li>
@@ -210,10 +186,7 @@ const RequestForm = ({ open, setOpen }) => {
               {selectedProducts.map((prod) => (
                 <div key={prod.slug} className="badge">
                   {prod.name}
-                  <span
-                    className="remove"
-                    onClick={() => removeProduct(prod.slug)}
-                  >
+                  <span className="remove" onClick={() => removeProduct(prod.slug)}>
                     &times;
                   </span>
                 </div>
@@ -221,13 +194,13 @@ const RequestForm = ({ open, setOpen }) => {
             </div>
           )}
 
-          {/* ================= CUSTOM BUTTON ================= */}
           <Button
-            title={"Submit"}
-            color={"blue"}
+            title={loading ? "Submitting..." : "Submit"}
+            color="blue"
             icon={<MdArrowOutward />}
-            width={"full"}
+            width="full"
             onClick={handleSubmit}
+            disabled={loading}
           />
         </div>
       </div>

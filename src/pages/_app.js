@@ -12,6 +12,7 @@ import "@/styles/components/contact.css";
 import "@/styles/components/gallery.css";
 import "@/styles/components/investor.css";
 import Layout from "@/components/layout/Layout";
+import { Toaster } from "react-hot-toast";
 
 
 export default function App({ Component, pageProps }) {
@@ -22,5 +23,6 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
     </Layout>
+    <Toaster />
   </>;
 }
