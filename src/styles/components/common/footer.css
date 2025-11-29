@@ -102,6 +102,7 @@ footer a {
   align-items: center;
   gap: 1rem;
   margin-top: 0.8rem;
+  position: relative;
 }
 .newsletter input {
   width: 65%;

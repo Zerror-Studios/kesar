@@ -7,6 +7,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { GrFormNext, GrNext } from "react-icons/gr";
 import Button from "./Button";
 import { productCards } from "@/helpers/homeProducts";
+import NewsLetter from "./NewsLetter";
 
 const Footer = () => {
   return (
@@ -44,16 +45,11 @@ const Footer = () => {
           <div>
             <h5>Products</h5>
             {productCards.map((product, i) => (
-              <Link key={i} href={product.slug}>{product.name}</Link>
+              <Link key={i} href={product.slug}>
+                {product.name}
+              </Link>
             ))}
           </div>
-          {/* <div>
-            <h5>Applications</h5>
-            <Link href="/">Inks</Link>
-            <Link href="/">Coatings</Link>
-            <Link href="/">Plastics (Master Batch)</Link>
-            <Link href="/">Offset</Link>
-          </div> */}
           <div>
             <h5>Company</h5>
             <Link href="/about">About Us</Link>
@@ -64,14 +60,6 @@ const Footer = () => {
             <Link href="/contact">Contact</Link>
             <Link href="/">Careers</Link>
           </div>
-          {/* <div>
-            <h5>Support</h5>
-            <Link href="/">Quality</Link>
-            <Link href="/">Sustainability</Link>
-            <Link href="/">Investor Relations</Link>
-            <Link href="/">News</Link>
-            <Link href="/">Contact</Link>
-          </div> */}
         </div>
       </div>
       <div id="footer-mid">
@@ -106,10 +94,7 @@ const Footer = () => {
             product updates, and technical innovations delivered directly to
             your inbox.
           </p>
-          <div className="newsletter">
-            <input type="text" placeholder="Enter your email id" />
-            <Button title={"Subscribe"} icon={<GrFormNext />} />
-          </div>
+          <NewsLetter />
         </div>
       </div>
       <div id="footer-btm">
