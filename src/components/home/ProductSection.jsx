@@ -7,16 +7,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from "gsap/dist/CustomEase";
 
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
 const ProductSection = ({ title, des, btn }) => {
   const [isMobile, setIsMobile] = useState(false);
-  const sliderRef = useRef(null); // parent container for cards
+  const sliderRef = useRef(null);
+  const progressRef = useRef(null);
 
-  // Create custom ease
   CustomEase.create("ease-secondary", "0.16, 1, 0.35, 1");
 
-  // Detect screen width
+  // Detect screen size
   useEffect(() => {
     const checkWidth = () => setIsMobile(window.innerWidth <= 480);
     checkWidth();
@@ -24,11 +26,10 @@ const ProductSection = ({ title, des, btn }) => {
     return () => window.removeEventListener("resize", checkWidth);
   }, []);
 
-  // Animate cards on scroll
+  // GSAP stagger animation
   useEffect(() => {
     if (sliderRef.current) {
-      const cards = gsap.utils.toArray(".product_card", sliderRef.current);
-
+      const cards = sliderRef.current.querySelectorAll(".product_card");
       gsap.fromTo(
         cards,
         { opacity: 0, y: 40, rotation: 1.5 },
@@ -36,21 +37,26 @@ const ProductSection = ({ title, des, btn }) => {
           opacity: 1,
           y: 0,
           rotation: 0,
-          duration: .8, // slightly faster duration
+          duration: 0.8,
           ease: "ease-secondary",
-          stagger: {
-            amount: 0.8, // faster cascading
-          },
+          stagger: 0.15,
           scrollTrigger: {
             trigger: sliderRef.current,
             start: "top 85%",
-            end: "top 25%",
-            scrub: 0.07,
           },
         }
       );
     }
   }, []);
+
+  // Safe progress update (null-check)
+  const updateProgress = (splide) => {
+    if (!progressRef.current) return; // FIX: prevents null error
+
+    const endIndex = splide.Components.Controller.getEnd();
+    const progress = 10 + (splide.index / endIndex) * 90; // 10% → 100%
+    progressRef.current.style.width = `${progress}%`;
+  };
 
   return (
     <div id="product_section">
@@ -66,12 +72,56 @@ const ProductSection = ({ title, des, btn }) => {
           )}
         </div>
 
-        <div className="product_slider" ref={sliderRef}>
-          {productCards.map((product, idx) => (
-            <div key={idx} className="product_card">
-              <ProductCard product={product} />
-            </div>
-          ))}
+        {/* Progress bar FIRST — ensures it is mounted before Splide */}
+        <div className="splide-progress">
+          <div className="splide-progress-bar" ref={progressRef}></div>
+        </div>
+
+        {/* Splide Slider */}
+        <div ref={sliderRef}>
+          <Splide
+            options={{
+              perPage: 3, // default for desktop
+              gap: "20px",
+              pagination: false,
+              arrows: false,
+              drag: true,
+              speed: 600,
+              type: "slide",
+
+              breakpoints: {
+                1286: {
+                  perPage: 2.1,
+                },
+                1150: {
+                  perPage: 2.3,
+                },
+                1024: {
+                  perPage: 2.5,
+                },
+                900: {
+                  perPage: 2.1, // 👈 For tablets
+                },
+                768: {
+                  perPage: 1.6, // 👈 For tablets
+                },
+                600: {
+                  perPage: 1.2, // 👈 For tablets
+                },
+                480: {
+                  perPage: 1.1, // 👈 For small mobiles
+                },
+              },
+            }}
+            onMounted={(splide) => updateProgress(splide)}
+            onMove={(splide) => updateProgress(splide)}
+          >
+            {productCards.map((product, idx) => (
+              <SplideSlide key={idx}>
+                <ProductCard product={product} />
+              </SplideSlide>
+            ))}
+          </Splide>
         </div>
 
         {isMobile && (

@@ -5,7 +5,7 @@ import { GrNext } from "react-icons/gr";
 
 const ProductCard = ({ product }) => {
   return (
-    <>
+    <div className="product_card">
       <div className="product_details">
         <h3 className="product_name">{product?.name}</h3>
 
@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
           link={`${product.slug}`}
         />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
     "@studio-freight/lenis": "^1.0.42",
     "@studio-freight/tempus": "^0.0.44",
     "dotenv": "^17.2.3",

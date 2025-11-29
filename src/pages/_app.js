@@ -13,6 +13,8 @@ import "@/styles/components/gallery.css";
 import "@/styles/components/investor.css";
 import Layout from "@/components/layout/Layout";
 import { Toaster } from "react-hot-toast";
+import "@splidejs/splide/dist/css/splide.min.css";
+
 
 
 export default function App({ Component, pageProps }) {
