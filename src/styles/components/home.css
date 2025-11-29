@@ -1106,7 +1106,7 @@
   }
   .product_card {
     gap: 2rem;
-    width: 80%;
+    width: 90%;
     height: auto;
     padding: 1rem;
     display: flex;
@@ -1186,7 +1186,7 @@
     margin-bottom: 1rem;
   }
   #sustainable_section_cards {
-    grid-template-columns: repeat(3, 80%);
+    grid-template-columns: repeat(3, 90%);
     margin-top: 1rem;
     overflow: hidden;
     overflow-x: auto;
@@ -1239,6 +1239,9 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 0.3rem;
+  }
+  .latest_news_dets .news_arrow p br{
+    display: none;
   }
   /* gallery_section */
   #gallery_section {

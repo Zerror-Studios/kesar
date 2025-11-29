@@ -153,12 +153,15 @@ footer a {
   #footer-top .footer-right {
     flex-wrap: wrap;
     gap: 0;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   #footer-top .footer-right div {
-    width: 50%;
+    width: 40%;
     margin-top: 2rem;
   }
+  #footer-top .footer-right a {
+    white-space: nowrap !important;
+}
   #footer-mid {
     gap: 2rem;
   }
