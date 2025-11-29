@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-const Dropdown = ({ label = "Select", options = [], value, onSelect }) => {
+const Dropdown = ({ label = "Select", className, options = [], value, onSelect }) => {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(value || label);
   const dropdownRef = useRef(null);
@@ -36,7 +36,7 @@ const Dropdown = ({ label = "Select", options = [], value, onSelect }) => {
       <span>{selected}</span>
       <IoMdArrowDropdown />
 
-      <div className="dropdown_items" data-lenis-prevent>
+      <div className={`dropdown_items ${className ? className : ''}`} data-lenis-prevent>
         {options.map((opt, idx) => (
           <h5
             key={idx}

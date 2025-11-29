@@ -213,7 +213,16 @@
 .dropdown_items h5:last-child {
   border: none;
 }
-.dropdown_box:nth-child(2) .dropdown_items,
+.dropdown_box:nth-child(1) .dropdown_items.option5{
+  height: 13.5rem;
+}
+.dropdown_box:nth-child(1) .dropdown_items.option4{
+  height: 11rem;
+}
+.dropdown_box:nth-child(1) .dropdown_items.option2{
+  height: 5.5rem;
+}
+.dropdown_box:nth-child(2).dropdown_items,
 .dropdown_box:nth-child(3) .dropdown_items {
   height: 10.6rem;
 }

@@ -26,7 +26,7 @@ export const categories = [
                 slug: "kpl-blue-7003-d",
                 name: "KPL Blue 7003 D",
                 desc: "General redder grade with 10% pigment loading",
-                tags: ["PB 15.3", "INK"],
+                tags: ["PB 15.3", "Ink"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#2C2681", "#3995D0"],
                 msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 D.pdf`,
