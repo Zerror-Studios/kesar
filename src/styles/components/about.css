@@ -9,6 +9,7 @@
   height: 100%;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #004dff;
 }
 
 #about_hero_container img {
@@ -188,7 +189,7 @@
   align-items: center;
   justify-content: center;
 }
-.leadership_section_card:nth-child(3) .leader_profile {
+.leader_card:nth-child(3) .leader_profile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +226,7 @@
   width: 1.8rem;
   height: auto;
 }
-.leadership_section_card:nth-child(3) img {
+.leader_card:nth-child(3) img {
   width: 1.8rem;
   height: auto;
 }

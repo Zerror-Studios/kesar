@@ -70,11 +70,22 @@
   top: 12%;
   left: 12%;
   border-radius: 5px;
+  transition: all ease 0.3s;
+}
+
+.product_list_card:hover .product_sample1 {
+  top: calc(100% - 62%);
+  left: calc(100% - 62%);
+}
+
+.product_list_card:hover .product_sample2 {
+  bottom: calc(100% - 62%);
+  right: calc(100% - 62%);
 }
 .product_sample1.center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
   box-shadow: 0 0 20 0 #00000036;
 }
 .product_sample2 {
@@ -85,6 +96,7 @@
   right: 12%;
   border-radius: 5px;
   box-shadow: 0 0 10 0 #00000059;
+  transition: all ease 0.3s;
 }
 
 .product_list_dets {

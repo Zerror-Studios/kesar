@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import ApplicationCard from "./ApplicationCard";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import CustomEase from "gsap/dist/CustomEase";
+
+gsap.registerPlugin(ScrollTrigger, CustomEase);
 
 const ApplicationSection = () => {
+  const cardsRef = useRef(null);
+
   const applications = [
     {
       id: 1,
@@ -37,6 +44,39 @@ const ApplicationSection = () => {
     },
   ];
 
+  // create custom ease
+  CustomEase.create("ease-secondary", "0.16, 1, 0.35, 1");
+
+  useEffect(() => {
+    if (cardsRef.current) {
+      const cards = gsap.utils.toArray(
+        ".application_card",
+        cardsRef.current
+      );
+
+      gsap.fromTo(
+        cards,
+        { opacity: 0, y: 40, rotation: 1.5 },
+        {
+          opacity: 1,
+          y: 0,
+          rotation: 0,
+          duration: 0.5,       // slightly faster duration
+          ease: "ease-secondary",
+          stagger: {
+            amount: 0.3,       // faster cascading
+          },
+          scrollTrigger: {
+            trigger: cardsRef.current,
+            start: "top 85%",
+            end: "top 25%",
+            scrub: 0.07,
+          },
+        }
+      );
+    }
+  }, []);
+
   return (
     <div id="application_section">
       <div id="application_section_container">
@@ -50,9 +90,11 @@ const ApplicationSection = () => {
           </div>
         </div>
 
-        <div id="application_section_cards">
+        <div id="application_section_cards" ref={cardsRef}>
           {applications.map((data, index) => (
-            <ApplicationCard key={index} data={data} index={index} />
+            <div key={index} className="application_card">
+              <ApplicationCard data={data} />
+            </div>
           ))}
         </div>
       </div>

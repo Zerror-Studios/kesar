@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import LeaderCard from "./LeaderCard";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import CustomEase from "gsap/dist/CustomEase";
+
+gsap.registerPlugin(ScrollTrigger, CustomEase);
+CustomEase.create("ease-secondary", "0.16, 1, 0.35, 1");
 
 const Leadership = () => {
+  const cardsRef = useRef(null);
+
   const leaders = [
     {
       id: 1,
@@ -15,17 +23,15 @@ const Leadership = () => {
       id: 2,
       name: "Shreyas Sharma",
       position: "Chief Executive Officer",
-      description:
-        `B.Tech. (Dyestuff Technology), ICT (UDCT), hands‑on experience across dyes, pigments and intermediates,
-Leads Technical ‑ Commercial Strategy and International Growth.`,
+      description: `B.Tech. (Dyestuff Technology), ICT (UDCT), hands-on experience across dyes, pigments and intermediates,
+Leads Technical - Commercial Strategy and International Growth.`,
       image: "/images/about/shreyas.webp",
     },
     {
       id: 3,
       name: "Ms. Shruti Sharma",
       position: "Vice President (Business Development)",
-      description:
-        `MBA; global business development and partnerships; focuses on distributor ecosystems and key accounts.`,
+      description: `MBA; global business development and partnerships; focuses on distributor ecosystems and key accounts.`,
       image: "/images/about/user.png",
     },
     {
@@ -35,11 +41,39 @@ Leads Technical ‑ Commercial Strategy and International Growth.`,
           name: "Mr. K. D. Fatnani",
           position: "Chemical Engineer, 35+ years in pigments",
           image: "/images/about/user.png",
-          tag:"Mentors (advisory)"
+          tag: "Mentors (advisory)",
         },
       ],
     },
   ];
+
+  // Animation effect
+  useEffect(() => {
+    if (cardsRef.current) {
+      const cards = gsap.utils.toArray(".leader_card", cardsRef.current);
+
+      gsap.fromTo(
+        cards,
+        { opacity: 0, y: 40, rotation: 1.5 },
+        {
+          opacity: 1,
+          y: 0,
+          rotation: 0,
+          duration: 1, // slightly faster duration
+          ease: "ease-secondary",
+          stagger: {
+            amount: 0.8, // faster cascading
+          },
+          scrollTrigger: {
+            trigger: cardsRef.current,
+            start: "top 85%",
+            end: "top 20%",
+            scrub: 0.07,
+          },
+        }
+      );
+    }
+  }, []);
 
   return (
     <div id="leadership_section">
@@ -53,9 +87,12 @@ Leads Technical ‑ Commercial Strategy and International Growth.`,
             </p>
           </div>
         </div>
-        <div id="leadership_section_cards">
+
+        <div id="leadership_section_cards" ref={cardsRef}>
           {leaders.map((leader) => (
-            <LeaderCard key={leader.id} {...leader} />
+            <div className="leader_card" key={leader.id}>
+              <LeaderCard {...leader} />
+            </div>
           ))}
         </div>
       </div>
