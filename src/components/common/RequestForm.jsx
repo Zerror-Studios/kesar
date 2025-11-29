@@ -11,9 +11,11 @@ const RequestForm = ({ open, setOpen }) => {
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
 
-  /* ===========================================================
-     ANIMATION
-  ============================================================ */
+  // Form fields
+  const [form, setForm] = useState({ name: "", email: "", phone: "" });
+  const [errors, setErrors] = useState({});
+
+  /* ================= ANIMATION ================= */
   useEffect(() => {
     if (open) {
       gsap.to(overlayRef.current, {
@@ -45,9 +47,7 @@ const RequestForm = ({ open, setOpen }) => {
     if (e.target === overlayRef.current) setOpen(false);
   };
 
-  /* ===========================================================
-   CLOSE DROPDOWN ON OUTSIDE CLICK
-=========================================================== */
+  /* ================= CLOSE DROPDOWN OUTSIDE CLICK ================= */
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (productDropdownOpen && !e.target.closest(".product_multiselect")) {
@@ -58,9 +58,7 @@ const RequestForm = ({ open, setOpen }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [productDropdownOpen]);
 
-  /* ===========================================================
-     PRODUCT SELECTION LOGIC
-  ============================================================ */
+  /* ================= PRODUCT SELECTION ================= */
   const toggleProduct = (product) => {
     if (selectedProducts.find((p) => p.slug === product.slug)) {
       setSelectedProducts(
@@ -69,11 +67,46 @@ const RequestForm = ({ open, setOpen }) => {
     } else {
       setSelectedProducts([...selectedProducts, product]);
     }
-    // Close the dropdown after selecting
     setProductDropdownOpen(false);
   };
   const removeProduct = (slug) => {
     setSelectedProducts(selectedProducts.filter((p) => p.slug !== slug));
+  };
+
+  /* ================= FORM HANDLERS ================= */
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+    setErrors({ ...errors, [e.target.id]: "" }); // clear error on change
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!form.name.trim()) newErrors.name = "Name is required";
+    if (!form.email.trim()) newErrors.email = "Email is required";
+    else if (!/^\S+@\S+\.\S+$/.test(form.email))
+      newErrors.email = "Invalid email";
+    if (!form.phone.trim()) newErrors.phone = "Phone is required";
+    else if (!/^\d{10}$/.test(form.phone))
+      newErrors.phone = "Invalid phone number";
+    if (selectedProducts.length === 0)
+      newErrors.products = "Select at least one product";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = () => {
+    if (!validate()) return;
+
+    // Extract only the names of the selected products
+    const productNames = selectedProducts.map((p) => p.name);
+
+    console.log("Form Submitted:", { ...form, products: productNames });
+    alert("Request submitted successfully!");
+
+    setForm({ name: "", email: "", phone: "" });
+    setSelectedProducts([]);
+    setOpen(false);
   };
 
   return (
@@ -83,7 +116,11 @@ const RequestForm = ({ open, setOpen }) => {
       style={{ display: "none", opacity: 0 }}
       onClick={handleOverlayClick}
     >
-      <div id="request_form_container" ref={containerRef}>
+      <div
+        id="request_form_container"
+        ref={containerRef}
+        onClick={(e) => e.stopPropagation()}
+      >
         <h2>Request Quotation</h2>
         <p>
           Please fill the details below for further communication.
@@ -91,55 +128,83 @@ const RequestForm = ({ open, setOpen }) => {
           Our team will get back to you soon.
         </p>
 
-        <form>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Your Name" />
-
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Your Email" />
-
-          <label htmlFor="phone">Phone</label>
-          <input type="text" id="phone" placeholder="Your Phone" />
-
-          {/* ================= PRODUCT MULTISELECT ================= */}
-          <label htmlFor="product">Select Product</label>
-          <div className="product_multiselect">
-            <div
-              className="dropdown_input"
-              onClick={() => setProductDropdownOpen(!productDropdownOpen)}
-            >
-              {selectedProducts.length === 0
-                ? "Select Product(s)"
-                : `${selectedProducts.length} Product(s) Selected`}
-            </div>
-
-            {productDropdownOpen && (
-              <div className="dropdown_menu" data-lenis-prevent>
-                {categories.map((cat) => (
-                  <div key={cat.category}>
-                    <strong>{cat.category}</strong>
-                    <ul>
-                      {cat.products.map((prod) => (
-                        <li
-                          key={prod.slug}
-                          onClick={() => toggleProduct(prod)}
-                          className={
-                            selectedProducts.find((p) => p.slug === prod.slug)
-                              ? "selected"
-                              : ""
-                          }
-                        >
-                          {prod.name}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            )}
+        <div>
+          <div className="input-wrapper">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              value={form.name}
+              onChange={handleChange}
+            />
+            {errors.name && <p className="error">{errors.name}</p>}
           </div>
 
-          {/* ================= SELECTED PRODUCTS BADGES ================= */}
+          <div className="input-wrapper">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              value={form.email}
+              onChange={handleChange}
+            />
+            {errors.email && <p className="error">{errors.email}</p>}
+          </div>
+
+          <div className="input-wrapper">
+            <label htmlFor="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Your Phone"
+              value={form.phone}
+              onChange={handleChange}
+            />
+            {errors.phone && <p className="error">{errors.phone}</p>}
+          </div>
+
+          <div className="input-wrapper">
+            <label htmlFor="product">Select Product</label>
+            <div className="product_multiselect">
+              <div
+                className="dropdown_input"
+                onClick={() => setProductDropdownOpen(!productDropdownOpen)}
+              >
+                {selectedProducts.length === 0
+                  ? "Select Product(s)"
+                  : `${selectedProducts.length} Product(s) Selected`}
+              </div>
+
+              {productDropdownOpen && (
+                <div className="dropdown_menu" data-lenis-prevent>
+                  {categories.map((cat) => (
+                    <div key={cat.category}>
+                      <strong>{cat.category}</strong>
+                      <ul>
+                        {cat.products.map((prod) => (
+                          <li
+                            key={prod.slug}
+                            onClick={() => toggleProduct(prod)}
+                            className={
+                              selectedProducts.find((p) => p.slug === prod.slug)
+                                ? "selected"
+                                : ""
+                            }
+                          >
+                            {prod.name}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {errors.products && <p className="error">{errors.products}</p>}
+            </div>
+          </div>
+
           {selectedProducts.length > 0 && (
             <div className="selected_products_badges">
               {selectedProducts.map((prod) => (
@@ -156,13 +221,15 @@ const RequestForm = ({ open, setOpen }) => {
             </div>
           )}
 
+          {/* ================= CUSTOM BUTTON ================= */}
           <Button
             title={"Submit"}
             color={"blue"}
             icon={<MdArrowOutward />}
             width={"full"}
+            onClick={handleSubmit}
           />
-        </form>
+        </div>
       </div>
     </div>
   );

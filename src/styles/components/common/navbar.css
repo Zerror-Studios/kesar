@@ -324,7 +324,7 @@ nav {
   justify-content: center;
   padding: 1rem;
 }
-#request_form .button{
+#request_form .button {
   display: flex;
 }
 #request_form_container {
@@ -402,14 +402,17 @@ nav {
 
 #request_form .product_multiselect {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+#request_form .product_multiselect .error{
+  bottom: -2.5rem;
 }
 #request_form .dropdown_input {
   padding: 0.8rem;
   font-size: 0.9rem;
   cursor: pointer;
   border-radius: 10px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   border: 1px solid rgb(221, 221, 221);
 }
 #request_form .dropdown_menu {
@@ -427,14 +430,14 @@ nav {
   padding: 1rem;
   padding-top: 0;
 }
-#request_form .dropdown_menu strong{
-    font-family: heading-medium;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 1.5rem .5rem .5rem;
-    display: block;
-    text-transform: uppercase !important;
-    color: rgba(0, 0, 0, 0.411);
+#request_form .dropdown_menu strong {
+  font-family: heading-medium;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1.5rem 0.5rem 0.5rem;
+  display: block;
+  text-transform: uppercase !important;
+  color: rgba(0, 0, 0, 0.411);
 }
 #request_form .dropdown_menu ul {
   list-style: none;
@@ -443,15 +446,15 @@ nav {
 }
 #request_form .dropdown_menu li {
   cursor: pointer;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-family: heading-medium;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 0.8rem .5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: heading-medium;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.8rem 0.5rem;
 }
 #request_form .dropdown_menu li:hover {
   background: #f0f0f0;
-  color:#004dff;
+  color: #004dff;
 }
 #request_form .dropdown_menu li.selected {
   /* background: #0070f3; */
@@ -479,6 +482,17 @@ nav {
   margin-left: 6px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.input-wrapper{
+  position: relative;
+}
+#request_form .error {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  bottom: -1.2rem;
+  left: 0;
 }
 
 #mobile_logo {
