@@ -71,9 +71,9 @@
   margin: 1rem 0 1.5rem;
 }
 .product_title_box h5 {
-  font-family: para-extrabold;
+  font-family: heading-bold;
   font-size: 2.8rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.5px;
   color: #000000;
 }
