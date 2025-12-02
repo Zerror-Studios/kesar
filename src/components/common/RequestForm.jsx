@@ -5,6 +5,7 @@ import Button from "./Button";
 import { categories } from "@/helpers/productData";
 import { toast } from "react-hot-toast";
 import { useModalStore } from "@/stores/modalStore";
+import { IoCloseSharp } from "react-icons/io5";
 
 const RequestForm = ({ open, setOpen }) => {
   const containerRef = useRef(null);
@@ -157,7 +158,21 @@ const RequestForm = ({ open, setOpen }) => {
         ref={containerRef}
         onClick={(e) => e.stopPropagation()}
       >
-        <h2>Request Quotation</h2>
+        <div id="form_header">
+          <h2>Request Quotation</h2>
+          <span
+            id="close_btn"
+            onClick={() => {
+              setForm({ name: "", email: "", phone: "" });
+              setSelectedProducts([]);
+              setErrors({});
+              setOpen(); 
+            }}
+          >
+            {" "}
+            <IoCloseSharp />
+          </span>
+        </div>
         <p>
           Please fill the details below for further communication.
           <br />
