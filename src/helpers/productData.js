@@ -265,7 +265,11 @@ export const categories = [
                 desc: "Suitable for universal stainer system",
                 tags: ["PB 15.1", "Coating"],
                 decorative: ["Solvent Based", "Water Based", "Textile Emulsion"],
-                industrial: ["Automobile OEM", "Automobile Refinish", "Industrial Paint", "Powder Coating", "Coil Coating"],
+                industrial: [{ industry: "Automobile OEM", icon: "outline" },
+                { industry: "Automobile Refinish", icon: "checkmark" },
+                { industry: "Industrial Paint", icon: "checkmark" },
+                { industry: "Powder Coating", icon: "outline" },
+                { industry: "Coil Coating", icon: "checkmark" }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 260", "Overspray: 5/5"],
                 shades: ["#18193C", "#2640A5"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7001L.pdf`,
@@ -287,7 +291,8 @@ export const categories = [
                 desc: "Suitable for universal stainer system",
                 tags: ["PB 15.3", "Coating"],
                 decorative: ["Solvent Based", "Water Based", "Textile Emulsion"],
-                industrial: ["Automobile Refinish", "Powder Coating"],
+                industrial: [{ industry: "Automobile Refinish", icon: "outline" },
+                { industry: "Powder Coating", icon: "outline" }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 260", "Overspray: 5/5"],
                 shades: ["#2C2681", "#3565B9"],
                 msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003L.pdf`,
@@ -436,7 +441,7 @@ export const categories = [
             {
                 slug: "kpl-blue-7001-ck",
                 name: "KPL Blue 7001 Ck",
-                desc: "Good dispersion and color strength with heat stability of 280°C",
+                desc: "Good dispersion and color strength with heat stability of 300°C",
                 tags: ["PB 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",
@@ -482,7 +487,7 @@ export const categories = [
             {
                 slug: "kpl-blue-7001-bkfv",
                 name: "KPL Blue 7001 BkFV",
-                desc: "Good dispersion and color strength with heat stability of 280°C and good FPV",
+                desc: "Good dispersion and color strength with heat stability of 280°C and good FPV value",
                 tags: ["PB 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",

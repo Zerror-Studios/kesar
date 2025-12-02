@@ -90,9 +90,9 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
             {product?.industrial && (
               <div className="product_application">
                 <span>Industrial Coating:</span>
-                {product?.industrial?.map((app, idx) => (
+                {product?.industrial?.map((item, idx) => (
                   <span key={idx}>
-                    <IoIosCheckmarkCircle /> {app}
+                    {iconMap[item.icon]} {item.industry}
                   </span>
                 ))}
               </div>
