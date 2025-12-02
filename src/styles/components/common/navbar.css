@@ -526,6 +526,9 @@ nav {
     width: 100%;
     padding: 1rem;
   }
+  #request_form_container {
+    padding: 1.5rem;
+  }
 }
 
 /* Bigger phones + small tablets */

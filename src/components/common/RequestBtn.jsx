@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import RequestForm from "./RequestForm";
 import Button from "./Button";
+import { useModalStore } from "@/stores/modalStore";
 
 const RequestBtn = () => {
-  const [open, setOpen] = useState(false);
+  const { isRequestOpen, openRequest, closeRequest } = useModalStore();
 
   return (
     <>
-      <Button title={"Request Quotation"} onClick={() => setOpen(true)} color={"blue"} />
-      <RequestForm open={open} setOpen={setOpen} />
+      <Button title="Request Quotation" onClick={openRequest} color="blue" />
+      <RequestForm open={isRequestOpen} setOpen={closeRequest} />
     </>
   );
 };

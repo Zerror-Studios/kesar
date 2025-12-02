@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import {
   IoIosCheckmarkCircle,
@@ -7,18 +7,21 @@ import {
 } from "react-icons/io";
 import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 import Button from "../common/Button";
+import { useModalStore } from "@/stores/modalStore";
 
 const ProductInformation = ({ product, previousSlug, nextSlug }) => {
-  const handleClick = () => {
-    const mailtoLink = document.createElement("a");
-    mailtoLink.href = "mailto:sales@kesarpetroproducts.com";
-    mailtoLink.click();
+  const { openRequest } = useModalStore();
+  const handleClick = (productdets) => {
+    openRequest(productdets);
   };
 
   const iconMap = {
     checkmark: <IoIosCheckmarkCircle />,
     outline: <IoIosCheckmarkCircleOutline />,
   };
+
+
+
   return (
     <div id="product_info_section">
       <div id="product_info_section_container">
@@ -124,7 +127,7 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
                 color={"blue"}
                 width={"size"}
                 icon={<MdArrowOutward />}
-                onClick={handleClick}
+                onClick={() => handleClick(product)}
               />
               {product?.msds && (
                 <Button
