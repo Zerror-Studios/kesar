@@ -105,7 +105,7 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
+                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7004 D.pdf`,
                 tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
@@ -141,7 +141,7 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
+                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7004 DG.pdf`,
                 tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
@@ -158,7 +158,7 @@ export const categories = [
             {
                 slug: "kpl-blue-7004-dr",
                 name: "KPL Blue 7004 DR",
-                desc: "Redder shade 15.4 universal specially for publication Gr. ink with good flow",
+                desc: "Redder shade 15.4 universal specially fo/ublication Gr. ink with good flow",
                 tags: ["PB 15.4", "Ink"],
                 application: [{
                     application: "NC-PU",
@@ -188,8 +188,8 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7004 DR – Kesar Petroproducts Ltd. | Ink Product",
                     description:
-                        "KPL Blue 7004 DR is a redder shade PB 15.4 universal pigment designed for publication-grade inks with excellent flow. Suitable for NC-PU, NC-Alcohol, PA, Vinyl-EVA, and Publication Grade Ink applications.",
-                    keywords: "KPL Blue 7004 DR, PB 15.4, Ink, redder shade ink, publication grade ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Pub.Gr.Ink, Kesar Petroproducts",
+                        "KPL Blue 7004 DR is a redder shade PB 15.4 universal pigment designed fo/ublication-grade inks with excellent flow. Suitable for NC-PU, NC-Alcohol, PA, Vinyl-EVA, an/ublication Grade Ink applications.",
+                    keywords: "KPL Blue 7004 DR, PB 15.4, Ink, redder shade ink/ublication grade ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Pub.Gr.Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -423,7 +423,7 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 280", "Bleeding in PVC - P: 4"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 BK.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7001 BK.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
@@ -469,7 +469,7 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 300", "Bleeding in PVC - P: 4"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
+                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 CK.pdf`,
                 tds: `/product/TDS/TDS KPL Blue 7001 CK.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
