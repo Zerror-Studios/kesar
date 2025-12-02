@@ -86,9 +86,13 @@ const ProductSection = ({ title, des, btn }) => {
               pagination: false,
               arrows: false,
               drag: true,
+              touch: true,
+              releaseWheel: true,
+               focus: "left", 
+              flickPower: 600,
+              flickMaxPages: 1,
               speed: 600,
               type: "slide",
-
               breakpoints: {
                 1286: {
                   perPage: 2.1,
