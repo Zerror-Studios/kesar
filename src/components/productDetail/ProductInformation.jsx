@@ -15,6 +15,10 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
     mailtoLink.click();
   };
 
+  const iconMap = {
+    checkmark: <IoIosCheckmarkCircle />,
+    outline: <IoIosCheckmarkCircleOutline />,
+  };
   return (
     <div id="product_info_section">
       <div id="product_info_section_container">
@@ -68,7 +72,7 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
                 <span>Application:</span>
                 {product?.application?.map((app, idx) => (
                   <span key={idx}>
-                    <IoIosCheckmarkCircle /> {app}
+                    {iconMap[app.icon]} {app.application}
                   </span>
                 ))}
               </div>
