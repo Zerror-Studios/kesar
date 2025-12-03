@@ -157,6 +157,9 @@ body {
 .btn_wrap_mobile {
   margin-top: 1rem;
 }
+.btn-disabled {
+  cursor: not-allowed;
+}
 
 .go3958317564 {
   font-size: 0.9rem;

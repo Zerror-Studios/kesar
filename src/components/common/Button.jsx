@@ -1,10 +1,21 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const Button = ({ title, color, width, link, onClick, newTab, icon }) => {
+const Button = ({
+  title,
+  color,
+  width,
+  link,
+  onClick,
+  newTab,
+  icon,
+  disabled,
+}) => {
   const router = useRouter();
 
   const handleClick = () => {
+    if (disabled) return; // ⛔ Prevent click
+
     if (onClick) {
       onClick();
       return;
@@ -13,7 +24,6 @@ const Button = ({ title, color, width, link, onClick, newTab, icon }) => {
     if (!link) return;
 
     if (newTab) {
-      // open in new tab without 
       const a = document.createElement("a");
       a.href = link;
       a.target = "_blank";
@@ -27,7 +37,9 @@ const Button = ({ title, color, width, link, onClick, newTab, icon }) => {
   return (
     <div
       onClick={handleClick}
-      className={`button ${color ? color : ""} ${width ? width : ""}`}
+      className={`button ${color || ""} ${width || ""} ${
+        disabled ? "btn-disabled" : ""
+      }`}
     >
       <div className="btn-text">
         <div className="btn-text-wrap">

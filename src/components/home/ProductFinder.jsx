@@ -2,14 +2,8 @@ import React, { useEffect, useState, useMemo } from "react";
 import Dropdown from "../common/Dropdown";
 import Button from "../common/Button";
 import { useRouter } from "next/router";
-import { IoMdArrowDropdown } from "react-icons/io";
 import { categories } from "@/helpers/productData";
 
-/* ===========================================================
-   🔥 GLOBAL PRECOMPUTATIONS (Optimized)
-=========================================================== */
-
-// ❌ EXCLUDE LAST TWO CATEGORIES
 const MAIN_CATEGORIES = categories.slice(0, -2);
 
 // Fixed Order (requested)
@@ -229,8 +223,17 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
 
         {/* BUTTONS */}
         <div className="button_wrapper_filter">
-          <Button title="Search" color="blue" onClick={handleApply} />
-          <Button title="Clear" onClick={handleClear} />
+          <Button
+            title="Search"
+            color="blue"
+            onClick={handleApply}
+            disabled={!category && !tag && !antiCorrosive && !fertilizer}
+          />
+          <Button
+            title="Clear"
+            onClick={handleClear}
+            disabled={!category && !tag && !antiCorrosive && !fertilizer}
+          />
         </div>
       </div>
     </div>
