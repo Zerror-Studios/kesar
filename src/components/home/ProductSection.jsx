@@ -101,10 +101,10 @@ const ProductSection = ({ title, des, btn }) => {
                   perPage: 2.3,
                 },
                 1024: {
-                  perPage: 2.5,
+                  perPage: 2.2,
                 },
                 900: {
-                  perPage: 2.1, // 👈 For tablets
+                  perPage: 1.8, // 👈 For tablets
                 },
                 768: {
                   perPage: 1.6, // 👈 For tablets

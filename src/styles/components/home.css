@@ -280,6 +280,7 @@
   color: #000000b3;
   border-radius: 20px;
   transition: box-shadow ease 0.6s;
+  border-bottom: 1.5px solid #FF7006;
 }
 
 .logo_card img {
@@ -1680,6 +1681,7 @@
   }
   #product_section_title {
     flex-direction: column;
+    margin-bottom: 1rem;
   }
   #product_section_title h4 {
     font-size: 2rem;

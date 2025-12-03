@@ -12,8 +12,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#18193C", "#4464BA"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7000 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Blue 7000 D.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL BLUE 7000 D.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -47,8 +47,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#2C2681", "#3995D0"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Blue 7003 D.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL BLUE 7003 D.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -70,8 +70,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#2C3AA4", "#3565B9"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7003 WD.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -105,8 +105,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7004 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Blue 7004 D.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7004 D.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -141,8 +141,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7004 DG.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Blue 7004 DG.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7004 DG.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -181,8 +181,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Blue 7003 WD.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7004 DR.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7004 DR.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -221,8 +221,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#00681F", "#5BDE69"],
-                msds: `/product/MSDS/1_MSDS LIiquid Ink all products/MSDS KPL Green 9000 D.pdf`,
-                tds: `/product/TDS/TDS Liquid Ink All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Green 9000 D.pdf`,
+                tds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 9000 D.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -247,8 +247,8 @@ export const categories = [
                 decorative: ["Water Based"],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 160", "Overspray: 5/5"],
                 shades: ["#18193C", "#4464BA"],
-                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000WL.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Coating All Grades/MSDS KPL Blue 7000WL.pdf`,
+                tds: `/MSDS & TDS/TDS/2_Coating/KPL Blue 7000WL.pdf`,
                 category: "Coating",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -272,8 +272,8 @@ export const categories = [
                 { industry: "Coil Coating", icon: "checkmark" }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 260", "Overspray: 5/5"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7001L.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Coating All Grades/MSDS KPL Blue 7001L.pdf`,
+                tds: `/MSDS & TDS/TDS/2_Coating/KPL Blue 7001 L.pdf`,
                 category: "Coating",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -295,8 +295,8 @@ export const categories = [
                 { industry: "Powder Coating", icon: "outline" }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 260", "Overspray: 5/5"],
                 shades: ["#2C2681", "#3565B9"],
-                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003L.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Coating All Grades/MSDS KPL Blue 7003L.pdf`,
+                tds: `/MSDS & TDS/TDS/2_Coating/KPL Blue 7003 L.pdf`,
                 category: "Coating",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -328,8 +328,8 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 160", "Bleeding in PVC - P: LOW"],
                 shades: ["#18193C", "#4464BA"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7000 K.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7000 K.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7000 K.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7000 K.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -348,8 +348,8 @@ export const categories = [
                 decorative: ["Water Based", "Textile Emulsion", "Dry Distemper"],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 160", "Overspray: N/A"],
                 shades: ["#2640A5", "#2640A5"],
-                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7000 DD.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/MSDS KPL Blue 7000 DD.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/KPL Blue 7000 DD.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -388,8 +388,8 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 260", "Bleeding in PVC - P: 3"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 AK.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 AK.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -423,8 +423,8 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 280", "Bleeding in PVC - P: 4"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 BK.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 BK.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 BK.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 BK.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -469,8 +469,8 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 300", "Bleeding in PVC - P: 4"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 CK.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 CK.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 CK.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 CK.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -515,8 +515,8 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 300", "Bleeding in PVC - P: 4"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 BKFV.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 BKFV.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 BKFV.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 BKFV.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -558,8 +558,8 @@ export const categories = [
                 }],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 300", "Bleeding in PVC - P: 4"],
                 shades: ["#18193C", "#2640A5"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7001 CKFV.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7001 CKFV.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 CKFV.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 CKFV.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -585,8 +585,8 @@ export const categories = [
                 ],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 260", "Bleeding in PVC - P: 4-5"],
                 shades: ["#2C2681", "#3565B9"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7003 K.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7003 K.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7003 K.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -612,8 +612,8 @@ export const categories = [
                 ],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 260", "Bleeding in PVC - P: 4-5"],
                 shades: ["#2C2681", "#3565B9"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Blue 7003 K FV.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7003 KFV.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7003 K FV.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7003 KFV.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -632,8 +632,8 @@ export const categories = [
                 decorative: ["Water Based", "Textile Emulsion", "Dry Distemper"],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 160", "Overspray: N/A"],
                 shades: ["#2C2681", "#3565B9"],
-                msds: `/product/MSDS/2_MSDS Coating All Grades/MSDS KPL Blue 7003 DD.pdf`,
-                tds: `/product/TDS/TDS Coating All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/MSDS KPL Blue 7003 DD.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/KPL Blue 7003 DD.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -660,8 +660,8 @@ export const categories = [
                 ],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 300", "Bleeding in PVC - P: 5"],
                 shades: ["#00A02C", "#5BDE69"],
-                msds: `/product/MSDS/3_MSDS Plastic All Grades/KPL Green 9000 K.pdf`,
-                tds: `/product/TDS/TDS Plastic All Grades.xls`,
+                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Green 9000 K.pdf`,
+                tds: `/MSDS & TDS/TDS/3_Plastic/KPL Green 9000 K.pdf`,
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -688,8 +688,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#18193C", "#4464BA"],
-                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OG.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Offset All Grades/MSDS KPL Blue 7003 OG.pdf`,
+                tds: `/MSDS & TDS/TDS/4_Offset/KPL Blue 7003 OG.pdf`,
                 category: "Offset",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -710,8 +710,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#2C2681", "#3565B9"],
-                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OR.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Offset All Grades/MSDS KPL Blue 7003 OR.pdf`,
+                tds: `/MSDS & TDS/TDS/4_Offset/KPL Blue 7003 OR.pdf`,
                 category: "Offset",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -740,8 +740,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 OGF.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Offset All Grades/MSDS KPL Blue 7003 OGF.pdf`,
+                tds: `/MSDS & TDS/TDS/4_Offset/KPL Blue 7003 OGF.pdf`,
                 category: "Offset",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -762,8 +762,8 @@ export const categories = [
                     { application: "Metal Deco", icon: "outline" },
                     { application: "Screen Ink", icon: "checkmark" }],
                 shades: ["#2C2681", "#3565B9"],
-                msds: `/product/MSDS/4_MSDS Offset All Grades/MSDS KPL Blue 7003 ORF.pdf`,
-                tds: `/product/TDS/TDS offset All Grades.xlsx`,
+                msds: `/MSDS & TDS/MSDS/MSDS Offset All Grades/MSDS KPL Blue 7003 ORF.pdf`,
+                tds: `/MSDS & TDS/TDS/4_Offset/KPL Blue 7003 ORF.pdf`,
                 category: "Offset",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -788,8 +788,8 @@ export const categories = [
                 { application: "Water based Ink", icon: "checkmark" },
                 { application: "Textile Emulsion Paint", icon: "outline" }],
                 shades: ["#002164", "#00B3F6"],
-                msds: `/product/MSDS/5_MSDS Universal All Grades/MSDS KPL Blue 7000 U.pdf`,
-                tds: `/product/TDS/TDS KPL Blue 7000 U.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Universal All Grades/MSDS KPL Blue 7000 U.pdf`,
+                tds: `/MSDS & TDS/TDS/5_Universal/TDS KPL Blue 7000 U.pdf`,
                 category: "Universal",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -813,8 +813,8 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#002164", "#00B3F6"],
-                msds: `/product/MSDS/5_MSDS Universal All Grades/MSDS KPL Blue 7003 U.doc`,
-                tds: `/product/TDS/TDS KPL Blue 7003 U.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Universal All Grades/MSDS KPL Blue 7003 U.doc`,
+                tds: `/MSDS & TDS/TDS/5_Universal/TDS KPL Blue 7003 U.pdf`,
                 category: "Universal",
                 use: ["Suitable", "Potential use"],
                 meta: {
@@ -838,7 +838,8 @@ export const categories = [
                     icon: "outline"
                 }],
                 shades: ["#00A02C", "#5BDE69"],
-                msds: `/product/MSDS/5_MSDS Universal All Grades/MSDS KPL Green 9000 U.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS Universal All Grades/MSDS KPL Green 9000 U.pdf`,
+                tds: `/MSDS & TDS/TDS/5_Universal/KPL Green 9000 U.pdf`,
                 category: "Universal",
                 use: ["Suitable", "Potential use"],
                 meta: {
