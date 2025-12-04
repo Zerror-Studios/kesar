@@ -181,7 +181,7 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#3347AA", "#3565B9"],
-                msds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7004 DR.pdf`,
+                msds: `/MSDS & TDS/MSDS/MSDS LIiquid Ink all products/MSDS KPL Blue 7004 DR.pdf`,
                 tds: `/MSDS & TDS/TDS/1_Ink/KPL Blue 7004 DR.pdf`,
                 category: "Ink",
                 use: ["Suitable", "Potential use"],
