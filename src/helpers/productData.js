@@ -813,7 +813,7 @@ export const categories = [
                     icon: "checkmark"
                 }],
                 shades: ["#002164", "#00B3F6"],
-                msds: `/MSDS & TDS/MSDS/MSDS Universal All Grades/MSDS KPL Blue 7003 U.doc`,
+                msds: `/MSDS & TDS/MSDS/MSDS Universal All Grades/MSDS KPL Blue 7003 U.pdf`,
                 tds: `/MSDS & TDS/TDS/5_Universal/TDS KPL Blue 7003 U.pdf`,
                 category: "Universal",
                 use: ["Suitable", "Potential use"],
