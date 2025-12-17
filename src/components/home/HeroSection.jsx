@@ -94,9 +94,9 @@ const HeroSection = () => {
         </h1>
         <p>
           India’s Leading Manufacturer of Phthalocyanine Pigments Blue and
-          Green. <br />
-          <span>Serving customers across 40+ countries</span> with repeatable
-          quality, technical support, and on‑time dispatch.
+          Green. <br /> <span> Serving customers across 40+ countries </span>{" "}
+          with repeatable quality, technical support, and on‑time
+          dispatch since 35 years.
         </p>
 
         {[...Array(5)].map((_, i) => (

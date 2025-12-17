@@ -646,8 +646,8 @@ export const categories = [
 
             },
             {
-                slug: "kp-green-9000-k",
-                name: "KP Green 9000 K",
+                slug: "kpl-green-9000-k",
+                name: "KPL Green 9000 K",
                 desc: "Good dispersion and color strength with moderate heat stability of 300°C",
                 tags: ["PG 7", "Plastic"],
                 application: [
@@ -665,9 +665,9 @@ export const categories = [
                 category: "Plastic",
                 use: ["Suitable", "Potential use"],
                 meta: {
-                    title: "KP Green 9000 K – Kesar Petroproducts Ltd. | Plastic Pigment",
-                    description: "KP Green 9000 K provides good dispersion, color strength, and moderate heat stability (300°C), suitable for various plastic applications.",
-                    keywords: "KP Green 9000 K, PG 7, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    title: "KPl Green 9000 K – Kesar Petroproducts Ltd. | Plastic Pigment",
+                    description: "KPl Green 9000 K provides good dispersion, color strength, and moderate heat stability (300°C), suitable for various plastic applications.",
+                    keywords: "KPl Green 9000 K, PG 7, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -733,7 +733,7 @@ export const categories = [
                 },
                 {
                     application: "Metal Deco",
-                    icon: "outline"
+                    icon: "checkmark"
                 },
                 {
                     application: "Screen Ink",

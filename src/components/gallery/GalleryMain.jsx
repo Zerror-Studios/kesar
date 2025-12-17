@@ -5,7 +5,7 @@ const GalleryMain = () => {
   // Step 1: Create data array
   const galleryData = [
     { src: "/images/gallery/image1.webp", title: "Activated - CPC" },
-    { src: "/images/gallery/image2.webp", title: "Aminated" },
+    { src: "/images/gallery/image2.webp", title: "Zinc Phosphate, Zinc Oxide, Zinc Carbonate" },
     { src: "/images/gallery/image3.webp", title: "Beta-Blue-15-3" },
     { src: "/images/gallery/image4.webp", title: "Beta-CPC-15" },
     { src: "/images/gallery/image5.webp", title: "CPC-Blue-15-0" },
@@ -13,9 +13,9 @@ const GalleryMain = () => {
     { src: "/images/gallery/image7.webp", title: "CPC-Crude" },
     { src: "/images/gallery/image8.webp", title: "CPC-Crude2" },
     { src: "/images/gallery/image9.webp", title: "CPC-Crude4" },
-    { src: "/images/gallery/image10.webp", title: "Nitrated-N" },
+    { src: "/images/gallery/image10.webp", title: "Diammonium Phosphate, Mono Ammonium Phosphate" },
     { src: "/images/gallery/image11.webp", title: "RM" },
-    { src: "/images/gallery/image12.webp", title: "Sulphonated-N" },
+    { src: "/images/gallery/image12.webp", title: "Zinc Sulphate" },
   ];
 
   return (

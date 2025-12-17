@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger, CustomEase);
 const Integrated = () => {
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef(null); // ref for the whole container
- CustomEase.create("ease-secondary", "0.16, 1, 0.35, 1");
+  CustomEase.create("ease-secondary", "0.16, 1, 0.35, 1");
   useEffect(() => {
     // Detect mobile width
     const checkWidth = () => {
@@ -37,7 +37,7 @@ const Integrated = () => {
             trigger: containerRef.current,
             start: "top 85%",
             end: "top 25%",
-            scrub:0.05,
+            scrub: 0.05,
           },
         }
       );
@@ -51,15 +51,16 @@ const Integrated = () => {
           <h4>Integrated Value Chain</h4>
           <p>
             We control CPC crude, cuprous chloride, synergists/additives, and
-            captive power; manufacture PB 15:0/1/3 & PG7 (plus Activated CPC);
-            and valorise by-products into Zinc Phosphate / ZnO / ZnCO₃ and DAP /
-            MAP / Zinc Sulphate - closing the loop for repeatable shade, stable
-            pricing, and lower waste.
+            captive power; manufacture Phthalocyanine Pigment Blue 15.0,
+            Phthalocyanine Pigment Blue 15.1, Phthalocyanine Pigment Blue 15.3 &
+            Pigment Green 7 (plus Activated CPC); and valorise by-products into
+            Zinc Phosphate / ZnO / ZnCO₃ and DAP / MAP / Zinc Sulphate - closing
+            the loop for repeatable shade, stable pricing, and lower waste.
           </p>
 
           {!isMobile && (
             <Button
-            color={"blue"}
+              color={"blue"}
               title="Learn More About our Integration"
               icon={<GrNext />}
               link="/about"
@@ -67,7 +68,7 @@ const Integrated = () => {
           )}
         </div>
 
-        <CircleSlider/>
+        <CircleSlider />
 
         {isMobile && (
           <Button
