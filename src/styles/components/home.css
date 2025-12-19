@@ -1809,7 +1809,7 @@
 /* Tablets + small laptops */
 @media (min-width: 1024px) and (max-width: 1286px) {
   #home_hero_container h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
   .product_card {
     width: 100% !important;

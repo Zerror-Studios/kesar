@@ -480,5 +480,8 @@
 }
 
 /* Tablets + small laptops */
-@media (min-width: 1024px) and (max-width: 1285px) {
+@media (min-width: 1024px) and (max-width: 1286px) {
+  #about_hero_overlay h2 {
+    font-size: 3.6rem !important;
+  }
 }
