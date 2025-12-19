@@ -3,7 +3,17 @@ import React from "react";
 import Button from "../common/Button";
 import { GrNext } from "react-icons/gr";
 
-const ProductCard = ({ product }) => {
+const newTags = [
+  "Production : 8000 MT / Annum",
+  "Production : 2400 MT / Annum",
+  "Production : 3600 MT / Annum",
+  "Production : 1800 MT / Annum",
+  "Production : 3600 MT / Annum",
+  "Production : 3000 MT / Annum",
+  "Production : 1200 MT / Annum",
+  "",
+];
+const ProductCard = ({ product ,index }) => {
   return (
     <div className="product_card">
       <div className="product_details">
@@ -11,7 +21,15 @@ const ProductCard = ({ product }) => {
 
         <div className="product_description">
           {product?.tags &&
-            product?.tags.map((t, i) => <span key={i}>{t}</span>)}
+            product?.tags.map((t, i) => (
+              <>
+                <span key={i}>{t}</span>
+              </>
+            ))}
+            {newTags[index] &&  <div style={{width:"100%",display:"flex",justifyContent:"center"}}>
+              <span key={index} style={{fontWeight:'800',color:"#000"}}>{newTags[index]}</span>
+            </div>}
+           
         </div>
       </div>
 

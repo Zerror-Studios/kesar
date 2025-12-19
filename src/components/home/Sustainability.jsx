@@ -54,6 +54,7 @@ const Sustainability = () => {
               environmental stewardship.
             </p>
           </div>
+          <p >ESG : Environment, Sustainability, Corporate Governance</p>
         </div>
         <div id="sustainable_section_cards" ref={cardsRef}>
           <div className="sustainable_section_card">

@@ -60,12 +60,12 @@ const AboutHeroSection = () => {
               Kesar Petroproducts Ltd. is a technology-driven Phthalocyanine
               pigment manufacturer and one of India’s established producers of
               phthalocyanine blue crude and downstream blues, with a sustainable
-              presence in 15+ countries.
+              presence in 40+ countries.
             </p>
             <p>
               Over three decades, we’ve combined efficient manufacturing with
               documented quality systems to deliver consistent blues and greens
-              for inks, coatings, plastics, textiles, master batches and more.
+              for inks, coatings, plastics, masterbatches, textiles and more.
             </p>
           </div>
         </div>

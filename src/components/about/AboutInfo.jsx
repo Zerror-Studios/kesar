@@ -13,7 +13,7 @@ const AboutInfo = () => {
             alt="logo"
           />
           <h5>Manufacturing Units</h5>
-          <p>CPC crude · Alpha Blue · Beta Blue · Pigment Green 7</p>
+          <p>CPC crude · Alpha Blue · Beta Blue · Pigment Green 7 · Anti Corrosives · Fertilizers</p>
         </div>
         <div className="about_info_card">
           <Image
@@ -23,7 +23,7 @@ const AboutInfo = () => {
             alt="logo"
           />
           <h5>Certifications</h5>
-          <p>ISO 9001:2015; REACH-registered grades</p>
+          <p>ISO 9001:2015; EU REACH registered grades</p>
         </div>
         <div className="about_info_card">
           <Image

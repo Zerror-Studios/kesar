@@ -122,7 +122,7 @@ const ProductSection = ({ title, des, btn }) => {
           >
             {productCards.map((product, idx) => (
               <SplideSlide key={idx}>
-                <ProductCard product={product} />
+                <ProductCard index={idx} product={product} />
               </SplideSlide>
             ))}
           </Splide>
