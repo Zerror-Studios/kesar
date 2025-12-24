@@ -1,7 +1,10 @@
+import SeoHeader from '@/components/seo/SeoHeader'
 import React from 'react'
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy = ({meta}) => {
   return (
+     <>
+      <SeoHeader meta={meta} />
      <div id="mpolicy-section1">
 
   <h2>Privacy Policy</h2>
@@ -175,8 +178,24 @@ const PrivacyPolicy = () => {
   <p><strong>Email:</strong> <a href="mailto:kesarprivacy@gmail.com">kesarprivacy@gmail.com</a></p>
 
 </div>
+     </>
 
   )
 }
 
 export default PrivacyPolicy
+
+
+export async function getStaticProps() {
+  const meta = {
+    title: "Privacy Policy | Kesar Petroproducts Ltd.",
+    description:
+      "Learn how Kesar Petroproducts Ltd. collects, uses, stores, and protects personal data in compliance with GDPR and applicable global data protection laws.",
+    keywords:
+      "Kesar Petroproducts privacy policy, data protection policy, GDPR compliance, personal data handling, industrial chemicals privacy, corporate privacy policy India",
+    author: "Kesar Petroproducts Ltd.",
+    robots: "noindex,nofollow",
+  };
+
+  return { props: { meta } };
+}
