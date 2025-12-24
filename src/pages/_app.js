@@ -11,6 +11,7 @@ import "@/styles/components/productDetail.css";
 import "@/styles/components/contact.css";
 import "@/styles/components/gallery.css";
 import "@/styles/components/investor.css";
+import "@/styles/components/legal.css";
 import Layout from "@/components/layout/Layout";
 import { Toaster } from "react-hot-toast";
 import "@splidejs/splide/dist/css/splide.min.css";

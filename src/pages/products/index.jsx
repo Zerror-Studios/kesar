@@ -24,7 +24,7 @@ export default function ResultPage({ meta }) {
     "PG 7",
   ];
   const allProducts = categories.flatMap((c) => c.products);
-  const normalCategories = ["ink", "coating", "plastic", "offset", "universal"];
+  const normalCategories = ["parent","ink", "coating", "plastic", "offset", "universal"];
 
   // Helper: filter normal products (ink, coating, etc.)
   const filterNormalProducts = () => {

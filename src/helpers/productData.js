@@ -1,5 +1,45 @@
 export const categories = [
     {
+        category: "Parent",
+        products: [
+            {
+                slug: "cpc-crude-blue",
+                name: "CPC Crude Blue",
+                desc: "Delivers stable color strength, excellent dispersion, and consistent batch-to-batch quality.",
+                shades: ["#18193C", "#4464BA"],
+                msds: `/MSDS & TDS/CPC Crude Blue/MSDS CPC Blue Crude.pdf`,
+                tds: `/MSDS & TDS/CPC Crude Blue/TDS_CPC Blue Crude.pdf`,
+                category: "Parent",
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7000 WL – Kesar Petroproducts Ltd. | Water Based Coating",
+                    description: "KPL Blue 7000 WL is specially designed for water based emulsion paint systems, providing excellent light fastness and weather resistance.",
+                    keywords: "KPL Blue 7000 WL, PB 15.0, Water Based Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
+            },
+            {
+                slug: "activated-crude-cpc-blue",
+                name: "Activated Crude CPC Blue",
+                desc: "Offers superior reactivity, clean tone, and reliable performance across diverse applications.",
+                shades: ["#18193C", "#2640A5"],
+                msds: `/MSDS & TDS/Activated CPC Blue Crude/MSDS Activated CPC Blue Crude.pdf`,
+                tds: `/MSDS & TDS/Activated CPC Blue Crude/TDS_Activated CPC Blue Crude.pdf`,
+                category: "Parent",
+                use: ["Suitable", "Potential use"],
+                meta: {
+                    title: "KPL Blue 7001 L – Kesar Petroproducts Ltd. | Universal Stainer Coating",
+                    description: "KPL Blue 7001 L is suitable for universal stainer systems, compatible with solvent and water based coatings, and various industrial applications.",
+                    keywords: "KPL Blue 7001 L, PB 15.1, Universal Stainer Coating, Kesar Petroproducts",
+                    author: "Kesar Petroproducts Ltd.",
+                    robots: "index,follow",
+                },
+
+            },
+        ]
+    },
+    {
         category: "Ink",
         products: [
             {
@@ -8,7 +48,7 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.0", "Ink"],
                 application: [{
-                    application: "W.B Ink",
+                    application: "Water Base Ink",
                     icon: "checkmark"
                 }],
                 shades: ["#18193C", "#4464BA"],
@@ -66,7 +106,7 @@ export const categories = [
                 desc: "Higher pigment loading (40-45%) with good gloss, transparency and viscosity",
                 tags: ["PB 15.3", "Ink"],
                 application: [{
-                    application: "W.B Ink",
+                    application: "Water Base Ink",
                     icon: "checkmark"
                 }],
                 shades: ["#2C3AA4", "#3565B9"],
@@ -201,7 +241,7 @@ export const categories = [
                 desc: "Good gloss, transparency and flow",
                 tags: ["PG 7", "Ink"],
                 application: [{
-                    application: "W.B Ink",
+                    application: "Water Base Ink",
                     icon: "checkmark"
                 },
                 {

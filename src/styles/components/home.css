@@ -430,6 +430,12 @@
   font-size: 2.8rem;
   color: #000000b3;
 }
+#product_section_title h4 span{
+    font-family: heading-medium;
+   font-weight: 100;
+  font-size: 1.6rem;
+  display: inline-block;
+}
 #product_section_title p {
   font-family: para-regular;
   font-weight: 400;

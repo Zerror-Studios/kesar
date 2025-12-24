@@ -108,8 +108,8 @@ const Footer = () => {
           <p> © 2024 Kesar Petroproducts Ltd. All rights reserved.</p>
           <div>
             <Link href="/">Terms & Conditions</Link>|
-            <Link href="/">Privacy Policy</Link>|
-            <Link href="/">Cookies Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>|
+            <Link href="/legal-notice">Legal Notice</Link>
           </div>
         </div>
       </div>

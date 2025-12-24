@@ -1,12 +1,12 @@
 export const productCards = [
     {
-        slug: "/products?category=All&tag=&antiCorrosive=&fertilizer=",
+        slug: "/products/cpc-crude-blue",
         name: "CPC Crude Blue",
         desc: "Delivers stable color strength, excellent dispersion, and consistent batch-to-batch quality.",
         tags: ["Ink", "Coating", "Plastic", "Offset", "Universal"],
     },
     {
-        slug: "/products?category=&tag=All&antiCorrosive=&fertilizer=",
+        slug: "/products/activated-crude-cpc-blue",
         name: "Activated Crude CPC Blue",
         desc: "Offers superior reactivity, clean tone, and reliable performance across diverse applications.",
         tags: ["Ink", "Coating", "Plastic", "Offset", "Universal"],

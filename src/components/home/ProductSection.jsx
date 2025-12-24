@@ -63,7 +63,7 @@ const ProductSection = ({ title, des, btn }) => {
       <div id="product_section_container">
         <div id="product_section_title">
           <div>
-            <h4>{title}</h4>
+            <h4>{title} <span>(EU REACH Registered)</span></h4>
             <p>{des}</p>
           </div>
 
