@@ -220,3 +220,35 @@ body {
 /* Tablets + small laptops */
 @media (min-width: 1024px) and (max-width: 1285px) {
 }
+
+
+
+#product_section .swiper{
+  padding-bottom: 3rem;
+} 
+.product-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.product-swiper .swiper-slide {
+  display: flex;
+  height: auto;
+}
+
+.product-swiper .product_card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc !important;
+  opacity: 1 !important;
+  height: 6px !important;
+   border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #004DFF !important;
+  width: 2rem !important;
+}
