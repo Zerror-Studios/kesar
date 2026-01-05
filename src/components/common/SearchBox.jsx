@@ -7,28 +7,66 @@ const SearchBox = () => {
   const [query, setQuery] = useState("");
   const searchRef = useRef(null);
 
-  // --- Filter Logic ---
+  // ---------------- FILTER LOGIC ----------------
   const filtered = categories
     .map((cat) => {
       const q = query.toLowerCase();
 
-      // match category name
       const categoryMatch = cat.category.toLowerCase().includes(q);
 
-      // match product name
-      const matchedProducts = cat.products.filter((p) =>
-        p.name.toLowerCase().includes(q)
-      );
+      const matchedProducts = cat.products
+        .map((p) => {
+          const nameMatch = p.name?.toLowerCase().includes(q);
 
-      // If category matches → return entire category
+          // tag match
+          const matchedTag = Array.isArray(p.tags)
+            ? p.tags.find((tag) =>
+                tag.toLowerCase().includes(q)
+              )
+            : null;
+
+          // application match
+          const matchedApplication = Array.isArray(p.application)
+            ? p.application.find((app) =>
+                app.application?.toLowerCase().includes(q)
+              )
+            : null;
+
+          if (nameMatch) {
+            return { ...p, _match: null };
+          }
+
+          if (matchedTag) {
+            return {
+              ...p,
+              _match: {
+                type: "tag",
+                value: matchedTag,
+              },
+            };
+          }
+
+          if (matchedApplication) {
+            return {
+              ...p,
+              _match: {
+                type: "application",
+                value: matchedApplication.application,
+              },
+            };
+          }
+
+          return null;
+        })
+        .filter(Boolean);
+
       if (categoryMatch) {
         return {
           category: cat.category,
-          products: cat.products,
+          products: cat.products.map((p) => ({ ...p, _match: null })),
         };
       }
 
-      // If no category match but some products match → return filtered ones
       if (matchedProducts.length > 0) {
         return {
           category: cat.category,
@@ -42,19 +80,20 @@ const SearchBox = () => {
 
   const hasResults = filtered.length > 0;
 
-  // Close dropdown when clicking outside
+  // ---------------- CLICK OUTSIDE ----------------
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (searchRef.current && !searchRef.current.contains(event.target)) {
-        setQuery(""); // close dropdown
+    const handleClickOutside = (e) => {
+      if (searchRef.current && !searchRef.current.contains(e.target)) {
+        setQuery("");
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Dim background and change root variable when dropdown is open
+  // ---------------- BACKGROUND DIM ----------------
   useEffect(() => {
     const contentWrapper = document.getElementById("content_wrapper");
     const root = document.documentElement;
@@ -71,6 +110,7 @@ const SearchBox = () => {
     }
   }, [query]);
 
+  // ---------------- UI ----------------
   return (
     <div
       ref={searchRef}
@@ -80,7 +120,6 @@ const SearchBox = () => {
     >
       <BiSearch />
 
-      {/* Input */}
       <input
         type="text"
         placeholder="Search Products here"
@@ -88,28 +127,42 @@ const SearchBox = () => {
         onChange={(e) => setQuery(e.target.value)}
       />
 
-      {/* Dropdown */}
       {query && (
         <div className="search-container-dropdown" data-lenis-prevent>
           <div className="search-dropdown-wrapper">
             {hasResults ? (
-              filtered.map((cat) => (
-                <div className="category_box" key={cat.category}>
-                  <p>{cat.category.toUpperCase()}</p>
-                  <ul>
-                    {cat.products.map((product) => (
-                      <li key={product.slug}>
-                        <Link
-                          href={`/products/${product.slug}`}
-                          onClick={() => setQuery("")} // close on click
-                        >
-                          {product.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))
+              filtered.map((cat) => {
+                const matchedProduct = cat.products.find(
+                  (p) => p._match
+                );
+
+                return (
+                  <div className="category_box" key={cat.category}>
+                    <p>
+                      {cat.category.toUpperCase()}
+                      {matchedProduct?._match && (
+                        <span className="match-label">
+                          {" "}
+                          ({matchedProduct._match.value})
+                        </span>
+                      )}
+                    </p>
+
+                    <ul>
+                      {cat.products.map((product) => (
+                        <li key={product.slug}>
+                          <Link
+                            href={`/products/${product.slug}`}
+                            onClick={() => setQuery("")}
+                          >
+                            {product.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })
             ) : (
               <p className="no-data-text">No data found</p>
             )}
