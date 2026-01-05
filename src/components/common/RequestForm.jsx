@@ -14,11 +14,13 @@ const RequestForm = ({ open, setOpen }) => {
 
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
+  const [productQuery, setProductQuery] = useState("");
 
   const [form, setForm] = useState({ name: "", email: "", phone: "" });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
+  /* ================= PREFILL ================= */
   useEffect(() => {
     if (open && requestedProduct) {
       setSelectedProducts([requestedProduct]);
@@ -55,11 +57,16 @@ const RequestForm = ({ open, setOpen }) => {
     }
   }, [open]);
 
+  const resetForm = () => {
+    setForm({ name: "", email: "", phone: "" });
+    setSelectedProducts([]);
+    setErrors({});
+    setProductQuery("");
+  };
+
   const handleOverlayClick = (e) => {
     if (e.target === overlayRef.current) {
-      setForm({ name: "", email: "", phone: "" });
-      setSelectedProducts([]);
-      setErrors({});
+      resetForm();
       setOpen();
     }
   };
@@ -67,13 +74,88 @@ const RequestForm = ({ open, setOpen }) => {
   /* ================= CLOSE DROPDOWN OUTSIDE CLICK ================= */
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (productDropdownOpen && !e.target.closest(".product_multiselect")) {
+      if (
+        productDropdownOpen &&
+        !e.target.closest(".product_multiselect")
+      ) {
         setProductDropdownOpen(false);
+        setProductQuery("");
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [productDropdownOpen]);
+
+  /* ================= SEARCH FILTER (WITH MATCH INFO) ================= */
+  const filteredCategories = categories
+    .map((cat) => {
+      const q = productQuery.toLowerCase();
+
+      const categoryMatch = cat.category.toLowerCase().includes(q);
+
+      const matchedProducts = cat.products
+        .map((p) => {
+          if (!q) return { ...p, _match: null };
+
+          const nameMatch = p.name?.toLowerCase().includes(q);
+
+          const matchedTag = Array.isArray(p.tags)
+            ? p.tags.find((tag) =>
+                tag.toLowerCase().includes(q)
+              )
+            : null;
+
+          const matchedApplication = Array.isArray(p.application)
+            ? p.application.find((app) =>
+                app.application?.toLowerCase().includes(q)
+              )
+            : null;
+
+          if (nameMatch) {
+            return { ...p, _match: null };
+          }
+
+          if (matchedTag) {
+            return {
+              ...p,
+              _match: { type: "tag", value: matchedTag },
+            };
+          }
+
+          if (matchedApplication) {
+            return {
+              ...p,
+              _match: {
+                type: "application",
+                value: matchedApplication.application,
+              },
+            };
+          }
+
+          return null;
+        })
+        .filter(Boolean);
+
+      if (!q || categoryMatch) {
+        return {
+          ...cat,
+          products: cat.products.map((p) => ({
+            ...p,
+            _match: null,
+          })),
+        };
+      }
+
+      if (matchedProducts.length > 0) {
+        return {
+          ...cat,
+          products: matchedProducts,
+        };
+      }
+
+      return null;
+    })
+    .filter(Boolean);
 
   /* ================= PRODUCT SELECTION ================= */
   const toggleProduct = (product) => {
@@ -85,13 +167,16 @@ const RequestForm = ({ open, setOpen }) => {
       setSelectedProducts([...selectedProducts, product]);
     }
     setProductDropdownOpen(false);
+    setProductQuery("");
   };
 
   const removeProduct = (slug) => {
-    setSelectedProducts(selectedProducts.filter((p) => p.slug !== slug));
+    setSelectedProducts(
+      selectedProducts.filter((p) => p.slug !== slug)
+    );
   };
 
-  /* ================= FORM HANDLERS ================= */
+  /* ================= FORM ================= */
   const handleChange = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value });
     setErrors({ ...errors, [e.target.id]: "" });
@@ -117,8 +202,10 @@ const RequestForm = ({ open, setOpen }) => {
     if (!validate()) return;
 
     setLoading(true);
-    const productNames = selectedProducts.map((p) => p.name);
-    const formData = { ...form, products: productNames };
+    const formData = {
+      ...form,
+      products: selectedProducts.map((p) => p.name),
+    };
 
     try {
       const response = await fetch("/api/submitEmail", {
@@ -127,25 +214,21 @@ const RequestForm = ({ open, setOpen }) => {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
-
       if (response.ok) {
-        setForm({ name: "", email: "", phone: "" });
-        setSelectedProducts([]);
-        setErrors({});
         toast.success("Form submitted successfully!");
+        resetForm();
         setOpen();
       } else {
-        toast.error(data.error || "Submission failed");
+        toast.error("Submission failed");
       }
-    } catch (error) {
+    } catch {
       toast.error("An error occurred.");
-      console.error(error);
     } finally {
       setLoading(false);
     }
   };
 
+  /* ================= UI ================= */
   return (
     <div
       id="request_form"
@@ -160,86 +243,101 @@ const RequestForm = ({ open, setOpen }) => {
       >
         <div id="form_header">
           <h2>Request Quotation</h2>
-          <span
-            id="close_btn"
-            onClick={() => {
-              setForm({ name: "", email: "", phone: "" });
-              setSelectedProducts([]);
-              setErrors({});
-              setOpen(); 
-            }}
-          >
-            {" "}
+          <span id="close_btn" onClick={() => { resetForm(); setOpen(); }}>
             <IoCloseSharp />
           </span>
         </div>
+
         <p>
           Please fill the details below for further communication.
           <br />
           Our team will get back to you soon.
         </p>
 
-        <div>
-          <div className="input-wrapper">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Your Name"
-              value={form.name}
-              onChange={handleChange}
-            />
-            {errors.name && <p className="error">{errors.name}</p>}
-          </div>
+        {/* NAME */}
+        <div className="input-wrapper">
+          <label>Name</label>
+          <input
+            id="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+          />
+          {errors.name && <p className="error">{errors.name}</p>}
+        </div>
 
-          <div className="input-wrapper">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Your Email"
-              value={form.email}
-              onChange={handleChange}
-            />
-            {errors.email && <p className="error">{errors.email}</p>}
-          </div>
+        {/* EMAIL */}
+        <div className="input-wrapper">
+          <label>Email</label>
+          <input
+            id="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+          />
+          {errors.email && <p className="error">{errors.email}</p>}
+        </div>
 
-          <div className="input-wrapper">
-            <label htmlFor="phone">Phone</label>
-            <input
-              type="text"
-              id="phone"
-              placeholder="Your Phone"
-              value={form.phone}
-              onChange={handleChange}
-            />
-            {errors.phone && <p className="error">{errors.phone}</p>}
-          </div>
+        {/* PHONE */}
+        <div className="input-wrapper">
+          <label>Phone</label>
+          <input
+            id="phone"
+            value={form.phone}
+            onChange={handleChange}
+            placeholder="Your Phone"
+          />
+          {errors.phone && <p className="error">{errors.phone}</p>}
+        </div>
 
-          <div className="input-wrapper">
-            <label htmlFor="product">Select Product</label>
-            <div className="product_multiselect">
-              <div
-                className="dropdown_input"
-                onClick={() => setProductDropdownOpen(!productDropdownOpen)}
-              >
-                {selectedProducts.length === 0
-                  ? "Select Product(s)"
-                  : `${selectedProducts.length} Product(s) Selected`}
-              </div>
+        {/* PRODUCT */}
+        <div className="input-wrapper">
+          <label>Select Product</label>
+          <div className="product_multiselect">
+            <div
+              className="dropdown_input"
+              onClick={() => setProductDropdownOpen(!productDropdownOpen)}
+            >
+              {selectedProducts.length === 0
+                ? "Select Product(s)"
+                : `${selectedProducts.length} Product(s) Selected`}
+            </div>
 
-              {productDropdownOpen && (
-                <div className="dropdown_menu" data-lenis-prevent>
-                  {categories.map((cat) => (
+            {productDropdownOpen && (
+              <div className="dropdown_menu" data-lenis-prevent>
+                <input
+                  id="dropdown_menu_search"
+                  placeholder="Search product"
+                  value={productQuery}
+                  onChange={(e) => setProductQuery(e.target.value)}
+                />
+
+                {filteredCategories.map((cat) => {
+                  const matchedProduct = cat.products.find(
+                    (p) => p._match
+                  );
+
+                  return (
                     <div key={cat.category}>
-                      <strong>{cat.category}</strong>
+                      <strong>
+                        {cat.category}
+                        {matchedProduct?._match && (
+                          <span className="match-label">
+                            {" "}
+                            ({matchedProduct._match.value})
+                          </span>
+                        )}
+                      </strong>
+
                       <ul>
                         {cat.products.map((prod) => (
                           <li
                             key={prod.slug}
                             onClick={() => toggleProduct(prod)}
                             className={
-                              selectedProducts.find((p) => p.slug === prod.slug)
+                              selectedProducts.find(
+                                (p) => p.slug === prod.slug
+                              )
                                 ? "selected"
                                 : ""
                             }
@@ -249,38 +347,39 @@ const RequestForm = ({ open, setOpen }) => {
                         ))}
                       </ul>
                     </div>
-                  ))}
-                </div>
-              )}
-              {errors.products && <p className="error">{errors.products}</p>}
-            </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {errors.products && (
+              <p className="error">{errors.products}</p>
+            )}
           </div>
-
-          {selectedProducts.length > 0 && (
-            <div className="selected_products_badges">
-              {selectedProducts.map((prod) => (
-                <div key={prod.slug} className="badge">
-                  {prod.name}
-                  <span
-                    className="remove"
-                    onClick={() => removeProduct(prod.slug)}
-                  >
-                    &times;
-                  </span>
-                </div>
-              ))}
-            </div>
-          )}
-
-          <Button
-            title={loading ? "Submitting..." : "Submit"}
-            color="blue"
-            icon={<MdArrowOutward />}
-            width="full"
-            onClick={handleSubmit}
-            disabled={loading}
-          />
         </div>
+
+        {/* SELECTED BADGES */}
+        {selectedProducts.length > 0 && (
+          <div className="selected_products_badges">
+            {selectedProducts.map((prod) => (
+              <div key={prod.slug} className="badge">
+                {prod.name}
+                <span className="remove" onClick={() => removeProduct(prod.slug)}>
+                  &times;
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <Button
+          title={loading ? "Submitting..." : "Submit"}
+          color="blue"
+          icon={<MdArrowOutward />}
+          width="full"
+          onClick={handleSubmit}
+          disabled={loading}
+        />
       </div>
     </div>
   );
