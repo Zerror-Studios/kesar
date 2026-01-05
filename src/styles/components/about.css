@@ -514,4 +514,7 @@
   #about_hero_overlay h2 {
     font-size: 3.6rem !important;
   }
+  .about_info_card{
+    padding: 1rem !important;
+  }
 }
