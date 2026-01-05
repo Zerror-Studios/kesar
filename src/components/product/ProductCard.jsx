@@ -9,7 +9,14 @@ const ProductCard = ({ product, currentSlug }) => {
   const isActive = currentSlug ? product.slug === currentSlug : false;
 
   const content = (
-    <div className={`product_list_card ${isActive ? "active" : ""}`}>
+    <div
+      className={`product_list_card`}
+      onClick={() => {
+        if (isActive) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
+    >
       <div className="product_img_wrap">
         <div className="product_sample_container">
           {product.shades?.map((shade, idx) => (
