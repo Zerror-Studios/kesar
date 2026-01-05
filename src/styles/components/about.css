@@ -146,7 +146,19 @@
   color: #000000b3;
   margin-bottom: 2.5rem;
 }
+.leader_subheading {
+  font-family: heading-medium;
+  font-weight: 500;
+  font-size: 1.875rem;
+  color: #0000004D;
+  margin: 3rem 0 1rem;
+  display: inline-block;
+}
 
+.leader_subheading {
+  font-size: 1.875rem;
+  margin: 3rem 0 1rem;
+}
 #leadership_section_cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -154,6 +166,9 @@
   align-items: stretch;
 }
 
+#leadership_section_cards.grid3{
+  grid-template-columns: repeat(3, 1fr);
+}
 .leadership_section_card {
   width: 100%;
   display: flex;
@@ -184,12 +199,8 @@
   display: flex;
   align-items: flex-end;
 }
-.leadership_section_card.last .leader_profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.leader_card:nth-child(3) .leader_profile {
+
+.leader_card .leader_profile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,17 +233,14 @@
   right: 0;
 }
 
-.leadership_section_card.last img {
-  width: 1.8rem;
-  height: auto;
+.leadership_section_card img {
+  width: 1.8rem !important;
+  height: auto !important;
 }
-.leader_card:nth-child(3) img {
-  width: 1.8rem;
-  height: auto;
-}
-.leader_profile img {
-  width: 100%;
-  height: 90%;
+
+.leader_profile img.profile {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
 }
 
@@ -320,6 +328,13 @@
     grid-template-columns: repeat(1, 100%);
     margin-top: 1rem;
   }
+  #leadership_section_cards.grid3{
+  grid-template-columns: repeat(1, 1fr);
+}
+.leader_subheading {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
   .leader_description {
     margin: 1rem 0;
     font-size: 0.9rem;
@@ -395,6 +410,13 @@
     grid-template-columns: repeat(1, 100%);
     margin-top: 1rem;
   }
+  #leadership_section_cards.grid3{
+  grid-template-columns: repeat(1, 1fr);
+}
+.leader_subheading {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
   .leader_description {
     margin: 1rem 0;
     font-size: 0.9rem;
@@ -470,6 +492,9 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1rem;
   }
+  #leadership_section_cards.grid3{
+  grid-template-columns: repeat(2, 1fr);
+}
   .leader_description {
     margin: 1rem 0;
     font-size: 0.9rem;

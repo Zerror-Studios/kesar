@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const LeaderCard = ({ image, name, position, description, mentors }) => {
+const LeaderCard = ({ image, name, position, description, mentors ,className }) => {
   return (
-    <div  className={`leadership_section_card ${mentors ? "last":""}`}>
+    <div className={`leadership_section_card ${mentors ? "last" : ""}`}>
       {mentors ? (
         mentors.map((m, i) => (
           <div key={i} className="leader_profile_wrap">
@@ -31,6 +31,7 @@ const LeaderCard = ({ image, name, position, description, mentors }) => {
                 height={1000}
                 src={image}
                 alt={name || "profile"}
+                className={className || ""}
               />
             </div>
             <div className="profile_name">

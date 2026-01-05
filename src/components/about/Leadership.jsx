@@ -10,38 +10,258 @@ CustomEase.create("ease-secondary", "0.16, 1, 0.35, 1");
 const Leadership = () => {
   const cardsRef = useRef(null);
 
-  const leaders = [
+  const leadershipSections = [
     {
-      id: 1,
-      name: "Shri. Dinesh Sharma",
-      position: "Founder, Chairman & Managing Director",
+      title: "Leadership & Founders",
       description:
-        "Law graduate & Chartered Accountant. Champion of cost‑effective, sustainable manufacturing and timely dispatches.",
-      image: "/images/about/dinesh.webp",
-    },
-    {
-      id: 2,
-      name: "Shreyas Sharma",
-      position: "Chief Executive Officer",
-      description: `Mr. Shreyas Sharma, B. Tech Graduate from UDCT in the year 2008 with specialization in dyes & pigments and has 15+ years of experience in the dying and
-pigmentation industry.`,
-      image: "/images/about/shreyas.webp",
-    },
-    {
-      id: 3,
-      name: "Ms. Shruti Sharma",
-      position: "Vice President (Business Development)",
-      description: `MBA; global business development and partnerships; focuses on distributor ecosystems and key accounts.`,
-      image: "/images/about/user.png",
-    },
-    {
-      id: 4,
-      mentors: [
+        "Committed to responsible manufacturing with measurable environmental stewardship.",
+      cards: [
         {
-          name: "Mr. K. D. Fatnani",
-          position: "Chemical Engineer, 35+ years in pigments",
+          id: 1,
+          name: "Shri. Dinesh Sharma",
+          position: "Founder, Chairman & Managing Director",
+          description:
+            "Law graduate & Chartered Accountant. Champion of cost-effective, sustainable manufacturing and timely dispatches.",
+          image: "/images/about/dinesh.webp",
+          className:"profile"
+        },
+        {
+          id: 2,
+          name: "Shreyas Sharma",
+          position: "Chief Executive Officer",
+          description:
+            "B.Tech graduate from UDCT (2008), specializing in dyes & pigments with 15+ years of industry experience.",
+          image: "/images/about/shreyas.webp",
+          className:"profile"
+        },
+        {
+          id: 3,
+          name: "Ms. Shruti Sharma",
+          position: "Vice President (Business Development)",
+          description:
+            "MBA; global business development and partnerships; focuses on distributor ecosystems and key accounts.",
           image: "/images/about/user.png",
-          tag: "Mentors (advisory)",
+        },
+        {
+          id: 4,
+          mentors: [
+            {
+              name: "Mr. K. D. Fatnani",
+              position: "Chemical Engineer, 35+ years in pigments",
+              image: "/images/about/user.png",
+              tag: "Mentors (advisory)",
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Board of Directors",
+      cards: [
+        {
+          id: 1,
+          name: "Satish Chand Mathur",
+          position: "Non - Executive Director DIN : 03641285",
+          description: `Mr. Satish Chand Mathur is a 1981-batch
+Indian Police Service (IPS) officer. His service duration was 37 years. Read more`,
+          image: "/images/about/user.png",
+        },
+        {
+          id: 2,
+          mentors: [
+            {
+              name: "Jignesh Dinesh Desai - CFO",
+              position: "Chemical Engineer, 35+ years in pigments",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 3,
+          name: "Satish Chand Mathur",
+          position: "Non - Executive Director DIN : 03641285",
+          description: `Mr. Satish Chand Mathur is a 1981-batch
+Indian Police Service (IPS) officer. His service duration was 37 years. Read more`,
+          image: "/images/about/user.png",
+        },
+        {
+          id: 4,
+          mentors: [
+            {
+              name: "Jignesh Dinesh Desai - CFO",
+              position: "Chemical Engineer, 35+ years in pigments",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Audit Committee",
+      grid: "grid3",
+      cards: [
+        {
+          id: 1,
+          mentors: [
+            {
+              name: "Kanayo Dayaram Fatani",
+              position: "Chairperson",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 2,
+          mentors: [
+            {
+              name: "Neelam Yashpal Arora",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 3,
+          mentors: [
+            {
+              name: "Ramjam Kadar Shaikh",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 4,
+          mentors: [
+            {
+              name: "Nainesh Sumant Rai Desai",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Nomination and remuneration committee",
+      grid: "grid3",
+      cards: [
+        {
+          id: 1,
+          mentors: [
+            {
+              name: "Kanayo Dayaram Fatani",
+              position: "Chairperson",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 2,
+          mentors: [
+            {
+              name: "Neelam Yashpal Arora",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 3,
+          mentors: [
+            {
+              name: "Nainesh Sumant Rai Desai",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Stakeholders Relationship Committee",
+      grid: "grid3",
+      cards: [
+        {
+          id: 1,
+          mentors: [
+            {
+              name: "Kanayo Dayaram Fatani",
+              position: "Chairperson",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 2,
+          mentors: [
+            {
+              name: "Neelam Yashpal Arora",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 3,
+          mentors: [
+            {
+              name: "Ramjam Kadar Shaikh",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 4,
+          mentors: [
+            {
+              name: "Nainesh Sumant Rai Desai",
+              position: "Member",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      title: "Disclosure of content details of Key Managerial personnel:",
+      grid: "grid3",
+      cards: [
+        {
+          id: 1,
+          mentors: [
+            {
+              name: "Ramjam Kadar Shaikh",
+              position: "7400055737",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 2,
+          mentors: [
+            {
+              name: "Jignesh Dinesh Desai",
+              position: "7738004903",
+              image: "/images/about/user.png",
+            },
+          ],
+        },
+        {
+          id: 3,
+          mentors: [
+            {
+              name: "Shreyas Dinesh Sharma",
+              position: "",
+              image: "/images/about/user.png",
+            },
+          ],
         },
       ],
     },
@@ -78,23 +298,33 @@ pigmentation industry.`,
   return (
     <div id="leadership_section">
       <div id="leadership_section_container">
-        <div id="leadership_section_header">
-          <div>
-            <h4>Leadership & Founders</h4>
-            <p>
-              Committed to responsible manufacturing with measurable
-              environmental stewardship.
-            </p>
-          </div>
-        </div>
+        {leadershipSections.map((section, index) => (
+          <div key={index}>
+            {/* Header (only for first section or when needed) */}
+            {section.description && (
+              <div id="leadership_section_header">
+                <div>
+                  <h4>{section.title}</h4>
+                  <p>{section.description}</p>
+                </div>
+              </div>
+            )}
 
-        <div id="leadership_section_cards" ref={cardsRef}>
-          {leaders.map((leader) => (
-            <div className="leader_card" key={leader.id}>
-              <LeaderCard {...leader} />
+            {!section.description && <span className="leader_subheading">{section.title}</span>}
+
+            <div
+              id="leadership_section_cards"
+              ref={index === 0 ? cardsRef : null}
+              className={section.grid || ""}
+            >
+              {section.cards.map((card) => (
+                <div className="leader_card" key={card.id}>
+                  <LeaderCard {...card} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
