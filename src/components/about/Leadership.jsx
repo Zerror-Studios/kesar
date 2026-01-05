@@ -16,15 +16,15 @@ const Leadership = () => {
       name: "Shri. Dinesh Sharma",
       position: "Founder, Chairman & Managing Director",
       description:
-        "Law graduate & Chartered Accountant. Champion of cost-effective, sustainable manufacturing and timely dispatches.",
+        "Law graduate & Chartered Accountant. Champion of cost‑effective, sustainable manufacturing and timely dispatches.",
       image: "/images/about/dinesh.webp",
     },
     {
       id: 2,
       name: "Shreyas Sharma",
       position: "Chief Executive Officer",
-      description: `B.Tech. (Dyestuff Technology), ICT (UDCT), hands-on experience across dyes, pigments and intermediates,
-Leads Technical - Commercial Strategy and International Growth.`,
+      description: `Mr. Shreyas Sharma, B. Tech Graduate from UDCT in the year 2008 with specialization in dyes & pigments and has 15+ years of experience in the dying and
+pigmentation industry.`,
       image: "/images/about/shreyas.webp",
     },
     {
