@@ -1039,7 +1039,7 @@ export const categories = [
                 { application: "Chemical Synthesis", icon: "checkmark" }],
                 shades: ["#FFFFFF"],
                 msds: '/MSDS & TDS/MSDS/MSDS Fertilizers/MSDS KPL Zinc Sulphate.pdf',
-                tds: '/MSDS & TDS/TDS/Fertilizers/TDS Mono-Ammonium Phosphate.pdf',
+                tds: '/MSDS & TDS/TDS/Fertilizers/TDS KPL Zinc Sulphate.pdf',
                 style: "center",
                 category: "Fertilizers",
                 use: ["Suitable", "Potential use"],
