@@ -13,7 +13,7 @@ const AboutInfo = () => {
             alt="logo"
           />
           <h5>Manufacturing Units</h5>
-          <p>CPC crude · Alpha Blue · Beta Blue · Pigment Green 7 · Anti Corrosives · Fertilizers</p>
+          <p>CPC Crude Blue · Activated CPC Crude Blue · Alpha Blue · Beta Blue · Pigment Green · Anti Corrosives · Fertilizers</p>
         </div>
         <div className="about_info_card">
           <Image

@@ -90,12 +90,12 @@ const Menu = () => {
                 : pathname.startsWith(item.path);
 
             return (
-              <li
-                key={index}
-                className={isActive ? "active" : ""}
-                onClick={handleLinkClick}
-              >
-                <Link href={item.path}>
+              <li key={index} className={isActive ? "active" : ""}>
+                <Link
+                  style={{ width: "100%" }}
+                  href={item.path}
+                  onClick={handleLinkClick}
+                >
                   <span>{item.name}</span>
                 </Link>
               </li>

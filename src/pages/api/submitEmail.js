@@ -86,7 +86,7 @@ export default async function handler(req, res) {
 
       const mailOptions = {
         from: process.env.NEXT_PUBLIC_MAIL_EMAIL_ADDRESS,
-        to: ["sales@kesarpetroproducts.com"],
+        to: ["sanjay@kesarpetroproducts.in"],
         subject: `New Request Quotation – Kesar Petroproducts Ltd.`,
         html: `
        <div class="container" style="font-family: Arial, sans-serif; color: #333; padding: 20px 0;">
