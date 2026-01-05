@@ -401,45 +401,45 @@ export const categories = [
                 },
 
             },
-            {
-                slug: "kpl-blue-7001-ak",
-                name: "KPL Blue 7001 AK",
-                desc: "Good dispersion and color strength. Suitable for those inducer required lower heat stability",
-                tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
-                application: [{
-                    application: "Polyolefins",
-                    icon: "checkmark"
-                },
-                {
-                    application: "PVC & PVC Leather",
-                    icon: "checkmark"
-                },
-                {
-                    application: "PA / ABS",
-                    icon: "checkmark"
-                },
-                {
-                    application: "PP Fiber",
-                    icon: "checkmark"
-                },
-                {
-                    application: "Rubber",
-                    icon: "outline"
-                }],
-                Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 260", "Bleeding in PVC - P: 3"],
-                shades: ["#18193C", "#2640A5"],
-                msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
-                tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 AK.pdf`,
-                category: "Plastic",
-                use: ["Suitable", "Potential use"],
-                meta: {
-                    title: "KPL Blue 7001 AK – Kesar Petroproducts Ltd. | Plastic Pigment",
-                    description: "KPL Blue 7001 AK provides excellent dispersion and color strength, suitable for polyolefins, PVC, PA/ABS, PP Fiber, and Rubber applications.",
-                    keywords: "KPL Blue 7001 AK, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, Polyolefins, PVC, Kesar Petroproducts",
-                    author: "Kesar Petroproducts Ltd.",
-                    robots: "index,follow",
-                },
-            },
+            // {
+            //     slug: "kpl-blue-7001-ak",
+            //     name: "KPL Blue 7001 AK",
+            //     desc: "Good dispersion and color strength. Suitable for those inducer required lower heat stability",
+            //     tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
+            //     application: [{
+            //         application: "Polyolefins",
+            //         icon: "checkmark"
+            //     },
+            //     {
+            //         application: "PVC & PVC Leather",
+            //         icon: "checkmark"
+            //     },
+            //     {
+            //         application: "PA / ABS",
+            //         icon: "checkmark"
+            //     },
+            //     {
+            //         application: "PP Fiber",
+            //         icon: "checkmark"
+            //     },
+            //     {
+            //         application: "Rubber",
+            //         icon: "outline"
+            //     }],
+            //     Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability in HDPE (°C): 260", "Bleeding in PVC - P: 3"],
+            //     shades: ["#18193C", "#2640A5"],
+            //     msds: `/MSDS & TDS/MSDS/MSDS Plastic All Grades/KPL Blue 7001 AK.pdf`,
+            //     tds: `/MSDS & TDS/TDS/3_Plastic/TDS KPL Blue 7001 AK.pdf`,
+            //     category: "Plastic",
+            //     use: ["Suitable", "Potential use"],
+            //     meta: {
+            //         title: "KPL Blue 7001 AK – Kesar Petroproducts Ltd. | Plastic Pigment",
+            //         description: "KPL Blue 7001 AK provides excellent dispersion and color strength, suitable for polyolefins, PVC, PA/ABS, PP Fiber, and Rubber applications.",
+            //         keywords: "KPL Blue 7001 AK, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, Polyolefins, PVC, Kesar Petroproducts",
+            //         author: "Kesar Petroproducts Ltd.",
+            //         robots: "index,follow",
+            //     },
+            // },
             {
                 slug: "kpl-blue-7001-bk",
                 name: "KPL Blue 7001 BK",
