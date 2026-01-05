@@ -7,10 +7,26 @@ import LogoSection from '@/components/home/LogoSection'
 import ProductFinder from '@/components/home/ProductFinder'
 import ProductSection from '@/components/home/ProductSection'
 import Sustainability from '@/components/home/Sustainability'
-import React from 'react'
+import React, { useEffect } from 'react'
 import SeoHeader from '../components/seo/SeoHeader'
+import { usePathname } from 'next/navigation'
 
 const Home = ({ meta }) => {
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace("#", "");
+      const el = document.getElementById(id);
+
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [pathname]);
 
   return (
     <>

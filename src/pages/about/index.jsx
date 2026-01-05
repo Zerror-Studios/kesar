@@ -4,9 +4,24 @@ import Leadership from "@/components/about/Leadership";
 import GallerySection from "@/components/home/GallerySection";
 import Sustainability from "@/components/home/Sustainability";
 import SeoHeader from "@/components/seo/SeoHeader";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect } from "react";
 
 const About = ({ meta }) => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace("#", "");
+      const el = document.getElementById(id);
+
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [pathname]);
   return (
     <>
       <SeoHeader meta={meta} />
