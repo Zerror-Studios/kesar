@@ -127,11 +127,11 @@ nav {
   letter-spacing: 0.6px;
 }
 .menu-container-dropdown li {
-  padding: 1rem 0.2rem;
   border-bottom: 1px solid #0000001a;
   position: relative;
 }
 .menu-container-dropdown li a {
+  padding: 1rem 0.2rem;
   text-decoration: none;
   color: #00000080;
   overflow: hidden;
