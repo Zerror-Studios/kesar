@@ -19,9 +19,9 @@ const FIXED_CATEGORY_ORDER = [
 const FIXED_TAG_ORDER = [
   "All",
   "PB 15.0",
-  "PB 15.1",
-  "PB 15.3",
-  "PB 15.4",
+  "Phthalocyanine Pigment Blue 15.1",
+  "Phthalocyanine Pigment Blue 15.3",
+  "Phthalocyanine Pigment Blue 15.4",
   "PG 7",
 ];
 

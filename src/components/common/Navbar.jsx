@@ -20,8 +20,7 @@ const Navbar = () => {
           />
         </Link>
         <p>
-          Petro
-          <br /> Products
+          Petroproducts
         </p>
       </div>
       <Menu />

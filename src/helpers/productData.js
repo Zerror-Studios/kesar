@@ -14,7 +14,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7000 WL – Kesar Petroproducts Ltd. | Water Based Coating",
                     description: "KPL Blue 7000 WL is specially designed for water based emulsion paint systems, providing excellent light fastness and weather resistance.",
-                    keywords: "KPL Blue 7000 WL, PB 15.0, Water Based Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7000 WL, Phthalocyanine Pigment Blue 15.0, Water Based Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -31,7 +31,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 L – Kesar Petroproducts Ltd. | Universal Stainer Coating",
                     description: "KPL Blue 7001 L is suitable for universal stainer systems, compatible with solvent and water based coatings, and various industrial applications.",
-                    keywords: "KPL Blue 7001 L, PB 15.1, Universal Stainer Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7001 L, Phthalocyanine Pigment Blue 15.1, Universal Stainer Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -46,7 +46,7 @@ export const categories = [
                 slug: "kpl-blue-7000-d",
                 name: "KPL Blue 7000 D",
                 desc: "General redder grade with 10% pigment loading",
-                tags: ["PB 15.0", "Ink"],
+                tags: ["Phthalocyanine Pigment Blue 15.0", "Ink"],
                 application: [{
                     application: "Water Base Ink",
                     icon: "checkmark"
@@ -60,7 +60,7 @@ export const categories = [
                     title: "KPL Blue 7000 D – Kesar Petroproducts Ltd. | Ink Product",
                     description:
                         "KPL Blue 7000 D is a general redder grade ink with 10% pigment loading, suitable for W.B Ink applications.",
-                    keywords: "KPL Blue 7000 D, PB 15.0, Ink, W.B Ink, Kesar Petroproducts",
+                    keywords: "KPL Blue 7000 D, Phthalocyanine Pigment Blue 15.0, Ink, W.B Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -69,7 +69,7 @@ export const categories = [
                 slug: "kpl-blue-7003-d",
                 name: "KPL Blue 7003 D",
                 desc: "General redder grade with 10% pigment loading",
-                tags: ["PB 15.3", "Ink"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Ink"],
                 application: [{
                     application: "NC - PU",
                     icon: "checkmark"
@@ -95,7 +95,7 @@ export const categories = [
                     title: "KPL Blue 7003 D – Kesar Petroproducts Ltd. | Ink Product",
                     description:
                         "KPL Blue 7003 D is a general redder grade ink with 10% pigment loading, suitable for NC - PU, NC Alcohol, PA, and Vinyl - EVA applications.",
-                    keywords: "KPL Blue 7003 D, PB 15.3, Ink, NC - PU, NC Alcohol, PA, Vinyl - EVA, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 D, Phthalocyanine Pigment Blue 15.3, Ink, NC - PU, NC Alcohol, PA, Vinyl - EVA, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -104,7 +104,7 @@ export const categories = [
                 slug: "kpl-blue-7003-wd",
                 name: "KPL Blue 7003 WD",
                 desc: "Higher pigment loading (40-45%) with good gloss, transparency and viscosity",
-                tags: ["PB 15.3", "Ink"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Ink"],
                 application: [{
                     application: "Water Base Ink",
                     icon: "checkmark"
@@ -118,7 +118,7 @@ export const categories = [
                     title: "KPL Blue 7003 WD – Kesar Petroproducts Ltd. | Ink Product",
                     description:
                         "KPL Blue 7003 WD is a high pigment loading (40-45%) ink with excellent gloss, transparency, and viscosity, suitable for W.B Ink applications.",
-                    keywords: "KPL Blue 7003 WD, PB 15.3, Ink, W.B Ink, high pigment ink, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 WD, Phthalocyanine Pigment Blue 15.3, Ink, W.B Ink, high pigment ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -127,7 +127,7 @@ export const categories = [
                 slug: "kpl-blue-7004-d",
                 name: "KPL Blue 7004 D",
                 desc: "General grade for solvent based ink with good gloss, transparency and flow",
-                tags: ["PB 15.4", "Ink"],
+                tags: ["Phthalocyanine Pigment Blue 15.4", "Ink"],
                 application: [{
                     application: "NC-PU",
                     icon: "checkmark"
@@ -153,7 +153,7 @@ export const categories = [
                     title: "KPL Blue 7004 D – Kesar Petroproducts Ltd. | Ink Product",
                     description:
                         "KPL Blue 7004 D is a general-grade solvent-based ink pigment with good gloss, transparency, and flow. Suitable for NC-PU, NC-Alcohol, PA, and Vinyl-EVA applications.",
-                    keywords: "KPL Blue 7004 D, PB 15.4, Ink, solvent based ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Kesar Petroproducts",
+                    keywords: "KPL Blue 7004 D, Phthalocyanine Pigment Blue 15.4, Ink, solvent based ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -163,7 +163,7 @@ export const categories = [
                 slug: "kpl-blue-7004-dg",
                 name: "KPL Blue 7004 DG",
                 desc: "Greener shade 15.4 universal with good gloss, transparency and flow",
-                tags: ["PB 15.4", "Ink"],
+                tags: ["Phthalocyanine Pigment Blue 15.4", "Ink"],
                 application: [{
                     application: "NC-PU",
                     icon: "checkmark"
@@ -188,8 +188,8 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7004 DG – Kesar Petroproducts Ltd. | Ink Product",
                     description:
-                        "KPL Blue 7004 DG is a greener shade PB 15.4 universal pigment with good gloss, transparency, and flow. Suitable for NC-PU, NC-Alcohol, PA, and Vinyl-EVA applications.",
-                    keywords: "KPL Blue 7004 DG, PB 15.4, Ink, greener shade ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Kesar Petroproducts",
+                        "KPL Blue 7004 DG is a greener shade Phthalocyanine Pigment Blue 15.4 universal pigment with good gloss, transparency, and flow. Suitable for NC-PU, NC-Alcohol, PA, and Vinyl-EVA applications.",
+                    keywords: "KPL Blue 7004 DG, Phthalocyanine Pigment Blue 15.4, Ink, greener shade ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -199,7 +199,7 @@ export const categories = [
                 slug: "kpl-blue-7004-dr",
                 name: "KPL Blue 7004 DR",
                 desc: "Redder shade 15.4 universal specially fo/ublication Gr. ink with good flow",
-                tags: ["PB 15.4", "Ink"],
+                tags: ["Phthalocyanine Pigment Blue 15.4", "Ink"],
                 application: [{
                     application: "NC-PU",
                     icon: "checkmark"
@@ -228,8 +228,8 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7004 DR – Kesar Petroproducts Ltd. | Ink Product",
                     description:
-                        "KPL Blue 7004 DR is a redder shade PB 15.4 universal pigment designed fo/ublication-grade inks with excellent flow. Suitable for NC-PU, NC-Alcohol, PA, Vinyl-EVA, an/ublication Grade Ink applications.",
-                    keywords: "KPL Blue 7004 DR, PB 15.4, Ink, redder shade ink/ublication grade ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Pub.Gr.Ink, Kesar Petroproducts",
+                        "KPL Blue 7004 DR is a redder shade Phthalocyanine Pigment Blue 15.4 universal pigment designed fo/ublication-grade inks with excellent flow. Suitable for NC-PU, NC-Alcohol, PA, Vinyl-EVA, an/ublication Grade Ink applications.",
+                    keywords: "KPL Blue 7004 DR, Phthalocyanine Pigment Blue 15.4, Ink, redder shade ink/ublication grade ink, NC-PU, NC-Alcohol, PA, Vinyl-EVA, Pub.Gr.Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -239,7 +239,7 @@ export const categories = [
                 slug: "kp-green-9000-d",
                 name: "KP Green 9000 D",
                 desc: "Good gloss, transparency and flow",
-                tags: ["PG 7", "Ink"],
+                tags: ["Pigment Green 7", "Ink"],
                 application: [{
                     application: "Water Base Ink",
                     icon: "checkmark"
@@ -269,7 +269,7 @@ export const categories = [
                     title: "KP Green 9000 D – Kesar Petroproducts Ltd. | Ink Product",
                     description:
                         "KP Green 9000 D ink offers good gloss, transparency, and flow. Suitable for W.B Ink, NC - PU, NC - Alcohol, PA, and Vinyl - EVA applications.",
-                    keywords: "KP Green 9000 D, PG 7, Ink, W.B Ink, NC - PU, NC - Alcohol, PA, Vinyl - EVA, Kesar Petroproducts",
+                    keywords: "KP Green 9000 D, Pigment Green 7, Ink, W.B Ink, NC - PU, NC - Alcohol, PA, Vinyl - EVA, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -283,7 +283,7 @@ export const categories = [
                 slug: "kpl-blue-7000-wl",
                 name: "KPL Blue 7000 WL",
                 desc: "Specially using for water based emulsion paint system",
-                tags: ["PB 15.0", "Coating"],
+                tags: ["Phthalocyanine Pigment Blue 15.0", "Coating"],
                 decorative: ["Water Based"],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 160", "Overspray: 5/5"],
                 shades: ["#18193C", "#4464BA"],
@@ -294,7 +294,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7000 WL – Kesar Petroproducts Ltd. | Water Based Coating",
                     description: "KPL Blue 7000 WL is specially designed for water based emulsion paint systems, providing excellent light fastness and weather resistance.",
-                    keywords: "KPL Blue 7000 WL, PB 15.0, Water Based Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7000 WL, Phthalocyanine Pigment Blue 15.0, Water Based Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -303,7 +303,7 @@ export const categories = [
                 slug: "kpl-blue-7001-l",
                 name: "KPL Blue 7001 L",
                 desc: "Suitable for universal stainer system",
-                tags: ["PB 15.1", "Coating"],
+                tags: ["Phthalocyanine Pigment Blue 15.1", "Coating"],
                 decorative: ["Solvent Based", "Water Based", "Textile Emulsion"],
                 industrial: [{ industry: "Automobile OEM", icon: "outline" },
                 { industry: "Automobile Refinish", icon: "checkmark" },
@@ -319,7 +319,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 L – Kesar Petroproducts Ltd. | Universal Stainer Coating",
                     description: "KPL Blue 7001 L is suitable for universal stainer systems, compatible with solvent and water based coatings, and various industrial applications.",
-                    keywords: "KPL Blue 7001 L, PB 15.1, Universal Stainer Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7001 L, Phthalocyanine Pigment Blue 15.1, Universal Stainer Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -329,7 +329,7 @@ export const categories = [
                 slug: "kpl-blue-7003-l",
                 name: "KPL Blue 7003 L",
                 desc: "Suitable for universal stainer system",
-                tags: ["PB 15.3", "Coating"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Coating"],
                 decorative: ["Solvent Based", "Water Based", "Textile Emulsion"],
                 industrial: [{ industry: "Automobile Refinish", icon: "outline" },
                 { industry: "Powder Coating", icon: "outline" }],
@@ -342,7 +342,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 L – Kesar Petroproducts Ltd. | Universal Stainer Coating",
                     description: "KPL Blue 7003 L is suitable for universal stainer systems, ideal for solvent and water based coatings, and select industrial applications.",
-                    keywords: "KPL Blue 7003 L, PB 15.3, Universal Stainer Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 L, Phthalocyanine Pigment Blue 15.3, Universal Stainer Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -357,7 +357,7 @@ export const categories = [
                 slug: "kpl-blue-7000-k",
                 name: "KPL Blue 7000 K",
                 desc: "Good dispersion and color strength",
-                tags: ["PB 15.0", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.0", "Plastic"],
                 application: [{
                     application: "PVC & PVC Leather",
                     icon: "checkmark"
@@ -375,7 +375,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7000 K – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPL Blue 7000 K offers good dispersion and color strength, suitable for PVC, PVC Leather, and Rubber applications.",
-                    keywords: "KPL Blue 7000 K, PB 15.0, Plastic Pigment, PVC, Rubber, Kesar Petroproducts",
+                    keywords: "KPL Blue 7000 K, Phthalocyanine Pigment Blue 15.0, Plastic Pigment, PVC, Rubber, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -384,7 +384,7 @@ export const categories = [
                 slug: "kpl-blue-7000-dd",
                 name: "KPL Blue 7000 DD",
                 desc: "Specially using for dry distemper with good dispersion and colour strength",
-                tags: ["PB 15.0", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.0", "Plastic"],
                 decorative: ["Water Based", "Textile Emulsion", "Dry Distemper"],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 160", "Overspray: N/A"],
                 shades: ["#2640A5", "#2640A5"],
@@ -395,7 +395,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7000 DD – Kesar Petroproducts Ltd. | Dry Distemper Coating",
                     description: "KPL Blue 7000 DD is ideal for dry distemper applications, providing excellent dispersion, color strength, and light fastness.",
-                    keywords: "KPL Blue 7000 DD, PB 15.0, Dry Distemper Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7000 DD, Phthalocyanine Pigment Blue 15.0, Dry Distemper Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -405,7 +405,7 @@ export const categories = [
                 slug: "kpl-blue-7001-ak",
                 name: "KPL Blue 7001 AK",
                 desc: "Good dispersion and color strength. Suitable for those inducer required lower heat stability",
-                tags: ["PB 15.1", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",
                     icon: "checkmark"
@@ -435,7 +435,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 AK – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPL Blue 7001 AK provides excellent dispersion and color strength, suitable for polyolefins, PVC, PA/ABS, PP Fiber, and Rubber applications.",
-                    keywords: "KPL Blue 7001 AK, PB 15.1, Plastic Pigment, Polyolefins, PVC, Kesar Petroproducts",
+                    keywords: "KPL Blue 7001 AK, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, Polyolefins, PVC, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -444,7 +444,7 @@ export const categories = [
                 slug: "kpl-blue-7001-bk",
                 name: "KPL Blue 7001 BK",
                 desc: "Good dispersion and color strength with heat stability of 280°C",
-                tags: ["PB 15.1", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",
                     icon: "checkmark"
@@ -470,9 +470,9 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 BK – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description:
-                        "KPL Blue 7001 BK is a PB 15.1 plastic pigment offering good dispersion, strong color strength, and excellent heat stability up to 280°C. Suitable for Polyolefins, PVC & PVC Leather, PA/ABS, and PP Fiber applications.",
+                        "KPL Blue 7001 BK is a Phthalocyanine Pigment Blue 15.1 plastic pigment offering good dispersion, strong color strength, and excellent heat stability up to 280°C. Suitable for Polyolefins, PVC & PVC Leather, PA/ABS, and PP Fiber applications.",
                     keywords:
-                        "KPL Blue 7001 BK, PB 15.1, Plastic Pigment, Polyolefins, PVC, PVC Leather, PA ABS, PP Fiber, heat stable pigment, Kesar Petroproducts",
+                        "KPL Blue 7001 BK, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, Polyolefins, PVC, PVC Leather, PA ABS, PP Fiber, heat stable pigment, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -482,7 +482,7 @@ export const categories = [
                 slug: "kpl-blue-7001-ck",
                 name: "KPL Blue 7001 Ck",
                 desc: "Good dispersion and color strength with heat stability of 300°C",
-                tags: ["PB 15.1", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",
                     icon: "checkmark"
@@ -516,9 +516,9 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 CK – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description:
-                        "KPL Blue 7001 CK is a PB 15.1 plastic pigment with excellent dispersion, high color strength, and heat stability up to 300°C. Suitable for Polyolefins, PVC & PVC Leather, PA/ABS, Nylon 6, PBT/PET, and PP Fiber applications.",
+                        "KPL Blue 7001 CK is a Phthalocyanine Pigment Blue 15.1 plastic pigment with excellent dispersion, high color strength, and heat stability up to 300°C. Suitable for Polyolefins, PVC & PVC Leather, PA/ABS, Nylon 6, PBT/PET, and PP Fiber applications.",
                     keywords:
-                        "KPL Blue 7001 CK, PB 15.1, Plastic Pigment, Polyolefins, PVC, PVC Leather, PA ABS, Nylon 6, PBT PET, PP Fiber, high heat stability pigment, Kesar Petroproducts",
+                        "KPL Blue 7001 CK, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, Polyolefins, PVC, PVC Leather, PA ABS, Nylon 6, PBT PET, PP Fiber, high heat stability pigment, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -528,7 +528,7 @@ export const categories = [
                 slug: "kpl-blue-7001-bkfv",
                 name: "KPL Blue 7001 BkFV",
                 desc: "Good dispersion and color strength with heat stability of 280°C and good FPV value",
-                tags: ["PB 15.1", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",
                     icon: "checkmark"
@@ -562,7 +562,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 BkFV – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPL Blue 7001 BkFV offers high heat stability (280°C) and good FPV, suitable for PVC, Nylon 6, PBT/PET, and other plastic applications.",
-                    keywords: "KPL Blue 7001 BkFV, PB 15.1, Plastic Pigment, PVC, Nylon 6, Kesar Petroproducts",
+                    keywords: "KPL Blue 7001 BkFV, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, PVC, Nylon 6, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -571,7 +571,7 @@ export const categories = [
                 slug: "kpl-blue-7001-ckfv",
                 name: "KPL Blue 7001 CkFV",
                 desc: "Good dispersion and color strength with heat stability of 300°C and good FPV value",
-                tags: ["PB 15.1", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.1", "Plastic"],
                 application: [{
                     application: "Polyolefins",
                     icon: "checkmark"
@@ -605,7 +605,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7001 CkFV – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPL Blue 7001 CkFV provides excellent color strength and heat stability (300°C) for PVC, Polyolefins, Nylon 6, PBT/PET, and PP Fiber applications.",
-                    keywords: "KPL Blue 7001 CkFV, PB 15.1, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    keywords: "KPL Blue 7001 CkFV, Phthalocyanine Pigment Blue 15.1, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -614,7 +614,7 @@ export const categories = [
                 slug: "kpl-blue-7003-k",
                 name: "KPL Blue 7003 K",
                 desc: "Good dispersion and color strength with heat stability of 260°C",
-                tags: ["PB 15.3", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Plastic"],
                 application: [
                     { application: "Polyolefins", icon: "checkmark" },
                     { application: "PVC & PVC Leather", icon: "checkmark" },
@@ -632,7 +632,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 K – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPL Blue 7003 K provides good dispersion, color strength, and heat stability (260°C) for a variety of plastic applications including PVC and Polyolefins.",
-                    keywords: "KPL Blue 7003 K, PB 15.3, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 K, Phthalocyanine Pigment Blue 15.3, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -641,7 +641,7 @@ export const categories = [
                 slug: "kpl-blue-7003-kfv",
                 name: "KPL Blue 7003 KFV",
                 desc: "Good dispersion and color strength with heat stability of 300°C and good FPV value",
-                tags: ["PB 15.3", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Plastic"],
                 application: [
                     { application: "Polyolefins", icon: "checkmark" },
                     { application: "PVC & PVC Leather", icon: "checkmark" },
@@ -659,7 +659,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 KFV – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPL Blue 7003 KFV offers excellent dispersion, color strength, and heat stability (300°C) for diverse plastic applications.",
-                    keywords: "KPL Blue 7003 KFV, PB 15.3, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 KFV, Phthalocyanine Pigment Blue 15.3, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -668,7 +668,7 @@ export const categories = [
                 slug: "kpl-blue-7003-dd",
                 name: "KPL Blue 7003 DD",
                 desc: "Specially using for dry distemper with good dispersion and colour strength",
-                tags: ["PB 15.3", "Plastic"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Plastic"],
                 decorative: ["Water Based", "Textile Emulsion", "Dry Distemper"],
                 Properties: ["Light Fastness Full Tone / RT: 8/8", "Weather Fastness Full Tone / RT: 5/5", "Heat Stability (°C): 160", "Overspray: N/A"],
                 shades: ["#2C2681", "#3565B9"],
@@ -679,7 +679,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 DD – Kesar Petroproducts Ltd. | Dry Distemper Coating",
                     description: "KPL Blue 7003 DD is ideal for dry distemper applications, providing excellent dispersion, colour strength, and light fastness.",
-                    keywords: "KPL Blue 7003 DD, PB 15.3, Dry Distemper Coating, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 DD, Phthalocyanine Pigment Blue 15.3, Dry Distemper Coating, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -689,7 +689,7 @@ export const categories = [
                 slug: "kpl-green-9000-k",
                 name: "KPL Green 9000 K",
                 desc: "Good dispersion and color strength with moderate heat stability of 300°C",
-                tags: ["PG 7", "Plastic"],
+                tags: ["Pigment Green 7", "Plastic"],
                 application: [
                     { application: "Polyolefins", icon: "checkmark" },
                     { application: "PVC & PVC Leather", icon: "checkmark" },
@@ -707,7 +707,7 @@ export const categories = [
                 meta: {
                     title: "KPl Green 9000 K – Kesar Petroproducts Ltd. | Plastic Pigment",
                     description: "KPl Green 9000 K provides good dispersion, color strength, and moderate heat stability (300°C), suitable for various plastic applications.",
-                    keywords: "KPl Green 9000 K, PG 7, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
+                    keywords: "KPl Green 9000 K, Pigment Green 7, Plastic Pigment, PVC, Polyolefins, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -722,7 +722,7 @@ export const categories = [
                 slug: "kpl-blue-7003-og",
                 name: "KPL Blue 7003 OG",
                 desc: "Cyan for offset with greener shade and dispersion",
-                tags: ["PB 15.3", "Offset"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Offset"],
                 application: [{
                     application: "Offset Ink",
                     icon: "checkmark"
@@ -735,7 +735,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 OG – Kesar Petroproducts Ltd. | Offset Ink",
                     description: "KPL Blue 7003 OG is a cyan offset ink with a greener shade and excellent dispersion for high-quality printing.",
-                    keywords: "KPL Blue 7003 OG, PB 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 OG, Phthalocyanine Pigment Blue 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -744,7 +744,7 @@ export const categories = [
                 slug: "kpl-blue-7003-or",
                 name: "KPL Blue 7003 OR",
                 desc: "Cyan for offset with redder shade and dispersion",
-                tags: ["PB 15.3", "Offset"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Offset"],
                 application: [{
                     application: "Offset Ink",
                     icon: "checkmark"
@@ -757,7 +757,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 OR – Kesar Petroproducts Ltd. | Offset Ink",
                     description: "KPL Blue 7003 OR is a cyan offset ink with a redder shade and excellent dispersion for professional offset printing applications.",
-                    keywords: "KPL Blue 7003 OR, PB 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 OR, Phthalocyanine Pigment Blue 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -766,7 +766,7 @@ export const categories = [
                 slug: "kpl-blue-7003-ogf",
                 name: "KPL Blue 7003 OGF",
                 desc: "Greener cyan with excellent flow and printability",
-                tags: ["PB 15.3", "Offset"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Offset"],
                 application: [{
                     application: "Offset Ink",
                     icon: "checkmark"
@@ -787,7 +787,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 OGF – Kesar Petroproducts Ltd. | Offset Ink",
                     description: "KPL Blue 7003 OGF is a greener cyan ink for offset, metal deco, and screen printing with excellent flow and printability.",
-                    keywords: "KPL Blue 7003 OGF, PB 15.3, Offset Ink, Cyan Ink, Screen Ink, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 OGF, Phthalocyanine Pigment Blue 15.3, Offset Ink, Cyan Ink, Screen Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -796,7 +796,7 @@ export const categories = [
                 slug: "kpl-blue-7003-orf",
                 name: "KPL Blue 7003 ORF",
                 desc: "Redder cyan with flow and excellent printability",
-                tags: ["PB 15.3", "Offset"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Offset"],
                 application: [
                     { application: "Offset Ink", icon: "checkmark" },
                     { application: "Metal Deco", icon: "outline" },
@@ -809,7 +809,7 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 ORF – Kesar Petroproducts Ltd. | Offset Ink",
                     description: "KPL Blue 7003 ORF is a redder cyan offset ink with excellent flow and printability, suitable for offset, metal deco, and screen printing.",
-                    keywords: "KPL Blue 7003 ORF, PB 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
+                    keywords: "KPL Blue 7003 ORF, Phthalocyanine Pigment Blue 15.3, Offset Ink, Cyan Ink, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -823,7 +823,7 @@ export const categories = [
                 slug: "kpl-blue-7000-u",
                 name: "KPL Blue 7000 U",
                 desc: "Stabilized Copper Phthalocyanine Blue Pigment with Excellent Dispersion and Rheological properties like Gloss, Transparency, viscosity.",
-                tags: ["PB 15.0", "Universal"],
+                tags: ["Phthalocyanine Pigment Blue 15.0", "Universal"],
                 application: [{ application: "Offset Ink", icon: "checkmark" },
                 { application: "Water based Ink", icon: "checkmark" },
                 { application: "Textile Emulsion Paint", icon: "outline" }],
@@ -837,7 +837,7 @@ export const categories = [
                     description:
                         "KPL Blue 7000 U is a Stabilized Copper Phthalocyanine Blue pigment offering excellent dispersion, gloss, transparency, viscosity, and rheological properties. Suitable for Offset Ink, Water-based Ink, and Textile Emulsion Paint applications.",
                     keywords:
-                        "KPL Blue 7000 U, Copper Phthalocyanine Blue Pigment, PB 15.0, Universal Pigment, Offset Ink Pigment, Water-based Ink Pigment, Textile Emulsion Paint Pigment, Kesar Petroproducts",
+                        "KPL Blue 7000 U, Copper Phthalocyanine Blue Pigment, Phthalocyanine Pigment Blue 15.0, Universal Pigment, Offset Ink Pigment, Water-based Ink Pigment, Textile Emulsion Paint Pigment, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -847,7 +847,7 @@ export const categories = [
                 slug: "kpl-blue-7003-u",
                 name: "KPL Blue 7003 U",
                 desc: "Stabilized Copper Phthalocyanine Blue Pigment with Excellent Dispersion and Rheological properties like Gloss, Transparency, millbase viscosity. Pigment of Low abrasion value.",
-                tags: ["PB 15.3", "Universal"],
+                tags: ["Phthalocyanine Pigment Blue 15.3", "Universal"],
                 application: [{
                     application: "Water based Ink",
                     icon: "checkmark"
@@ -860,9 +860,9 @@ export const categories = [
                 meta: {
                     title: "KPL Blue 7003 U – Stabilized Copper Phthalocyanine Blue Pigment | Kesar Petroproducts Ltd.",
                     description:
-                        "KPL Blue 7003 U is a low-abrasion PB 15.3 Copper Phthalocyanine Blue pigment with excellent dispersion, gloss, transparency, and millbase viscosity. Ideal for Water-Based Ink applications.",
+                        "KPL Blue 7003 U is a low-abrasion Phthalocyanine Pigment Blue 15.3 Copper Phthalocyanine Blue pigment with excellent dispersion, gloss, transparency, and millbase viscosity. Ideal for Water-Based Ink applications.",
                     keywords:
-                        "KPL Blue 7003 U, PB 15.3, Copper Phthalocyanine Blue Pigment, Low Abrasion Pigment, Water Based Ink Pigment, Universal Pigment, Kesar Petroproducts",
+                        "KPL Blue 7003 U, Phthalocyanine Pigment Blue 15.3, Copper Phthalocyanine Blue Pigment, Low Abrasion Pigment, Water Based Ink Pigment, Universal Pigment, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },
@@ -872,7 +872,7 @@ export const categories = [
                 slug: "kpl-green-9000-u",
                 name: "KPL Green 9000 U",
                 desc: "Green offset ink with good dispersion",
-                tags: ["PG 7", "Universal"],
+                tags: ["Pigment Green 7", "Universal"],
                 application: [{
                     application: "Offset Ink",
                     icon: "outline"
@@ -885,9 +885,9 @@ export const categories = [
                 meta: {
                     title: "KPL Green 9000 U – Phthalocyanine Green PG7 Pigment | Kesar Petroproducts Ltd.",
                     description:
-                        "KPL Green 9000 U is a PG 7 Phthalocyanine Green pigment formulated for offset ink applications, offering good dispersion and consistent, bright green shade performance.",
+                        "KPL Green 9000 U is a Pigment Green 7 Phthalocyanine Green pigment formulated for offset ink applications, offering good dispersion and consistent, bright green shade performance.",
                     keywords:
-                        "KPL Green 9000 U, PG 7, Phthalocyanine Green Pigment, Offset Ink Pigment, Universal Pigment, Green Printing Ink, Good Dispersion, Kesar Petroproducts",
+                        "KPL Green 9000 U, Pigment Green 7, Phthalocyanine Green Pigment, Offset Ink Pigment, Universal Pigment, Green Printing Ink, Good Dispersion, Kesar Petroproducts",
                     author: "Kesar Petroproducts Ltd.",
                     robots: "index,follow",
                 },

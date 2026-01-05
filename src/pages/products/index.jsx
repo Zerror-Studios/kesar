@@ -17,10 +17,10 @@ export default function ResultPage({ meta }) {
   ];
   const indexOptions = [
     "All",
-    "PB 15.0",
-    "PB 15.1",
-    "PB 15.3",
-    "PB 15.4",
+    "Phthalocyanine Pigment Blue 15.0",
+    "Phthalocyanine Pigment Blue 15.1",
+    "Phthalocyanine Pigment Blue 15.3",
+    "Phthalocyanine Pigment Blue 15.4",
     "PG 7",
   ];
   const allProducts = categories.flatMap((c) => c.products);
