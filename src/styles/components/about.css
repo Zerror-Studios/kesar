@@ -190,6 +190,10 @@
   position: relative;
 }
 
+#leadership_section_cards.grid3 .leader_card .leader_profile{
+  height: 80px !important;
+  width: 80px !important;
+}
 .leader_profile {
   width: 100px;
   height: 100px;
@@ -199,6 +203,7 @@
   display: flex;
   align-items: flex-end;
 }
+
 
 .leader_card .leader_profile {
   display: flex;
