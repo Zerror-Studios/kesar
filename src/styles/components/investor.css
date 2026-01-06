@@ -89,7 +89,7 @@
   font-family: para-bold;
   font-size: 1.1rem;
   font-weight: 900;
-  white-space: nowrap;
+  white-space: normal;
   padding: 1rem;
   padding-left: 0;
 }
