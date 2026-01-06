@@ -1,5 +1,6 @@
 import { reportData } from "@/helpers/investorsData";
 import React, { useState } from "react";
+import Dropdown from "../common/Dropdown";
 
 const ReportSection = () => {
   const categoryKeys = Object.keys(reportData);
@@ -14,47 +15,43 @@ const ReportSection = () => {
     (sub) => sub.key === activeSub
   );
 
+  // Dropdown options (titles shown, keys used internally)
+  const categoryOptions = categoryKeys.map(
+    (key) => reportData[key].title
+  );
+
+  const handleCategoryChange = (selectedTitle) => {
+    const selectedKey = categoryKeys.find(
+      (key) => reportData[key].title === selectedTitle
+    );
+
+    if (selectedKey) {
+      setActiveCategory(selectedKey);
+      setActiveSub(reportData[selectedKey].subCategories[0].key);
+    }
+  };
+
   return (
     <div id="report_section">
-      {/* ================= MAIN CATEGORY FILTER ================= */}
+      {/* ================= MAIN CATEGORY DROPDOWN ================= */}
       <div id="investor_filter_wrap">
-        <div id="investor_filters">
-          {categoryKeys.map((key) => (
-            <div
-              key={key}
-              className={`investor_filter ${
-                activeCategory === key ? "active" : ""
-              }`}
-              onClick={() => {
-                setActiveCategory(key);
-                setActiveSub(reportData[key].subCategories[0].key);
-              }}
-            >
-              <span>{reportData[key].title}</span>
-            </div>
-          ))}
-          
-        </div>
-        
+        <Dropdown
+          label="Select Category"
+          options={categoryOptions}
+          value={reportData[activeCategory].title}
+          onSelect={handleCategoryChange}
+          classNameMain="dropdown3"
+          className="option4"
+        />
       </div>
 
-      {/* ================= SUB CATEGORY FILTER ================= */}
+      {/* ================= SUB CATEGORY HEADER ================= */}
       <div id="report_header">
         <h5>{currentSub.title}</h5>
 
-        {currentSub?.description && <div id="report_header_desc">{currentSub?.description}</div>}
-
-        {/* <div id="report_filter">
-          {currentCategory.subCategories.map((sub) => (
-            <span
-              key={sub.key}
-              className={activeSub === sub.key ? "active" : ""}
-              onClick={() => setActiveSub(sub.key)}
-            >
-              {sub.title}
-            </span>
-          ))}
-        </div> */}
+        {currentSub?.description && (
+          <div id="report_header_desc">{currentSub.description}</div>
+        )}
       </div>
 
       {/* ================= UNIVERSAL REPORT RENDERER ================= */}
@@ -62,12 +59,12 @@ const ReportSection = () => {
         {currentSub.data && currentSub.data.length > 0 ? (
           currentSub.data.map((block, idx) => (
             <div key={idx} className="report_block">
-              {/* ===== YEAR / BLOCK TITLE ===== */}
+              {/* ===== BLOCK TITLE ===== */}
               {block.title && (
                 <div className="report_row_title">{block.title}</div>
               )}
 
-              {/* ===== CASE 1: HTML LABEL ===== */}
+              {/* ===== HTML LABEL ===== */}
               {block.label && (
                 <div className="report_row fullwidth">
                   <div
@@ -77,7 +74,7 @@ const ReportSection = () => {
                 </div>
               )}
 
-              {/* ===== CASE 2: YEAR → SUB CATEGORIES (NEW) ===== */}
+              {/* ===== YEAR → SUB CATEGORIES ===== */}
               {block.subCategories &&
                 block.subCategories.map((subCat, subIdx) => (
                   <div key={subIdx} className="report_sub_block">
@@ -102,12 +99,14 @@ const ReportSection = () => {
                   </div>
                 ))}
 
-              {/* ===== CASE 3: NORMAL REPORT LIST ===== */}
+              {/* ===== NORMAL REPORT LIST ===== */}
               {block.reports &&
                 block.reports.map((report, i) => (
                   <div
                     key={i}
-                    className={`report_row ${i % 2 !== 0 ? "transparent" : ""}`}
+                    className={`report_row ${
+                      i % 2 !== 0 ? "transparent" : ""
+                    }`}
                   >
                     <a
                       href={report.link || "#"}
@@ -119,10 +118,12 @@ const ReportSection = () => {
                   </div>
                 ))}
 
-              {/* ===== CASE 4: SIMPLE YEAR → LINK ===== */}
+              {/* ===== SIMPLE YEAR → LINK ===== */}
               {block.year && (
                 <div
-                  className={`report_row ${idx % 2 !== 0 ? "transparent" : ""}`}
+                  className={`report_row ${
+                    idx % 2 !== 0 ? "transparent" : ""
+                  }`}
                 >
                   <a
                     href={block.link || "#"}

@@ -48,34 +48,9 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid #0000001a;
   margin-bottom: 2rem;
-  overflow-x: auto;
 }
-/* Chrome, Edge, Safari */
-#investor_filter_wrap::-webkit-scrollbar {
-  height: 1px; /* thin scrollbar */
-}
-
-#investor_filter_wrap::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-#investor_filter_wrap::-webkit-scrollbar-thumb {
-  background: #004dff; /* blue */
-  border-radius: 10px;
-}
-#investor_filter_wrap > span {
-  position: relative;
-  line-height: 1.2;
-}
-
-#investor_filter_wrap > span::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  bottom: 0;
-  left: 0;
+#investor_filter_wrap .dropdown_items.option4 {
+  height: 18rem;
 }
 #investor_filters {
   display: flex;
@@ -231,11 +206,6 @@
   #investor_hero_title h4 {
     font-size: 2rem;
   }
-  #investor_filter_wrap {
-    white-space: nowrap;
-    overflow: hidden;
-    overflow-x: auto;
-  }
   #report_section {
     width: 100%;
     height: auto;
@@ -270,11 +240,7 @@
   #investor_hero_title h4 {
     font-size: 2rem;
   }
-  #investor_filter_wrap {
-    white-space: nowrap;
-    overflow: hidden;
-    overflow-x: auto;
-  }
+
   #report_section {
     width: 100%;
     height: auto;
@@ -309,11 +275,7 @@
   #investor_hero_title h4 {
     font-size: 2rem;
   }
-  #investor_filter_wrap {
-    white-space: nowrap;
-    overflow: hidden;
-    overflow-x: auto;
-  }
+
   #report_section {
     width: 100%;
     height: auto;

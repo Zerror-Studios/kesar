@@ -1016,6 +1016,7 @@
   font-family: para-medium;
   letter-spacing: 0.8px;
   transition: all ease 0.3s;
+  text-decoration: none;
 }
 
 .gallery_section_card:hover .overlay_tab {
