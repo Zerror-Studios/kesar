@@ -54,7 +54,7 @@ const Footer = () => {
             <h5>Company</h5>
             <Link href="/about">About Us</Link>
             <Link href="/about#leadership_section">Team</Link>
-            {/* <Link href="/investors">Investors</Link> */}
+            <Link href="/investors">Investors</Link>
             <Link href="/gallery">Gallery</Link>
             <Link href="/#latest-news-section">News</Link>
             <Link href="/contact">Contact</Link>
