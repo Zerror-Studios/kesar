@@ -33,7 +33,9 @@ const ReportSection = () => {
               <span>{reportData[key].title}</span>
             </div>
           ))}
+          
         </div>
+        
       </div>
 
       {/* ================= SUB CATEGORY FILTER ================= */}
