@@ -1,718 +1,920 @@
 export const reportData = {
     financialDetails: {
-        title: "Financial Details",
+        title: "Financials",
         subCategories: [
             {
-                title: "Annual Financial Reports",
-                key: "annualReports",
+                title: "Financials",
+                key: "financials",
                 data: [
-                    { year: "FY 2022-23", link: "/pdf/financial-details/annual-reports/Annual_Report_2023.pdf" },
-                    { year: "FY 2021-22", link: "/pdf/financial-details/annual-reports/Annual_Return_for_the_FY_2021_22.pdf" },
-                    { year: "FY 2020-21", link: "/pdf/financial-details/annual-reports/Kesar_AnnualReport_2020-21.pdf" },
-                    { year: "FY 2019-20", link: "/pdf/financial-details/annual-reports/Kesar-Annual-Report-for-FY-19-20.pdf" },
-                    { year: "FY 2018-19", link: "/pdf/financial-details/annual-reports/Kesar_AnnualReport_2018-19.pdf" },
-                    { year: "FY 2017-18", link: "/pdf/financial-details/annual-reports/KesarFY-2017-2018.pdf" },
-                    { year: "FY 2016-17", link: "/pdf/financial-details/annual-reports/Kesar-Pertoproducts-Ltd-AR-2016-17.pdf" },
-                    { year: "FY 2015-16", link: "/pdf/financial-details/annual-reports/KESAR-Annual-2015-2016.pdf" },
-                    { year: "FY 2014-15", link: "/pdf/financial-details/annual-reports/Revised_final_Annual_Report_14.pdf" },
-                    { year: "FY 2013-14", link: "/pdf/financial-details/annual-reports/Revised_final_Annual_Report_14.pdf" },
-                    { year: "FY 2012-13", link: "/pdf/financial-details/annual-reports/KPL Annual Report - 2012-13.pdf" },
-                    { year: "FY 2011-12", link: "/pdf/financial-details/annual-reports/Anual Report 11-12.pdf" },
-                    { year: "FY 2010-11", link: "/pdf/financial-details/annual-reports/kesarAnnual10-11.pdf" },
-                    { year: "FY 2009-10", link: "/pdf/financial-details/annual-reports/kesarAnnual 09 - 10.pdf" },
-                ],
-            },
+                    {
+                        title: "Financial year 2020-2021",
+                        reports: [
+                            { label: "30 Dec 2020", link: "/Investors/Investors/1_Financials/Financial year 2020-2021/30_Dec_2020.pdf" },
+                            { label: "30 Sept 2020", link: "/Investors/Investors/1_Financials/Financial year 2020-2021/30_Sept_2020.pdf" },
+                            { label: "31 Jun 2020", link: "/Investors/Investors/1_Financials/Financial year 2020-2021/31_Jun_2020.pdf" },
+                            { label: "31 Mar 2021", link: "/Investors/Investors/1_Financials/Financial year 2020-2021/31_Mar_2021.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2021-2022",
+                        reports: [
+                            { label: "30 Jun 2021", link: "/Investors/Investors/1_Financials/Financial year 2021-2022/30_Jun_2021.pdf" },
+                            { label: "30 Sept 2021", link: "/Investors/Investors/1_Financials/Financial year 2021-2022/30_Sept_2021.pdf" },
+                            { label: "31 Dec 2021", link: "/Investors/Investors/1_Financials/Financial year 2021-2022/31_Dec_2021.pdf" },
+                            { label: "31 March 2022", link: "/Investors/Investors/1_Financials/Financial year 2021-2022/31_March_2022.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2022-2023",
+                        reports: [
+                            { label: "30 June 2022", link: "/Investors/Investors/1_Financials/Financial year 2022-2023/30_June_2022.pdf" },
+                            { label: "Quarterly Report Sept 2022", link: "/Investors/Investors/1_Financials/Financial year 2022-2023/dvYUvp-Quarterly_Report_Sept_2022.pdf" },
+                            { label: "Financial Results of Kesar 31_12_2022", link: "/Investors/Investors/1_Financials/Financial year 2022-2023/Financial Results of Kesar_31_12_2022.pdf" },
+                            { label: "Quarterly Report Sept 2022", link: "/Investors/Investors/1_Financials/Financial year 2022-2023/Quarterly_Report_Sept_2022.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2023-2024",
+                        reports: [
+                            { label: "BM-02.05.2023", link: "/Investors/Investors/1_Financials/Financial year 2023-2024/BM-02.05.2023.pdf" },
+                            { label: "Financials for 31st December, 2023", link: "/Investors/Investors/1_Financials/Financial year 2023-2024/Financials for 31st December, 2023.pdf" },
+                            { label: "Financials for 31st March 2023", link: "/Investors/Investors/1_Financials/Financial year 2023-2024/Financials for 31st March 2023.pdf" },
+                            { label: "Financials for 31st March 2024", link: "/Investors/Investors/1_Financials/Financial year 2023-2024/Financials for 31st March 2024.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2024-2025",
+                        reports: [
+                            { label: "31st March, 2025", link: "/Investors/Investors/1_Financials/Financial year 2024-2025/31st March, 2025.pdf" },
+                            { label: "Financials for 30th December, 2024", link: "/Investors/Investors/1_Financials/Financial year 2024-2025/Financials for 30th December, 2024.pdf" },
+                            { label: "Financials for 30th June, 2024", link: "/Investors/Investors/1_Financials/Financial year 2024-2025/Financials for 30th June, 2024.pdf" },
+                            { label: "Financials for 30th September, 2024", link: "/Investors/Investors/1_Financials/Financial year 2024-2025/Financials for 30th September, 2024.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2025-2026",
+                        reports: [
+                            { label: "30.06.2025", link: "/Investors/Investors/1_Financials/Financial year 2025-2026/30.06.2025.pdf" },
+                        ],
+                    },
 
-            {
-                title: "Quarterly Reports",
-                key: "quarterlyReports",
-                data: [
-                    {
-                        title: "Financial Year 2023-24",
-                        reports: [
-                            { label: "30 June 2023", link: "/pdf/financial-details/quarterly-reports/FY-22-23/30_June_2023.pdf" },
-                            { label: "30 Sept 2023", link: "/pdf/financial-details/quarterly-reports/FY-22-23/30_September_2023.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2022-23",
-                        reports: [
-                            { label: "31 Mar 2023", link: "/pdf/financial-details/quarterly-reports/Corporate_Governance_Report_31Mar2023.pdf" },
-                            { label: "30 Sept 2022", link: "/pdf/financial-details/quarterly-reports/Corporate Governace- 30 Sept 2022.pdf" },
-                            { label: "31 Dec 2022", link: "/pdf/financial-details/quarterly-reports/FY-21-22/Financial Results of Kesar_31_12_2022.pdf" },
-                            { label: "30 June 2022", link: "/pdf/financial-details/quarterly-reports/FY-21-22/30_June_2022.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2021-22",
-                        reports: [
-                            { label: "30 Jun 2021", link: "/pdf/financial-details/quarterly-reports/FY-20-21/30_Jun_2021.pdf" },
-                            { label: "30 Sept 2021", link: "/pdf/financial-details/quarterly-reports/FY-20-21/30_Sept_2021.pdf" },
-                            { label: "31 Dec 2021", link: "/pdf/financial-details/quarterly-reports/FY-20-21/31_Dec_2021.pdf" },
-                            { label: "31 March 2022", link: "/pdf/financial-details/quarterly-reports/FY-21-22/31_March_2022.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2020-21",
-                        reports: [
-                            { label: "30 Sept 2020", link: "/pdf/financial-details/quarterly-reports/FY-19-20/30_Sept_2020.pdf" },
-                            { label: "30 Dec 2020", link: "/pdf/financial-details/quarterly-reports/FY-19-20/30_Dec_2020.pdf" },
-                            { label: "31 Mar 2021", link: "/pdf/financial-details/quarterly-reports/FY-20-21/31_Mar_2021.pdf" },
-                            { label: "31 Jun 2020", link: "/pdf/financial-details/quarterly-reports/FY-19-20/31_Jun_2020.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2019-20",
-                        reports: [
-                            { label: "30 Jun 2019", link: "/pdf/financial-details/quarterly-reports/FY-18-19/30_Jun_2019.pdf" },
-                            { label: "30 Sept 2019", link: "/pdf/financial-details/quarterly-reports/FY-18-19/30_sept_2019.pdf" },
-                            { label: "31 Dec 2019", link: "/pdf/financial-details/quarterly-reports/FY-18-19/31_Dec_2019.pdf" },
-                            { label: "31 Mar 2020", link: "/pdf/financial-details/quarterly-reports/FY-19-20/31_Mar_2020.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2018-19",
-                        reports: [
-                            { label: "31 June 2018", link: "/pdf/financial-details/quarterly-reports/FY-17-18/31_June_2018.pdf" },
-                            { label: "30 Sept 2018", link: "/pdf/financial-details/quarterly-reports/FY-17-18/30_Sept_2018.pdf" },
-                            { label: "31 Dec 2018", link: "/pdf/financial-details/quarterly-reports/FY-17-18/31_Dec_2018.pdf" },
-                            { label: "31 Mar 2019", link: "/pdf/financial-details/quarterly-reports/FY-18-19/31_Mar_2019.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2017-18",
-                        reports: [
-                            { label: "30 June 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyreport-30-June-2017.pdf" },
-                            { label: "30 Sept 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-30-sept-2017.pdf" },
-                            { label: "31 Dec 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-31-Dec-2017.pdf" },
-                            { label: "31 March 2018", link: "/pdf/financial-details/quarterly-reports/FY-17-18/Kesar-QFR-March2018.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2016-17",
-                        reports: [
-                            { label: "31 March 2017", link: "/pdf/corporate-details/share-holding-pattern/31_March_2017.pdf" },
-                            { label: "30 June 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Outcome-Result-kesar-30-June-2016.pdf" },
-                            { label: "30 Sept 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Final-outcome-with-result-30-sept-2016.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2015-16",
-                        reports: [
-                            { label: "30 June 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
-                            { label: "30 Sept 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
-                            { label: "31 Dec 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
-                            { label: "31 March 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/UFR-MARCH-2016-KESAR.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2013-14",
-                        reports: [
-                            { label: "30 Sept 2013", link: "/pdf/financial-details/quarterly-reports/FY-12-13/UFR_Sept_13.pdf" },
-                            { label: "31 Dec 2013", link: "/pdf/financial-details/quarterly-reports/FY-12-13/UFR_DEC_13.pdf" },
-                            { label: "31 March 2014", link: "/pdf/financial-details/quarterly-reports/FY-13-14/UFR_March_14.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2012-13",
-                        reports: [
-                            { label: "30 June 2012", link: "/pdf/financial-details/quarterly-reports/FY-11-12/UFR_June_12.pdf" },
-                            { label: "30 Sept 2012", link: "/pdf/financial-details/quarterly-reports/FY-11-12/UFR_Sept_12.pdf" },
-                            { label: "31 Dec 2012", link: "/pdf/financial-details/quarterly-reports/FY-11-12/UFR_Dec_12.pdf" },
-                            { label: "31 March 2013", link: "/pdf/financial-details/quarterly-reports/FY-12-13/UFR_March_13.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2011-12",
-                        reports: [
-                            { label: "30 June 2011", link: "/pdf/financial-details/quarterly-reports/FY-10-11/UFR_June_11.pdf" },
-                            { label: "30 Sept 2011", link: "/pdf/financial-details/quarterly-reports/FY-10-11/FR Sep 11.pdf" },
-                            { label: "31 Dec 2011", link: "/pdf/financial-details/quarterly-reports/FY-11-12/UFR_Dec_12.pdf" },
-                            { label: "31 March 2012", link: "/pdf/financial-details/quarterly-reports/FY-11-12/UFR_March_12.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2010-11",
-                        reports: [
-                            { label: "30 June 2010", link: "/pdf/financial-details/quarterly-reports/FY-09-10/FR june 10.pdf" },
-                            { label: "30 Sept 2010", link: "/pdf/financial-details/quarterly-reports/FY-09-10/FR sept 10.pdf" },
-                            { label: "31 Dec 2010", link: "/pdf/financial-details/quarterly-reports/FY-09-10/FR dec 10.pdf" },
-                            { label: "31 March 2011", link: "/pdf/financial-details/quarterly-reports/FY-10-11/FR march 11.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2009-10",
-                        reports: [
-                            { label: "30 June 2009", link: "/pdf/financial-details/quarterly-reports/FY-08-09/FR june09.pdf" },
-                            { label: "30 Sept 2009", link: "/pdf/financial-details/quarterly-reports/FY-08-09/FR sep09.pdf" },
-                            { label: "31 Dec 2009", link: "/pdf/financial-details/quarterly-reports/FY-08-09/FR dec 09.pdf" },
-                            { label: "31 March 2010", link: "/pdf/financial-details/quarterly-reports/FY-09-10/FR march10.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2008-09",
-                        reports: [{ label: "31 Dec 2008", link: "/pdf/financial-details/quarterly-reports/FY-08-09/FR DEC 08.pdf" }],
-                    },
                 ],
             },
         ],
     },
-    corporateDetails: {
-        title: "Corporate Details",
+    shareHoldingPattern: {
+        title: "Share holding pattern",
         subCategories: [
             {
-                title: "Share Holding Pattern",
-                key: "shareHoldingPattern",
+                title: "Share holding pattern",
+                key: "shareholdingpattern",
                 data: [
                     {
-                        title: "Financial Year 2023-24",
+                        title: "2021-22",
                         reports: [
-                            { label: "30th June, 2023", link: "/pdf/corporate-details/share-holding-pattern/Shareholding_Pattern_30th_June_2023.pdf" },
-                            { label: "30th Sep, 2023", link: "/pdf/corporate-details/share-holding-pattern/Shareholding_Pattern_30th_September_2023.pdf" },
+                            { label: "30 June 2021", link: "/Investors/Investors/2_Share holding pattern/2021-22/30_June_2021.pdf" },
+                            { label: "31 Dec 2021", link: "/Investors/Investors/2_Share holding pattern/2021-22/U31T5a-31_Dec_2021.pdf" },
+                            { label: "30 Sept 2021", link: "/Investors/Investors/2_Share holding pattern/2021-22/wBwd7B-30_Sept_2021.pdf" },
+                            { label: "31 March 2022", link: "/Investors/Investors/2_Share holding pattern/2021-22/ytCsiA-31_March_2022.pdf" },
                         ],
                     },
                     {
-                        title: "Financial Year 2022-23",
+                        title: "2022-23",
                         reports: [
-                            { label: "31st Mar, 2023", link: "/pdf/financial-details/quarterly-reports/Shareholding_Pattern_31Mar2023.pdf" },
-                            { label: "31st Dec, 2022", link: "/pdf/corporate-details/share-holding-pattern/Shareholding Pattern Kesar 31_12_2022.pdf" },
-                            { label: "30th June, 2022", link: "/pdf/corporate-details/share-holding-pattern/30_June_2022.pdf" },
-                            { label: "30th Sep, 2022", link: "/pdf/corporate-details/share-holding-pattern/Shareholding Pattern_ September 2022.pdf" },
+                            { label: "30 June 2022", link: "/Investors/Investors/2_Share holding pattern/2022-23/bLYFKr-30_June_2022.pdf" },
+                            { label: "Shareholding Pattern Kesar 31_12_2022", link: "/Investors/Investors/2_Share holding pattern/2022-23/Shareholding Pattern Kesar 31_12_2022.pdf" },
+                            { label: "Shareholding Pattern September 2022", link: "/Investors/Investors/2_Share holding pattern/2022-23/Shareholding Pattern_ September 2022.pdf" },
+                            { label: "Shareholding Pattern 31 Mar 2023", link: "/Investors/Investors/2_Share holding pattern/2022-23/Shareholding_Pattern_31Mar2023.pdf" },
                         ],
                     },
                     {
-                        title: "Financial Year 2021-22",
+                        title: "2023-24",
                         reports: [
-                            { label: "30th June, 2021", link: "/pdf/corporate-details/share-holding-pattern/30_June_2021.pdf" },
-                            { label: "30th Sept, 2021", link: "/pdf/corporate-details/share-holding-pattern/30_Sept_2021.pdf" },
-                            { label: "31st Dec, 2021", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2021.pdf" },
-                            { label: "31st Mar, 2022", link: "/pdf/corporate-details/share-holding-pattern/31_March_2022.pdf" },
+                            { label: "SHP - 31.12.2023", link: "/Investors/Investors/2_Share holding pattern/2023-24/SHP - 31.12.2023.pdf" },
+                            { label: "SHP - 31.03.2024", link: "/Investors/Investors/2_Share holding pattern/2023-24/SHP- 31.03.2024.pdf" },
                         ],
                     },
                     {
-                        title: "Financial Year 2020-21",
+                        title: "2024-25",
                         reports: [
-                            { label: "30th June, 2020", link: "/pdf/corporate-details/share-holding-pattern/30_June_2020.pdf" },
-                            { label: "30th Sept, 2020", link: "/pdf/corporate-details/share-holding-pattern/30_Sept_2020.pdf" },
-                            { label: "31st Dec, 2020", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2020.pdf" },
-                            { label: "31st Mar, 2021", link: "/pdf/corporate-details/share-holding-pattern/31_March_2021.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2019-20",
-                        reports: [
-                            { label: "30th June, 2019", link: "/pdf/corporate-details/share-holding-pattern/30_June_2019.pdf" },
-                            { label: "30th Sept, 2019", link: "/pdf/corporate-details/share-holding-pattern/30_Sept_2019.pdf" },
-                            { label: "31st Dec, 2019", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2019.pdf" },
-                            { label: "31st Mar, 2020", link: "/pdf/corporate-details/share-holding-pattern/31_Mar_2020.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2018-19",
-                        reports: [
-                            { label: "30th June, 2018", link: "/pdf/corporate-details/share-holding-pattern/30_June_2018.pdf" },
-                            { label: "30th Sept, 2018", link: "/pdf/corporate-details/share-holding-pattern/30_Sept_2018.pdf" },
-                            { label: "30th Mar, 2019", link: "/pdf/corporate-details/share-holding-pattern/30_Mar_2019.pdf" },
-                            { label: "31st Dec, 2019", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2019.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2017-18",
-                        reports: [
-                            { label: "30th June, 2017", link: "/pdf/corporate-details/share-holding-pattern/30_June_2017.pdf" },
-                            { label: "30th Sept, 2017", link: "/pdf/corporate-details/share-holding-pattern/30_Sept_2017.pdf" },
-                            { label: "31st Dec, 2017", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2017.pdf" },
-                            { label: "31st March, 2018", link: "/pdf/corporate-details/share-holding-pattern/31_March_2018.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2016-17",
-                        reports: [
-                            { label: "30th June, 2016", link: "/pdf/corporate-details/share-holding-pattern/30_June_2016.pdf" },
-                            { label: "30th Sept, 2016", link: "/pdf/corporate-details/share-holding-pattern/30_Sept_2016.pdf" },
-                            { label: "31st Dec, 2016", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2016.pdf" },
-                            { label: "31st March, 2017", link: "/pdf/corporate-details/share-holding-pattern/31_March_2017.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2015-16",
-                        reports: [
-                            { label: "30th June, 2015", link: "/pdf/corporate-details/share-holding-pattern/Kesar-SHP-30-06-2015.pdf" },
-                            { label: "30th Sept, 2015", link: "/pdf/corporate-details/share-holding-pattern/KESAR-SHP-30-09-2015.pdf" },
-                            { label: "31st Dec, 2015", link: "/pdf/corporate-details/share-holding-pattern/Kesar-SHP-31-12-2015.pdf" },
-                            { label: "31st March, 2016", link: "/pdf/corporate-details/share-holding-pattern/Keasr-SHP-31-03-2016.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2013-14",
-                        reports: [
-                            { label: "30th June, 2013", link: "/pdf/corporate-details/share-holding-pattern/30.06.2013.pdf" },
-                            { label: "30th Sept, 2013", link: "/pdf/corporate-details/share-holding-pattern/30.09.2013 -.pdf" },
-                            { label: "31st Dec, 2013", link: "/pdf/corporate-details/share-holding-pattern/shareholding dec13.pdf" },
-                            { label: "31st March, 2014", link: "/pdf/corporate-details/share-holding-pattern/CLause%2035%20march%202014.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2012-13",
-                        reports: [
-                            { label: "30th June, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                            { label: "30th Sept, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                            { label: "31st Dec, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                            { label: "31st March, 2013", link: "/pdf/corporate-details/share-holding-pattern/kesar march 13.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2011-12",
-                        reports: [
-                            { label: "30th June, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                            { label: "30th Sept, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                            { label: "31st Dec, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                            { label: "31st March, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2010-11",
-                        reports: [
-                            { label: "30th June, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                            { label: "30th Sept, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                            { label: "31st Dec, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                            { label: "31st March, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2009-10",
-                        reports: [
-                            { label: "30th June, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
-                            { label: "30th Sept, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
-                            { label: "31st Dec, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
-                            { label: "31st March, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                        ],
-                    },
-                ],
-            },
-
-            // CORPORATE GOVERNANCE REPORT
-            {
-                title: "Corporate Governance Report",
-                key: "corporateGovernance",
-                data: [
-                    {
-                        title: "Financial Year 2023-24",
-                        reports: [
-                            { label: "30th June, 2023", link: "/pdf/corporate-details/corporate-governance-report/Corporate_Governance_30th_June_2023.pdf" },
-                            { label: "30th Sept, 2023", link: "/pdf/corporate-details/corporate-governance-report/Corporate_Governance_30th_September_2023.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2022-23",
-                        reports: [
-                            { label: "31st Mar, 2023", link: "/pdf/corporate-details/corporate-governance-report/Corporate Governance KPL_31_12_2022.pdf" },
-                            { label: "31st Dec, 2022", link: "/pdf/corporate-details/corporate-governance-report/Corporate Governance KPL_31_12_2022.pdf" },
-                            { label: "30th June, 2022", link: "/pdf/corporate-details/corporate-governance-report/30_June_2022.pdf" },
-                            { label: "30th Sept, 2022", link: "#" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2021-22",
-                        reports: [
-                            { label: "30th June, 2021", link: "/pdf/corporate-details/corporate-governance-report/30_June_2021.pdf" },
-                            { label: "30th Sept, 2021", link: "/pdf/corporate-details/corporate-governance-report/30_Sept_2021.pdf" },
-                            { label: "31st Dec, 2021", link: "/pdf/corporate-details/corporate-governance-report/31_Dec_2021.pdf" },
-                            { label: "31st March, 2022", link: "/pdf/corporate-details/corporate-governance-report/31_March_2022.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2018-19",
-                        reports: [
-                            { label: "30th June, 2018", link: "/pdf/corporate-details/corporate-governance-report/30_June_2018.pdf" },
-                            { label: "30th Sept, 2018", link: "/pdf/corporate-details/corporate-governance-report/30_sept_2018.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2017-18",
-                        reports: [
-                            { label: "30th June, 2017", link: "/pdf/corporate-details/corporate-governance-report/30_June_2017.pdf" },
-                            { label: "30th Sept, 2017", link: "#" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2016-17",
-                        reports: [
-                            { label: "31st Dec, 2016", link: "/pdf/corporate-details/corporate-governance-report/Corporate-Governance-31-12-16.pdf" },
-                            { label: "31st March, 2017", link: "#" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2013-14",
-                        reports: [
-                            { label: "30th June, 2013", link: "/pdf/corporate-details/corporate-governance-report/corporate governance report - 31 12 2013.pdf" },
-                            { label: "30th Sept, 2013", link: "/pdf/corporate-details/corporate-governance-report/corporate governance report - 31 12 2013.pdf" },
-                            { label: "31st Dec, 2013", link: "/pdf/corporate-details/corporate-governance-report/corporate governance report - 31 12 2013.pdf" },
-                            { label: "31st March, 2014", link: "/pdf/corporate-details/corporate-governance-report/corporate governance report - 31 03 2014.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2012-13",
-                        reports: [
-                            { label: "30th June, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                            { label: "30th Sept, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                            { label: "31st Dec, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                            { label: "31st March, 2013", link: "/pdf/corporate-details/share-holding-pattern/Corporategoverreport31032013.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2011-12",
-                        reports: [
-                            { label: "30th June, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                            { label: "30th Sept, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                            { label: "31st Dec, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                            { label: "31st March, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2010-11",
-                        reports: [
-                            { label: "30th June, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                            { label: "30th Sept, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                            { label: "31st Dec, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                            { label: "31st March, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
-                        ],
-                    },
-                    {
-                        title: "Financial Year 2009-10",
-                        reports: [
-                            { label: "30th June, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
-                            { label: "30th Sept, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
-                            { label: "31st Dec, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
-                            { label: "31st March, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
-                        ],
-                    },
-                ],
-            },
-
-            // COMPANY POLICIES
-            {
-                title: "MOA and AOA",
-                key: "moaAoa",
-                data: [
-                    {
-                        reports: [
-                            { label: "In terms of clause 54 of the Listing Agreement with the Stock Exchange, the Company has not made any agreement with any Media Companies and/ or their associates", link: "" },
+                            { label: "SHP - 30.06.2024", link: "/Investors/Investors/2_Share holding pattern/2024-25/SHP-30.06.2024.pdf" },
+                            { label: "SHP - 31.03.2025", link: "/Investors/Investors/2_Share holding pattern/2024-25/SHP-31.03.2025.pdf" },
+                            { label: "SHP - 31.12.2024", link: "/Investors/Investors/2_Share holding pattern/2024-25/SHP-31.12.2024.pdf" },
                         ],
                     },
                 ],
             },
         ],
     },
-
-    investorInformation: {
-        title: "Investor Information",
+    advertisements: {
+        title: "Advertisements",
         subCategories: [
             {
-                title: "Scrutizner Report",
-                key: "scrutiznerReport",
+                title: "Advertisements",
+                key: "advertisements",
                 data: [
                     {
-                        title: "Financial Year 2023-24",
-                        reports: [
-                            { label: "Scrutinizer Report- AGM 2022-2023", link: "/pdf/investor-information/scrutizner-report/Scrutinizer_Report_AGM_2023.pdf" }
-                        ]
-                    },
-                    {
-                        title: "Financial Year 2022-23",
-                        reports: [
-                            { label: "Scrutinizer Report Postal Ballot", link: "/pdf/investor-information/scrutizner-report/Scrutinizer_Report_Postal_Ballot.pdf" }
-                        ]
-                    },
-                    {
-                        title: "Financial Year 2017-21",
-                        reports: [
-                            { label: "2017", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-AGM.pdf" },
-                            { label: "2018", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-AGM.pdf" },
-                            { label: "2019", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-AGM.pdf" },
-                            { label: "2020", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-AGM.pdf" },
-                            { label: "2020 Voting Results", link: "/pdf/financial-details/quarterly-reports/Voting_Results_2020.pdf" },
-                            { label: "2021", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-AGM.pdf" },
-                            { label: "2022", link: "/pdf/investor-information/scrutizner-report/Scrutinizers report 2022.pdf" }
-                        ]
-                    },
-                    {
-                        title: "Financial Year 2015-16",
-                        reports: [
-                            { label: "AGM", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-AGM.pdf" },
-                            { label: "EGM", link: "/pdf/investor-information/scrutizner-report/Scrutinizer-Report-Kesar-EGM.pdf" }
-                        ]
-                    }
-                ]
-            },
-            {
-                title: "Dividend Declaration",
-                key: "dividendDeclaration",
-                data: [
-                    {
-                        title: "Dividend History",
-                        reports: [
-                            { label: "Sept 2015", link: "/pdf/investor-information/dividend-declaration/Dividend-History.pdf" }
-                        ]
-                    }
-                ]
-            }
-            ,
-            {
-                title: "Newspaper Ads",
-                key: "newspaperAds",
-                data: [
-                    {
-                        reports: [
-                            { label: "12th August 2023", link: "/pdf/investor-information/newspaper-ads/Newspaper_Ads_12th_August_2023.pdf" },
-                            { label: "06th September 2023 - AGM Notice", link: "/pdf/investor-information/newspaper-ads/Newspaper_Ads_06_September_2023.pdf" },
-                            { label: "12th November 2023", link: "/pdf/investor-information/newspaper-ads/Newspaper_Ads_12th_November_2023.pdf" },
-                            { label: "21st May, 2016", link: "#" },
-                            { label: "8th August, 2017", link: "#" },
-                            { label: "8th August, 2017", link: "#" }, // duplicate kept as requested
-                            { label: "29th September, 2022", link: "/pdf/investor-information/newspaper-ads/Newspaper Publications- AGM 29.09.2022.pdf" },
-                            { label: "5th April, 2023", link: "#" },
-                            { label: "31th May, 2023", link: "/pdf/financial-details/quarterly-reports/Newspaper_Advertisement_for_Financial_Results_31_05_2023.pdf" }
-                        ]
-                    }
-                ]
-            }
-            ,
-            {
-                title: "Notices of Meeting",
-                key: "noticesMeeting",
-                data: [
-                    {
-                        title: "Notice of General Meeting",
-                        reports: [
-                            { label: "Notice of 33rd AGM - 26.09.2023", link: "/pdf/investor-information/scrutizner-report/Notice_of_33rd_AGM_26_09_2023.pdf" },
-                            { label: "Intimation of Board Meeting", link: "/pdf/investor-information/notices-of-meeting/Intimation_for_Board_Meeting_KPL.pdf" },
-                            { label: "Notice of Postal Ballot to BSE", link: "/pdf/investor-information/scrutizner-report/Notice_of_Postal_Ballot_to_BSE.pdf" },
-                            { label: "Board Meeting Intimation - 14.11.2022", link: "/pdf/investor-information/notices-of-meeting/Board meeting intimation- 14.11.2022.pdf" },
-                            { label: "Notice of 32nd AGM - 29.09.2022", link: "/pdf/investor-information/scrutizner-report/KPL_ 32nd AGM notice 20.09.2022.pdf" },
-                            { label: "Feb, 2016", link: "/pdf/investor-information/notices-of-meeting/Notice-of-Board-Meeting-to BSE of 12.02.2016.pdf" },
-                            { label: "May, 2017", link: "#" },
-                            { label: "August, 2017", link: "#" },
-                            { label: "November, 2017", link: "/pdf/investor-information/notices-of-meeting/KesarBSEIntimation11112017.pdf" },
-                            { label: "December, 2017", link: "/pdf/investor-information/notices-of-meeting/Kesar-BSE-BM-Intimation-1-12-17.pdf" }
-                        ]
-                    }
-                ]
-            },
-            {
-                title: "Extract of Annual Report",
-                key: "annualExtract",
-                data: [
-                    {
-                        title: "Extract of Annual Report",
-                        reports: [
-                            { label: "Annual Return for the FY 2021-22", link: "/pdf/financial-details/annual-reports/Annual_Return_for_the_FY_2021_22.pdf" }
-                        ]
-                    }
-                ]
-            },
-           {
-    title: "Contacts For Investor Assistance",
-    key: "investorContacts",
-    data: [
-        {
-            label: `
-               <p><strong>Live Stock Price </strong><br>
-<strong>Exchange Where Company is listed</strong><br>
+                        title: "Financial year 2022-2023",
+                        subCategories: [
+                            {
+                                title: "AGM",
+                                key: "agm",
+                                reports: [
+                                    {
+                                        label: "AGM Intimation -07.09.2022",
+                                        link: "/Investors/Investors/3_Advertisements/Financial year 2022-2023/AGM/AGM Intimation -07.09.2022.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Financial Result Publication",
+                                key: "financialresultpublication",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Postal Ballot",
+                                key: "postal",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
 
-BSE Limited (Scrip Code: 524174)<br>
-P.J.Tower, Dalal Street<br>
-Fort,Mumbai-400001<br>
-<br>
-For any assistance regarding dematerialization of shares, share transfers, transmissions, change of address, 
-non – receipt of dividend or any other query relating to shares, please write to:<br>
-<br>
-<strong>Mrs Saba Jameel Shaikh</strong> <br>
-Company Secretary &amp; Compliance Officer<br>
-D-7/1,MIDC,Lote Parshuram,Taluka Khed,District Ratnagiri-415722, Maharashtra<br>
-Phone: 02356-272339 <br>Email: info@kesarpertoproducts.com <br>Website:www.kesarpetroproducts.com
-<br><br>
-OR
-<br><br>
-<strong>Registrar &amp; Share Transfer Agent &amp; ISIN
-</strong><br>
-Skyline Financial Services Private Limited
-D-153 A| Ist Floor | Okhla Industrial Area, Phase - I | New Delhi-110 020. 
-<br>Tel Nos.:011-41044923 |Fax: +91 11 26812682 
-<br>Web Site :www.skylinerta.com.
-
-<br><br><strong>ISIN for NSDL &amp; CDSL : INE133C01033</strong>
-</p>
-            `
-        }
-    ]
-}
-,
-            {
-                title: "Investor Information",
-                key: "investorInfo",
-                data: [
-                    {
-                        title: "2018",
-                        reports: [
-                            { label: "Kesar Petro Products Investor Presentation", link: "/pdf/investor-information/investor-information/Kesar-Petroproducts-Investor-Presentation-9MFY18.pdf" }
-                        ]
-                    }
-                ]
-            },
-            {
-                title: "Secretarial Compliance Reports",
-                key: "secretarialCompliance",
-                data: [
-                    {
-                        reports: [
-                            { label: "Secretarial Compliance Report Mar 19", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial Compliance Report Mar 19.pdf" },
-                            { label: "Secretarial Compliance Report Mar 20", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial Compliance Report Mar 20.pdf" },
-                            { label: "Secretarial Compliance Report Mar 21", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial Compliance Report Mar 21.pdf" },
-                            { label: "Secretarial Compliance Report Mar 22", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial_Audit_Report_KESAR.pdf" },
-                            { label: "Secretarial Compliance Report Mar 23", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial_Audit_Report_KESAR.pdf" }
-                        ]
-                    }
-                ]
-            }
-
-        ],
-    },
-
-    archives: {
-        title: "Archives",
-        subCategories: [
-            {
-                title: "Policies",
-                key: "policies",
-                data: [
-                    {
-                        reports: [
-                            { label: "Policy on Board Diversity", link: "/pdf/archives/policies/POLICY ON BOARD DIVERSITY.pdf" },
-                            { label: "Code of Fair Disclosure and Determination of Legitimate Purpose", link: "/pdf/archives/policies/Code of Fair Disclosure and determination of Legitimate Purpose.pdf" },
-                            { label: "Policy on Criteria for Appointment of Directors and KMP", link: "/pdf/archives/policies/Policy on criteria for appointment of Directors and KMP.pdf" },
-                            { label: "Risk Management Policy", link: "/pdf/archives/policies/Risk management policy.pdf" },
-                            { label: "Policy on Prevention of Sexual Harassment", link: "/pdf/archives/policies/POlicy on Prevention of Sexual Harrassment.pdf" },
-                            { label: "Corporate Social Responsibility Policy", link: "/pdf/archives/policies/Corporate Social responsibility policy.pdf" },
-                            { label: "Code of Conduct for Prevention of Insider Trading", link: "/pdf/archives/policies/Code of conduct for prevention of Insider Trading.pdf" },
-                            { label: "Corporate Social Responsibility Policy", link: "/pdf/archives/policies/Corporate Social responsibility policy.pdf" },
-                            { label: "Code of Conduct for Directors and Senior Management", link: "/pdf/archives/policies/CodeofConductforDirectorsandSeniorManagement.pdf" },
-                            { label: "Vigil Mechanism Policy", link: "/pdf/archives/policies/VigilMachnaisumPolicy.pdf" },
-                            { label: "Risk Management Policy (Coming Soon)", link: "" },
-                            { label: "Policy on Dealing with Related Party Transactions", link: "/pdf/archives/policies/PolicyondealingwiththeRelatedPartyTransactions.pdf" },
-                            { label: "Policy for Determination of Materiality of Event/Information", link: "/pdf/archives/policies/Policy-for-Determination-of-Materiality-of-any-Event-Information.pdf" },
-                            { label: "Policy for Preservation of Documents", link: "/pdf/archives/policies/Policy-for-Preservation-of-Documents.pdf" },
-                            { label: "Terms of Appointment of Independent Directors", link: "/pdf/archives/policies/Terms-of-Appointment-of-Independent-Directors.pdf" },
-                            { label: "Familiarisation Programme for Independent Directors", link: "/pdf/archives/policies/Familirisation-of-Independent-Directors-Programme.pdf" },
-                            { label: "Archival Policy", link: "/pdf/archives/policies/Archival-Policy.pdf" },
                         ],
                     },
-                ],
-            },
-
-            {
-                title: "Forms",
-                key: "forms",
-                data: [
                     {
-                        reports: [
-                            { label: "Details for Registration Process and E-Communication Form", link: "/pdf/archives/forms/Details-for-Registration-process-and-form-for-E-communication.pdf" },
-                            { label: "Nomination Form – SH 13", link: "/pdf/archives/forms/Nomination-Form-SH-13.pdf" },
-                            { label: "Reporting Loss of Share Certificate Form", link: "/pdf/archives/forms/Reporting-Loss-of-Share-Certificate-Form.pdf" },
+                        title: "Financial year 2023-2024",
+                        subCategories: [
+                            {
+                                title: "AGM",
+                                key: "agm",
+                                reports: [
+                                    {
+                                        label: "AGM Intimation - 07.09.2023",
+                                        link: "/Investors/Investors/3_Advertisements/Financial year 2023-2024/AGM/AGM Intimation - 07.09.2023.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Financial Result Publication",
+                                key: "financialresultpublication",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Postal Ballot",
+                                key: "postal",
+                                reports: [
+                                    {
+                                        label: "Postal Ballot Intimation - 2023",
+                                        link: "/Investors/Investors/3_Advertisements/Financial year 2023-2024/Postal Ballot/Postal Ballot Intimation - 2023.pdf",
+                                    },
+                                ],
+                            },
+
+                        ],
+                    },
+                    {
+                        title: "Financial year 2024-2025",
+                        subCategories: [
+                            {
+                                title: "AGM",
+                                key: "agm",
+                                reports: [
+                                    {
+                                        label: "BSE COVERING LETTER for Annual Report submission",
+                                        link: "/Investors/Investors/3_Advertisements/Financial year 2024-2025/AGM/BSE COVERING LETTER for Annual Report submission.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Financial Result Publication",
+                                key: "financialresultpublication",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Postal Ballot",
+                                key: "postal",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
+
+                        ],
+                    },
+                    {
+                        title: "Financial year 2025-2026",
+                        subCategories: [
+                            {
+                                title: "AGM",
+                                key: "agm",
+                                reports: [
+                                    {
+                                        label: "BSE - Newspaper Publication",
+                                        link: "/Investors/Investors/3_Advertisements/Financial year 2025-2026/AGM/BSE - Newspaper Publication.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Financial Result Publication",
+                                key: "financialresultpublication",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Postal Ballot",
+                                key: "postal",
+                                reports: [
+                                    {
+                                        label: "",
+                                        link: "",
+                                    },
+                                ],
+                            },
+
                         ],
                     },
                 ],
             },
         ],
     },
-
     corporateAnnouncements: {
         title: "Corporate Announcements",
         subCategories: [
             {
                 title: "Corporate Announcements",
-                key: "corporateAnnouncementsSection",
+                key: "corporateannouncements",
                 data: [
                     {
-                        title: "Financial Year 2018-19",
-                        reports: [
-                            { label: "Board Meeting outcome 14.02.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 14_02_2019.pdf" },
-                            { label: "Board Meeting outcome 14.08.2018", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 14_08_2018.pdf" },
-                            { label: "Board Meeting outcome 14.11.2018", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 14_11_2018.pdf" },
-                            { label: "Board Meeting outcome 30.05.2018", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 30_05_2018.pdf" },
-                            { label: "Disclosure under Reg 30", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30- Change in RTA.pdf" },
+                        title: "Board meeting financial year 2020-2021",
+                        subCategories: [
+                            {
+                                title: "Notice of Board Meeting",
+                                key: "noticeboard",
+                                reports: [
+                                    {
+                                        label: "Notice of BM - 01.11.2021",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2020-2021/Notice of Board Meeting/Notice of BM - 01.11.2021.pdf",
+                                    },
+                                    {
+                                        label: "Notice of BM - 22.06.2021",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2020-2021/Notice of Board Meeting/Notice of BM - 22.06.2021.pdf",
+                                    },
+                                    {
+                                        label: "Notice of BM - 30.07.2021",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2020-2021/Notice of Board Meeting/Notice of BM - 30.07.2021.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Outcome of Board Meeting",
+                                key: "outcomeboard",
+                                reports: [
+                                    {
+                                        label: "Outcome of BM -11.11.2021",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2020-2021/Outcome of Board Meeting/Outcome of BM -11.11.2021.pdf",
+                                    },
+                                    {
+                                        label: "Outcome of BM -12.08.2021",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2020-2021/Outcome of Board Meeting/Outcome of BM -12.08.2021.pdf",
+                                    },
+                                    {
+                                        label: "Outcome of BM -30.06.2021",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2020-2021/Outcome of Board Meeting/Outcome of BM -30.06.2021.pdf",
+                                    },
+                                ],
+                            },
+
                         ],
                     },
-
                     {
-                        title: "Financial Year 2019-20",
-                        reports: [
-                            { label: "Board meeting outcome- 10.02.2020", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_10_02_2020.pdf" },
-                            { label: "Board meeting outcome- 12.11.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_12_11_2019.pdf" },
-                            { label: "Board meeting outcome- 14.08.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_14_08_2019.pdf" },
-                            { label: "Board meeting outcome- 30.05.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_30_05_2019.pdf" },
+                        title: "Board meeting financial year 2021-2022",
+                        subCategories: [
+                            {
+                                title: "Notice of Board Meeting",
+                                key: "noticeboard",
+                                reports: [
+                                    {
+                                        label: "Notice of BM - 03.02.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2021-2022/Notice of Board Meeting/Notice of BM - 03.02.2022.pdf",
+                                    },
+                                    {
+                                        label: "Notice of BM - 03.03.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2021-2022/Notice of Board Meeting/Notice of BM - 03.03.2022.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Outcome of Board Meeting",
+                                key: "outcomeboard",
+                                reports: [
+                                    {
+                                        label: "Outcome of BM -11.02.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2021-2022/Outcome of Board Meeting/Outcome of BM -11.02.2022.pdf",
+                                    },
+                                    {
+                                        label: "Outcome of BM -11.03.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2021-2022/Outcome of Board Meeting/Outcome of BM -11.03.2022.pdf",
+                                    },
+                                ],
+                            },
+
                         ],
                     },
-
                     {
-                        title: "Financial Year 2020-21",
-                        reports: [
-                            { label: "Board Meeting outcome- 11.02.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_02_2021.pdf" },
-                            { label: "Board Meeting outcome- 30.06.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_30_06_2021.pdf" },
-                            { label: "Board Meeting outcome- 31.07.2020", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_31_07_2020.pdf" },
-                            { label: "Board Meeting outome- 12.11.2020", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outome_12_11_2020.pdf" },
+                        title: "Board meeting financial year 2022-2023",
+                        subCategories: [
+                            {
+                                title: "Notice of Board Meeting",
+                                key: "noticeboard",
+                                reports: [
+                                    {
+                                        label: "BM-Intimation - 19.04.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2022-2023/Notice of Board Meeting/BM-Intimation - 19.04.2022.pdf",
+                                    },
+                                    {
+                                        label: "BM-Intimation - 19.05.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2022-2023/Notice of Board Meeting/BM-Intimation - 19.05.2022.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Outcome of Board Meeting",
+                                key: "outcomeboard",
+                                reports: [
+                                    {
+                                        label: "BM Outcome - 25.04.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2022-2023/Outcome of Board Meeting/BM Outcome - 25.04.2022.pdf",
+                                    },
+                                    {
+                                        label: "BM Outcome - 26.05.2022",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2022-2023/Outcome of Board Meeting/BM Outcome - 26.05.2022.pdf",
+                                    },
+                                ],
+                            },
+
                         ],
                     },
-
                     {
-                        title: "Financial Year 2021-22",
-                        reports: [
-                            { label: "Board Meeting outcome- 11.02.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_02_2022.pdf" },
-                            { label: "Board Meeting outcome- 11.03.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_03_2022.pdf" },
-                            { label: "Board Meeting outcome- 11.11.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_11_2021.pdf" },
-                            { label: "Board meeting outcome- 12.08.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_12_08_2021.pdf" },
-                            { label: "Board meeting outcome- 30.06.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_30_06_2021.pdf" },
+                        title: "Board meeting financial year 2023-2024",
+                        subCategories: [
+                            {
+                                title: "Notice of Board Meeting",
+                                key: "noticeboard",
+                                reports: [
+                                    {
+                                        label: "BM Intimation - 03.11.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Notice of Board Meeting/BM Intimation - 03.11.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Intimation - 05.08.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Notice of Board Meeting/BM Intimation - 05.08.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Intimation - 22.05.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Notice of Board Meeting/BM Intimation - 22.05.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Intimation - 26.04.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Notice of Board Meeting/BM Intimation - 26.04.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Intimation 05.02.2024",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Notice of Board Meeting/BM Intimation 05.02.2024.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Outcome of Board Meeting",
+                                key: "outcomeboard",
+                                reports: [
+                                    {
+                                        label: "BM Outcome - 02.05.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Outcome of Board Meeting/BM Outcome - 02.05.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Outcome - 11.08.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Outcome of Board Meeting/BM Outcome - 11.08.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Outcome - 13.02.2024",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Outcome of Board Meeting/BM Outcome - 13.02.2024.pdf",
+                                    },
+                                    {
+                                        label: "BM Outcome -29.05.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Outcome of Board Meeting/BM Outcome -29.05.2023.pdf",
+                                    },
+                                    {
+                                        label: "BM Outcome 10.11.2023",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2023-2024/BM Intimation & Outcome-2023-24/Outcome of Board Meeting/BM Outcome 10.11.2023.pdf",
+                                    },
+                                ],
+                            },
 
-                            { label: "Disclosure under Reg 30 (1)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_1.pdf" },
-                            { label: "Disclosure under Reg 30 (2)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_2.pdf" },
-                            { label: "Disclosure under Reg 30 (3)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_3.pdf" },
-                            { label: "Disclosure under Reg 30 (4)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_4.pdf" },
-                            { label: "Disclosure under Reg 30 (5)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_5.pdf" },
-                            { label: "Disclosure under Reg 30 (6)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_6.pdf" },
-                            { label: "Disclosure under Reg 30 (7)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_7.pdf" },
                         ],
                     },
-
                     {
-                        title: "Financial Year 2022-23",
-                        reports: [
-                            { label: "Board Meeting outcome - 10.02.2023", link: "#" },
-                            { label: "Board Meeting outcome - 21.12.2023", link: "#" },
-                            { label: "Board Meeting outcome - 27.12.2023", link: "#" },
-                            { label: "Board Meeting outcome - 26.05.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_26_05_2022.pdf" },
-                            { label: "Board meeting outcome- 14.11.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_14_11_2022.pdf" },
-                            { label: "Board meeting outcome-10.08.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_10_08_2022.pdf" },
-                            { label: "Board meeting Outcome-30.08.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting Outcome_30_08_2022.pdf" },
+                        title: "Board meeting financial year 2024-2025",
+                        subCategories: [
+                            {
+                                title: "Notice of Board Meeting",
+                                key: "noticeboard",
+                                reports: [
+                                    {
+                                        label: "BM - Notice -20.05.2025",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2024-2025/BM - Notice -20.05.2025.pdf",
+                                    },
+                                    {
+                                        label: "BM - Notice -23.04.2025",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2024-2025/BM - Notice -23.04.2025.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Outcome of Board Meeting",
+                                key: "outcomeboard",
+                                reports: [
+                                    {
+                                        label: "BM - Outcome - 28.04.2025",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2024-2025/BM - Outcome - 28.04.2025.pdf",
+                                    },
+                                    {
+                                        label: "BM - Outcome - 28.05.2025",
+                                        link: "/Investors/Investors/4_ Corporate Announcements/Board meeting financial year 2024-2025/BM - Outcome - 28.05.2025.pdf",
+                                    },
+                                ],
+                            },
 
-                            { label: "Disclosure under Reg 30 (1)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_1.pdf" },
-                            { label: "Disclosure under Reg 30 (2)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_2.pdf" },
-                            { label: "Disclosure under Reg 30 (3)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_3.pdf" },
-                            { label: "Disclosure under Reg 30- Change in RTA", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30- Change in RTA.pdf" },
-                            { label: "Disclosure under Reg 23(9)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 23(9).pdf" },
-                        ],
-                    },
-
-                    {
-                        title: "Financial Year 2023-24",
-                        reports: [
-                            { label: "Outcome of Board Meeting 2023-24", link: "/pdf/corporate-announcements/corporate-announcements/Outcome_of_Board_Meeting_KPL_23_24.pdf" },
-                            { label: "Outcome of Board Meeting-11.08.2023", link: "/pdf/corporate-announcements/corporate-announcements/Outcome_Board_Meeting_11_08_2023.pdf" },
-                            { label: "Outcome of Board Meeting-10.11.2023", link: "/pdf/corporate-announcements/corporate-announcements/Outcome_Board_Meeting_10_11_2023.pdf" },
                         ],
                     },
                 ],
             },
         ],
     },
+    extractOfAnnualReport: {
+        title: "Extract of Annual Report",
+        subCategories: [
+            {
+                title: "Extract of Annual Report",
+                key: "extractreport",
+                data: [
+                    {
+                        reports: [
+                            { label: "31st Annual Report 2020-21.pdf", link: "/Investors/Investors/5_Extract of Annual Report/31st Annual Report 2020-21.pdf" },
+                            { label: "32nd  Annual Report 2021-22", link: "/Investors/Investors/5_Extract of Annual Report/32nd  Annual Report 2021-22.pdf" },
+                            { label: "33rd Annual Report 2022-23", link: "/Investors/Investors/5_Extract of Annual Report/33rd Annual Report 2022-23.pdf" },
+                            { label: "34th Annual Report 2023-24", link: "/Investors/Investors/5_Extract of Annual Report/34th Annual Report 2023-24.pdf" },
+                            { label: "35th Annual Report 2024-25", link: "/Investors/Investors/5_Extract of Annual Report/35th Annual Report 2024-25.pdf" },
+                            { label: "Notice of EGM - 18.10.2024", link: "/Investors/Investors/5_Extract of Annual Report/Notice of EGM - 18.10.2024.pdf" },
+                            { label: "Postal Ballot Intimation - 2023", link: "/Investors/Investors/5_Extract of Annual Report/Postal Ballot Intimation - 2023.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    grievanceRedressal: {
+        title: "Grievance Redressal",
+        subCategories: [
+            {
+                title: "Grievance Redressal",
+                key: "grievanceredressal",
+                data: [
+                    {
+                        title: "Financial year 2020-2021",
+                        reports: [
+                            { label: "Quarter ended 30-06-2020", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2020-2021/Quarter ended 30-06-2020.pdf" },
+                            { label: "Quarter ended 30-09-2020", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2020-2021/Quarter ended 30-09-2020.pdf" },
+                            { label: "Quarter ended 31-03-2021", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2020-2021/Quarter ended 31-03-2021.pdf" },
+                            { label: "Quarter ended 31-12-2020", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2020-2021/Quarter ended 31-12-2020.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2021-2022",
+                        reports: [
+                            { label: "Quarter ended 30-09-2021", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2021-2022/Quarter ended 30-09-2021.pdf" },
+                            { label: "Quarter ended 31-03-2022", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2021-2022/Quarter ended 31-03-2022.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2022-2023",
+                        reports: [
+                            { label: "", link: "" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2023-2024",
+                        reports: [
+                            { label: "Quarter ended 30-06-2023", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2023-2024/Quarter ended 30-06-2023.pdf" },
+                            { label: "Quarter ended 30-09-2023", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2023-2024/Quarter ended 30-09-2023.pdf" },
+                            { label: "Quarter ended 31-03-2024", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2023-2024/Quarter ended 31-03-2024.pdf" },
+                            { label: "Quarter ended 31-12-2023", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2023-2024/Quarter ended 31-12-2023.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2024-2025",
+                        reports: [
+                            { label: "Quarter ended 30-06-2024", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2024-2025/Quarter ended 30-06-2024.pdf" },
+                            { label: "Quarter ended 30-09-2024", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2024-2025/Quarter ended 30-09-2024.pdf" },
+                            { label: "Quarter ended 31-03-2025", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2024-2025/Quarter ended 31-03-2025.pdf" },
+                            { label: "Quarter ended 31-12-2024", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2024-2025/Quarter ended 31-12-2024.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Financial year 2025-2026",
+                        reports: [
+                            { label: "IGR-30.09.2025", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2025-2026/IGR-30.09.2025.pdf" },
+                            { label: "XBRL-Integrated Governance-30.06.2025", link: "/Investors/Investors/6_Grievance Redressal/Financial year 2025-2026/XBRL-Integrated Governance-30.06.2025.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    scrutinizerReport: {
+        title: "Scrutinizer Report",
+        subCategories: [
+            {
+                title: "Scrutinizer Report",
+                key: "scrutinizerreport",
+                data: [
+                    {
+                        reports: [
+                            { label: "Scrutinizer Report - 31st AGM", link: "/Investors/Investors/7_Scrutinizer Report/Scrutinizer Report - 31st AGM.pdf" },
+                            { label: "Scrutinizer Report - EGM - 2024-25", link: "/Investors/Investors/7_Scrutinizer Report/Scrutinizer Report - EGM - 2024-25.pdf" },
+                            { label: "Scrutinizer Report -2024-25", link: "/Investors/Investors/7_Scrutinizer Report/Scrutinizer Report -2024-25.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    policy: {
+        title: "Policy",
+        subCategories: [
+            {
+                title: "Policy",
+                key: "policy",
+                data: [
+                    {
+                        reports: [
+                            { label: "Letter of appointment as a Non Executive Independent Director", link: "/Investors/Investors/8_Policy/1_Letter of appointment as a Non Executive Independent Director-.pdf" },
+                            { label: "Policy on Related Party Transaction Revised on 01-04-2025", link: "/Investors/Investors/8_Policy/2_Policy on Related Party Transaction Revised on 01-04-2025.pdf" },
+                            { label: "Criteria of making payments to Non Executive Directors", link: "/Investors/Investors/8_Policy/3_Criteria of making payments to Non Executive Directors.pdf" },
+                            { label: "Whistle Blower Policy", link: "/Investors/Investors/8_Policy/4_Whistle Blower Policy.pdf" },
+                            { label: "Code of Conduct for Directors & Management", link: "/Investors/Investors/8_Policy/5_Code of Conduct for Directors & Management .pdf" },
+                            { label: "Policy For Insider Trading Code", link: "/Investors/Investors/8_Policy/6_Policy For Insider Trading Code.pdf" },
+                            { label: "POLICY FOR DETERMINATION OF MATERIALITY OF EVENTS OR INFORMATION", link: "/Investors/Investors/8_Policy/7_POLICY FOR DETERMINATION OF MATERIALITY OF EVENTS OR INFORMATION.pdf" },
+                            { label: "CODE OF PRACTICES AND PROCEDURES FOR FAIR DISCLOSURE OF UPSI", link: "/Investors/Investors/8_Policy/8_CODE OF PRACTICES AND PROCEDURES FOR FAIR DISCLOSURE OF UPSI.pdf" },
+                            { label: "Policy for Determining Material Subsidiaries", link: "/Investors/Investors/8_Policy/9_Policy for Determining Material Subsidiaries .pdf" },
+                            { label: "Posh Policy", link: "/Investors/Investors/8_Policy/10_Posh Policy.pdf" },
+                            { label: "Terms And Conditions Of Appointment Of Independent Directors", link: "/Investors/Investors/8_Policy/11_Terms And Conditions Of Appointment Of Independent Directors.pdf" },
+                            { label: "Risk Management Policy", link: "/Investors/Investors/8_Policy/12_Risk Management Policy.pdf" },
+                            { label: "Policy for Inquiry in Case of Leak or Suspected Leak of upsi", link: "/Investors/Investors/8_Policy/13_Policy for Inquiry in Case of Leak or Suspected Leak of upsi.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    SecretarialComplianceReport: {
+        title: "Secretarial Compliance Report",
+        subCategories: [
+            {
+                title: "Secretarial Compliance Report",
+                key: "secretarialcompliancereport",
+                data: [
+                    {
+                        reports: [
+                            { label: "Annual Secretarial Compliance Report - KPL 31.03.2025", link: "/Investors/Investors/9_Secretarial Compliance Report/Annual Secretarial Compliance Report - KPL 31.03.2025.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    annualReport: {
+        title: "Annual Report",
+        subCategories: [
+            {
+                title: "Annual Report",
+                key: "annualreport",
+                data: [
+                    {
+                        reports: [
+                            { label: "Form MGT 7 Annual Return 2022-23", link: "/Investors/Investors/10_Annual Report/Form MGT 7 Annual Return 2022-23.pdf" },
+                            { label: "Form MGT 7 Annual Return 2023-24", link: "/Investors/Investors/10_Annual Report/Form MGT 7 Annual Return 2023-24.pdf" },
+                            { label: "Form_MGT_7 KESAR 2020-21", link: "/Investors/Investors/10_Annual Report/Form_MGT_7 KESAR 2020-21.pdf" },
+                            { label: "Form_MGT_7 Kesar 2022 -signed", link: "/Investors/Investors/10_Annual Report/Form_MGT_7 Kesar 2022 -signed.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    familarisationProgram: {
+        title: "Familarisation Program",
+        subCategories: [
+            {
+                title: "Familarisation Program",
+                key: "familarisationprogram",
+                data: [
+                    {
+                        reports: [
+                            { label: "Familarization Programme-2020-21", link: "/Investors/Investors/11_Familarisation Program/Familarization Programme-2020-21.pdf" },
+                            { label: "Familarization Programme-2021-22", link: "/Investors/Investors/11_Familarisation Program/Familarization Programme-2021-22.pdf" },
+                            { label: "Familarization Programme-2022-23", link: "/Investors/Investors/11_Familarisation Program/Familarization Programme-2022-23.pdf" },
+                            { label: "Familarization Programme-2023-24", link: "/Investors/Investors/11_Familarisation Program/Familarization Programme-2023-24 .pdf" },
+                            { label: "Familarization Programme-2024-25", link: "/Investors/Investors/11_Familarisation Program/Familarization Programme-2024-25.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    smartForm: {
+        title: "Smart ODR & KYC Form",
+        subCategories: [
+            {
+                title: "Common and Simplified Norms for processing investors service request by RTAs.",
+                key: "common",
+                 description: <p>
+            For the attention of shareholders holding shares in physical form:<br /><br />
 
+            SEBI, vide its circulars SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2021/655 dated 3rd November 2021 and SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/8 dated 25th January 2022, and subsequent notifications through SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/37 dated 16th March 2023 and SEBI/HO/MIRSD/PoD-1/P/CIR/2023/158 dated 26th September 2023, has introduced common and simplified norms for processing investors’ service requests by RTAs, which mandate furnishing the following documents to the RTA of the Company, i.e., Link Intime India Private Limited, on or before 31st December 2023:<br /><br />
+
+            i. PAN<br />
+            ii. Nomination<br />
+            iii. Contact details including postal address with PIN code, mobile number, and e-mail address<br />
+            iv. Bank account details including bank name and branch, bank account number, and IFSC code<br />
+            v. Specimen signature<br /><br />
+
+            Shareholders can download the requisite forms from the Company’s website.<br /><br />
+
+            The circular also mandates that the security holders (holding securities in physical form) whose folio(s) do not have PAN / choice of nomination / contact details / mobile number / bank account details / specimen signature updated shall be eligible for any payment, including dividend, interest, or redemption, in respect of such folios only through electronic mode with effect from 1st April 2024, upon furnishing all the aforesaid details in entirety.
+        </p>,
+                data: [
+                    {
+                        reports: [
+                            { label: "form-isr-1-register-or-change-pan-kyc-details", link: "/Investors/Investors/12_SMART ODR & KYC FORM/Common/form-isr-1-register-or-change-pan-kyc-details.pdf" },
+                            { label: "form-isr-2-confirmation-of-signature-of-securityholders", link: "/Investors/Investors/12_SMART ODR & KYC FORM/Common/form-isr-2-confirmation-of-signature-of-securityholders.pdf" },
+                            { label: "form-isr-3-declaration-for-opting-out-of-nomination", link: "/Investors/Investors/12_SMART ODR & KYC FORM/Common/form-isr-3-declaration-for-opting-out-of-nomination.pdf" },
+                            { label: "form-isr-4", link: "/Investors/Investors/12_SMART ODR & KYC FORM/Common/form-isr-4.pdf" },
+                            { label: "form-sh-13-registration-of-nomiantion", link: "/Investors/Investors/12_SMART ODR & KYC FORM/Common/form-sh-13-registration-of-nomiantion.pdf" },
+                            { label: "form-sh-14-cancellation-or-variation-of-nomination", link: "/Investors/Investors/12_SMART ODR & KYC FORM/Common/form-sh-14-cancellation-or-variation-of-nomination.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    circulars: {
+        title: "Circulars",
+        subCategories: [
+            {
+                title: "Circulars",
+                key: "circulars",
+                data: [
+                    {
+                        reports: [
+                            { label: "Opening of Special Window for Re-lodgement of Transfer Requests of Physical Shares (Dated 02-07-2025)", link: "/Investors/Investors/13_CIRCULARS/1_Opening of Special Window for Re-lodgement of Transfer Requests of Physical Shares (Dated 02-07-2025).pdf" },
+                            { label: "26th-september-2023-kyc-circular", link: "/Investors/Investors/13_CIRCULARS/2_26th-september-2023-kyc-circular.pdf" },
+                            { label: "smart-odr-linking-to-scores", link: "/Investors/Investors/13_CIRCULARS/3_smart-odr-linking-to-scores.pdf" },
+                            { label: "online-resolution-of-disputes-in-indian-securities-market", link: "/Investors/Investors/13_CIRCULARS/4_online-resolution-of-disputes-in-indian-securities-market.pdf" },
+                            { label: "sebi-circular-25-01-2022", link: "/Investors/Investors/13_CIRCULARS/5_sebi-circular-25-01-2022.pdf" },
+                            { label: "sebi-circular-03-11-2021", link: "/Investors/Investors/13_CIRCULARS/6_sebi-circular-03-11-2021.pdf" },
+                            { label: "sebi-circular-14-12-2021", link: "/Investors/Investors/13_CIRCULARS/7_sebi-circular-14-12-2021.pdf" },
+                            { label: "form-sh-13-registration-of-nomiantion", link: "/Investors/Investors/13_CIRCULARS/8_form-sh-13-registration-of-nomiantion.pdf" },
+                            { label: "sebi-circular-02.07.2025-special-window-for-transfer-of-shares", link: "/Investors/Investors/13_CIRCULARS/9_sebi-circular-02.07.2025-special-window-for-transfer-of-shares.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    stockExchange: {
+        title: "Stock Exchange Compliance - Disclosure under Regulation 46 of SEBI (LODR)",
+        subCategories: [
+            {
+                title: "Stock Exchange Compliance - Disclosure under Regulation 46 of SEBI (LODR)",
+                key: "stockexchange",
+                data: [
+                    {
+                        title: "Trading Window",
+                        reports: [
+                            { label: "TW - 27.06.2025", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 27.06.2025.pdf" },
+                            { label: "TW - 30.06.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 30.06.2022.pdf" },
+                            { label: "TW - 30.06.2023", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 30.06.2023.pdf" },
+                            { label: "TW - 30.06.2024", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 30.06.2024.pdf" },
+                            { label: "TW - 30.09.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 30.09.2022.pdf" },
+                            { label: "TW - 30.09.2023", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 30.09.2023.pdf" },
+                            { label: "TW - 30.09.2024", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 30.09.2024.pdf" },
+                            { label: "TW - 31.03.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.03.2022.pdf" },
+                            { label: "TW - 31.03.2023", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.03.2023.pdf" },
+                            { label: "TW - 31.03.2024", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.03.2024.pdf" },
+                            { label: "TW - 31.03.2025", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.03.2025.pdf" },
+                            { label: "TW - 31.12.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.12.2022.pdf" },
+                            { label: "TW - 31.12.2023", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.12.2023.pdf" },
+                            { label: "TW - 31.12.2024", link: "/Investors/Investors/13_Stock Exchange Compliance/1_Trading Window/TW - 31.12.2024.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Reconciliation of Share Capital",
+                        reports: [
+                            { label: "ANNEXURE-1 10-05-2024", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/ANNEXURE-1 10-05-2024.pdf" },
+                            { label: "Annual Disclosure - Annexure A_- 2023 -Kesar (1)", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/Annual Disclosure - Annexure A_- 2023 -Kesar (1).pdf" },
+                            { label: "Annual Disclosure B2 -2024 Signed", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/Annual Disclosure B2 -2024 Signed.pdf" },
+                            { label: "Annual Disclosure B2_- 2023 -Kesar (2)", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/Annual Disclosure B2_- 2023 -Kesar (2).pdf" },
+                            { label: "Annual Disclosure B2", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/Annual Disclosure B2.pdf" },
+                            { label: "B2 OCR -2023 Final_signed", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/B2 OCR -2023 Final_signed.pdf" },
+                            { label: "Disclosure of Non Applicability of Large Corporate Borrower Annexure A -2024 Signed", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/Disclosure of Non Applicability of Large Corporate Borrower Annexure A -2024 Signed.pdf" },
+                            { label: "2_RECONCILIATION OF SHARE CAPITAL/Disclosure- Annexure A", link: "/Investors/Investors/13_Stock Exchange Compliance/2_RECONCILIATION OF SHARE CAPITAL/Disclosure- Annexure A.pdf" },
+                        ],
+                    },
+                    {
+                        title: "Compliances-Certificate 74 (5)",
+                        reports: [
+                            { label: "30.06.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/30.06.2022.pdf" },
+                            { label: "30.09.2020", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/30.09.2020.pdf" },
+                            { label: "30.09.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/30.09.2022.pdf" },
+                            { label: "31.03.2023", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/31.03.2023.pdf" },
+                            { label: "31.03.2025", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/31.03.2025.pdf" },
+                            { label: "31.12.2020", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/31.12.2020.pdf" },
+                            { label: "31.12.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/31.12.2022.pdf" },
+                            { label: "74(5) covering and certificate - 31.03.2022", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/74(5) covering and certificate - 31.03.2022.pdf" },
+                            { label: "74(5) covering and certificate-30.09.2021", link: "/Investors/Investors/13_Stock Exchange Compliance/3_Compliances-Certificate 74 (5)/74(5) covering and certificate-30.09.2021.pdf" },
+                        ],
+                    },
+
+                ],
+            },
+        ],
+    },
+    sebi: {
+        title: "SEBI (LODR)",
+        subCategories: [
+            {
+                title: "SEBI (LODR)",
+                key: "sebi",
+                data: [
+                    {
+                        reports: [
+                            { label: "Book closure - 31st AGM", link: "/Investors/Investors/14_SEBI (LODR)/Book closure - 31st AGM.pdf" },
+                            { label: "Book closure - 32nd AGM", link: "/Investors/Investors/14_SEBI (LODR)/Book closure - 32nd AGM.pdf" },
+                            { label: "Book closure - 33rd AGM", link: "/Investors/Investors/14_SEBI (LODR)/Book closure - 33rd AGM.pdf" },
+                            { label: "Book closure - 34th AGM", link: "/Investors/Investors/14_SEBI (LODR)/Book closure - 34th AGM.pdf" },
+                            { label: "Book closure - 35th AGM", link: "/Investors/Investors/14_SEBI (LODR)/Book closure - 35th AGM.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    disclosure: {
+        title: "Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020",
+        subCategories: [
+            {
+                title: "Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020",
+                key: "disclosure",
+                data: [
+                    {
+                        reports: [
+                            { label: "30.09.2023", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/30.09.2023.pdf" },
+                            { label: "30.09.2024", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/30.09.2024.pdf" },
+                            { label: "31.03.2022", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/31.03.2022.pdf" },
+                            { label: "31.03.2023", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/31.03.2023.pdf" },
+                            { label: "31.03.2024", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/31.03.2024.pdf" },
+                            { label: "31.03.2025", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/31.03.2025.pdf" },
+                            { label: "RPT- 30.09.2022", link: "/Investors/Investors/15_Disclosure Of Related Party Transactions Pursuant To Regulation 23(9) Of The SEBI (LODR) Regulations, 2015. -half year ended March 31, 2020/RPT- 30.09.2022.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    meetingOfKesar: {
+        title: "Meeting Of Kesar Petroproducts Limited Held on 13th November, 2024 as per regulation 44 of the SEBI (LODR) Regulations 2015",
+        subCategories: [
+            {
+                title: "Meeting Of Kesar Petroproducts Limited Held on 13th November, 2024 as per regulation 44 of the SEBI (LODR) Regulations 2015",
+                key: "meetingofkesar",
+                data: [
+                    {
+                        reports: [
+                            { label: "Disclosure Of Voting Results Of AGM - 26.09.2023", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Disclosure Of Voting Results Of AGM - 26.09.2023..pdf" },
+                            { label: "Disclosure Of Voting Results Of AGM - 27.09.2024", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Disclosure Of Voting Results Of AGM - 27.09.2024..pdf" },
+                            { label: "Disclosure Of Voting Results Of Annual General Meeting Of Held On 30.09.2020", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Disclosure Of Voting Results Of Annual General Meeting Of Held On 30.09.2020.pdf" },
+                            { label: "Disclosure Of Voting Results Of Annual General Meeting Of Held On 30.09.2021", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Disclosure Of Voting Results Of Annual General Meeting Of Held On 30.09.2021.pdf" },
+                            { label: "Disclosure Of Voting Results Of EGM - 13.11.2024", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Disclosure Of Voting Results Of EGM - 13.11.2024..pdf" },
+                            { label: "Disclosure Of Voting Results Of Postal Ballot - 05.05.2023", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Disclosure Of Voting Results Of Postal Ballot - 05.05.2023.pdf" },
+                            { label: "Proceedings of Postal Ballot - 05.05.2023", link: "/Investors/Investors/16_Meeting Of Kesar Petroproducts Limited/Proceedings of Postal Ballot - 05.05.2023.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    regCompliance: {
+        title: "Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020",
+        subCategories: [
+            {
+                title: "Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020",
+                key: "regcompliance",
+                data: [
+                    {
+                        reports: [
+                            { label: "Regulation 7(3) - Half Year Ended 30.09.2020", link: "/Investors/Investors/17_Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020/Regulation 7(3) - Half Year Ended 30.09.2020.pdf" },
+                            { label: "Regulation 7(3) - Half Year Ended 30.09.2021", link: "/Investors/Investors/17_Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020/Regulation 7(3) - Half Year Ended 30.09.2021.pdf" },
+                            { label: "Regulation 7(3) - Half Year Ended 30.09.2024", link: "/Investors/Investors/17_Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020/Regulation 7(3) - Half Year Ended 30.09.2024.pdf" },
+                            { label: "Regulation 7(3) - Year Ended 30.09.2022", link: "/Investors/Investors/17_Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020/Regulation 7(3) - Year Ended 30.09.2022.pdf" },
+                            { label: "Regulation 7(3) - Year Ended 30.09.2023", link: "/Investors/Investors/17_Reg 7(3)- Compliance Certificate for the Half Year Ended 30.09.2020/Regulation 7(3) - Year Ended 30.09.2023.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    ComplianceCertificatePursuant: {
+        title: "Compliance Certificate Pursuant to Reg. 40 (9) of SEBI LODR Regulations, 2025",
+        subCategories: [
+            {
+                title: "Compliance Certificate Pursuant to Reg. 40 (9) of SEBI LODR Regulations, 2025",
+                key: "compliancecertificatepursuant",
+                data: [
+                    {
+                        reports: [
+                            { label: "", link: "" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    publicAnnouncement: {
+        title: "Public Announcement",
+        subCategories: [
+            {
+                title: "Public Announcement",
+                key: "publicannouncement",
+                data: [
+                    {
+                        reports: [
+                            { label: "Announcement under Regulation 30 (LODR)-Analyst  Investor Meet - Outcome", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Analyst  Investor Meet - Outcome.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Press Release  Media Release (2)", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Press Release  Media Release (2).pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Press Release  Media Release", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Press Release  Media Release.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Chief Financial Officer (CFO) - Mr. Iignesh Dinesh Desai", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Chief Financial Officer (CFO) - Mr. Iignesh Dinesh Desai.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Chief Financial Officer (CFO) - Mr. Raviprakash Radheshyam Roongta", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Chief Financial Officer (CFO) - Mr. Raviprakash Radheshyam Roongta.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Company Secretary  - Mr. Vinjamuri Govindraja Chari", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Company Secretary  - Mr. Vinjamuri Govindraja Chari.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Company Secretary  - Mrs. Bhavna Girish Purohit", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Company Secretary  - Mrs. Bhavna Girish Purohit.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Company Secretary - Bhavna Girish Purohit", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Company Secretary - Bhavna Girish Purohit.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Director - Mr. Parijat Kanetkar", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Director - Mr. Parijat Kanetkar.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Director - Mr. Surya Prakash Sitaram Pande", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Director - Mr. Surya Prakash Sitaram Pande.pdf" },
+                            { label: "Announcement under Regulation 30 (LODR)-Resignation of Director - Mrs. Snehalata Dinesh Sharma", link: "/Investors/Investors/19_ Public Announcement/Announcement under Regulation 30 (LODR)-Resignation of Director - Mrs. Snehalata Dinesh Sharma.pdf" },
+                            { label: "Appointment of CEO -Shreyas Sharma", link: "/Investors/Investors/19_ Public Announcement/Appointment of CEO -Shreyas Sharma.pdf" },
+                            { label: "Appointment of Company Secretary and Compliance Officer - Mrs. Nisha Jain", link: "/Investors/Investors/19_ Public Announcement/Appointment of Company Secretary and Compliance Officer - Mrs. Nisha Jain.pdf" },
+                            { label: "Appointment of Company Secretary and Compliance Officer. -  Bhavna Girish Purohit", link: "/Investors/Investors/19_ Public Announcement/Appointment of Company Secretary and Compliance Officer. -  Bhavna Girish Purohit.pdf" },
+                            { label: "Appointment Of Director Of The Company - Mr. Govind Krislma Sharma - Independent Director", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Director Of The Company - Mr. Govind Krislma Sharma - Independent Director.pdf" },
+                            { label: "Appointment Of Director Of The Company - Mr. Surya Prakash Sitaram Pandey - Non-Executive & Non Independent Director", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Director Of The Company - Mr. Surya Prakash Sitaram Pandey - Non-Executive & Non Independent Director.pdf" },
+                            { label: "Appointment Of Dr. Parijat Vinod Kanetkar As A Additional Director Of The Company", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Dr. Parijat Vinod Kanetkar As A Additional Director Of The Company..pdf" },
+                            { label: "Appointment Of Mr. Jignesh Dinesh Desai As The Chief Financial Officer (CFO) Of The Company", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Mr. Jignesh Dinesh Desai As The Chief Financial Officer (CFO) Of The Company..pdf" },
+                            { label: "Appointment Of Mr. Ramchandra Dhondu Ghanekar As The Additional Director And WTD", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Mr. Ramchandra Dhondu Ghanekar As The Additional Director And WTD..pdf" },
+                            { label: "Appointment Of Mr. Ramjan Kadar Shaikh As A WTD", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Mr. Ramjan Kadar Shaikh As A WTD.pdf" },
+                            { label: "Appointment Of Mr. Ravi Roongta As The Chief Financial Officer (CFO)", link: "/Investors/Investors/19_ Public Announcement/Appointment Of Mr. Ravi Roongta As The Chief Financial Officer (CFO).pdf" },
+                            { label: "Compliances-Reg. 39 (3) - Details of Loss of Certificate -Duplicate Certificate -Kanta & Kanjibhai", link: "/Investors/Investors/19_ Public Announcement/Compliances-Reg. 39 (3) - Details of Loss of Certificate -Duplicate Certificate -Kanta & Kanjibhai.pdf" },
+                            { label: "Date Of Book Closure from 24.09.2021 to 30.09.2021 for the Purpose Of AGM", link: "/Investors/Investors/19_ Public Announcement/Date Of Book Closure from 24.09.2021 to 30.09.2021 for the Purpose Of AGM..pdf" },
+                            { label: "Disclosure On Impact Of COVID-19 Pandemic", link: "/Investors/Investors/19_ Public Announcement/Disclosure On Impact Of COVID-19 Pandemic.pdf" },
+                            { label: "Intimation Of Book Closure Pursuant To Section 91 Of Companies Act 2013 Andregulation 42 Of The SEBI (LODR) Regulations, 2015", link: "/Investors/Investors/19_ Public Announcement/Intimation Of Book Closure Pursuant To Section 91 Of Companies Act 2013 Andregulation 42 Of The SEBI (LODR) Regulations, 2015.pdf" },
+                            { label: "Intimation That Kesar Petroproducts Limited Has Received Consent To Operate (CTO) From The Maharashtra Pollution Control Board (MPCB) For Its 1.5 MW Co-Generation (Co-Gen)", link: "/Investors/Investors/19_ Public Announcement/Intimation That Kesar Petroproducts Limited.pdf" },
+                            { label: "Intimation Under Regulation 30 Receipt Of BSE IN-Principle Approval & Issue Of Offer Cum Application Letter", link: "/Investors/Investors/19_ Public Announcement/Intimation Under Regulation 30 Receipt Of BSE IN-Principle Approval & Issue Of Offer Cum Application Letter.pdf" },
+                            { label: "regularized the appt of Mr Nainesh Sumantirai Desai DIN - 08452630 as NED", link: "/Investors/Investors/19_ Public Announcement/regularized the appt of Mr Nainesh Sumantirai Desai DIN - 08452630 as NED.pdf" },
+                            { label: "Resignation of Director & CEO- Mr. Mohit Prem Kumar Kaushik", link: "/Investors/Investors/19_ Public Announcement/Resignation of Director & CEO- Mr. Mohit Prem Kumar Kaushik.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
 };

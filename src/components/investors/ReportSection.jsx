@@ -40,7 +40,9 @@ const ReportSection = () => {
       <div id="report_header">
         <h5>{currentSub.title}</h5>
 
-        <div id="report_filter">
+        {currentSub?.description && <div id="report_header_desc">{currentSub?.description}</div>}
+
+        {/* <div id="report_filter">
           {currentCategory.subCategories.map((sub) => (
             <span
               key={sub.key}
@@ -50,20 +52,20 @@ const ReportSection = () => {
               {sub.title}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* ================= UNIVERSAL REPORT RENDERER ================= */}
       <div id="report_table">
         {currentSub.data && currentSub.data.length > 0 ? (
           currentSub.data.map((block, idx) => (
-            <div key={idx}>
-              {/* TITLE RENDERING */}
+            <div key={idx} className="report_block">
+              {/* ===== YEAR / BLOCK TITLE ===== */}
               {block.title && (
                 <div className="report_row_title">{block.title}</div>
               )}
 
-              {/* 1) CASE: SINGLE HTML LABEL (Investor Assistance) */}
+              {/* ===== CASE 1: HTML LABEL ===== */}
               {block.label && (
                 <div className="report_row fullwidth">
                   <div
@@ -73,25 +75,58 @@ const ReportSection = () => {
                 </div>
               )}
 
-              {/* 2) CASE: LIST STRUCTURE (Reports List) */}
+              {/* ===== CASE 2: YEAR → SUB CATEGORIES (NEW) ===== */}
+              {block.subCategories &&
+                block.subCategories.map((subCat, subIdx) => (
+                  <div key={subIdx} className="report_sub_block">
+                    <div className="report_sub_title">{subCat.title}</div>
+
+                    {subCat.reports?.map((report, i) => (
+                      <div
+                        key={i}
+                        className={`report_row ${
+                          i % 2 !== 0 ? "transparent" : ""
+                        }`}
+                      >
+                        <a
+                          href={report.link || "#"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span>{report.label}</span>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+
+              {/* ===== CASE 3: NORMAL REPORT LIST ===== */}
               {block.reports &&
                 block.reports.map((report, i) => (
                   <div
                     key={i}
                     className={`report_row ${i % 2 !== 0 ? "transparent" : ""}`}
                   >
-                    <a href={report.link || "#"} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={report.link || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <span>{report.label}</span>
                     </a>
                   </div>
                 ))}
 
-              {/* 3) CASE: SIMPLE VALUE LIST (Annual Reports → {year, link}) */}
+              {/* ===== CASE 4: SIMPLE YEAR → LINK ===== */}
               {block.year && (
                 <div
                   className={`report_row ${idx % 2 !== 0 ? "transparent" : ""}`}
                 >
-                  <a href={block.link || "#"} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={block.link || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>{block.year}</span>
                   </a>
                 </div>
