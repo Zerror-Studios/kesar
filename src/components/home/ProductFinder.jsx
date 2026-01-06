@@ -163,6 +163,7 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
                 label="Select Application"
                 options={applicationOptions}
                 value={category}
+                classNameMain={'dropdown1'}
                 className={`option${applicationOptions.length}`}
                 onSelect={(v) => {
                   setCategory(v);
@@ -180,6 +181,7 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
                 label="Select Colour Index"
                 options={tagOptions}
                 value={tag}
+                 classNameMain={'dropdown2'}
                 className={`option${tagOptions.length}`}
                 onSelect={setTag}
               />
@@ -199,6 +201,7 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
               ]}
               value={antiCorrosive}
               onSelect={setAntiCorrosive}
+               classNameMain={'dropdown3'}
               className="option4"
             />
           </div>
@@ -216,6 +219,7 @@ const ProductFinder = ({ isHero, title, description, initialValues = {} }) => {
               ]}
               value={fertilizer}
               onSelect={setFertilizer}
+               classNameMain={'dropdown4'}
               className="option4"
             />
           </div>

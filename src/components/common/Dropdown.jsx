@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-const Dropdown = ({ label = "Select", className, options = [], value, onSelect }) => {
+const Dropdown = ({ label = "Select", className,classNameMain, options = [], value, onSelect }) => {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(value || label);
   const dropdownRef = useRef(null);
@@ -30,7 +30,7 @@ const Dropdown = ({ label = "Select", className, options = [], value, onSelect }
   return (
     <div
       ref={dropdownRef}
-      className={`dropdown ${open ? "open" : ""}`}
+      className={`dropdown ${open ? "open" : ""} ${classNameMain ? classNameMain : ''}`}
       onClick={() => setOpen((prev) => !prev)}
     >
       <span>{selected}</span>

@@ -190,9 +190,20 @@
     border-color 0.25s ease,
     box-shadow 0.25s ease,
     transform 0.2s ease;
-    z-index: 999;
 }
 
+.dropdown.dropdown1{
+  z-index: 9999;
+}
+.dropdown.dropdown2{
+  z-index: 999;
+}
+.dropdown.dropdown3{
+  z-index: 99;
+}
+.dropdown.dropdown4{
+  z-index: 98;
+}
 .dropdown:hover ,.dropdown.open{
   border-color: #004DFF;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -222,7 +233,6 @@
   background-color: #fff;
   backdrop-filter: blur(10px);
   overflow-y: auto;
-  z-index: 999999;
 }
 .dropdown_items h5:last-child {
   border: none;
