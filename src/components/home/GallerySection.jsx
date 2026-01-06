@@ -5,6 +5,7 @@ import { GrNext } from "react-icons/gr";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from "gsap/dist/CustomEase";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -84,10 +85,10 @@ useEffect(() => {
               alt="image"
             />
             <div className="gallery_section_card_overlay">
-              <div className="overlay_tab">
+              <Link href="/gallery" className="overlay_tab">
                 <span>Plant</span>
                 <GrNext />
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -99,10 +100,10 @@ useEffect(() => {
               alt="image"
             />
             <div className="gallery_section_card_overlay">
-              <div className="overlay_tab">
+               <Link href="/gallery" className="overlay_tab">
                 <span>Lab</span>
                 <GrNext />
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -114,10 +115,10 @@ useEffect(() => {
               alt="image"
             />
             <div className="gallery_section_card_overlay">
-              <div className="overlay_tab">
+               <Link href="/gallery" className="overlay_tab">
                 <span>Products</span>
                 <GrNext />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

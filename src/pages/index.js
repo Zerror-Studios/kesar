@@ -38,7 +38,7 @@ const Home = ({ meta }) => {
       <ProductSection title={"Our Products"} des={"Comprehensive range of Phthalocyanine Pigments Blue and Green engineered for your specific applications."} btn={"Explore more Products"} />
       <ApplicationSection />
       <Sustainability />
-      <LatestNews />
+      {/* <LatestNews /> */}
       <GallerySection />
     </>
   )

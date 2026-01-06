@@ -1011,6 +1011,7 @@
 .gallery_section_card:hover .overlay_tab {
   background-color: #ff7006;
   color: white;
+  text-decoration: none;
 }
 
 /* Mobile */

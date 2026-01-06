@@ -63,10 +63,10 @@ export const reportData = {
         ],
     },
     shareHoldingPattern: {
-        title: "Share holding pattern",
+        title: "Shareholding pattern",
         subCategories: [
             {
-                title: "Share holding pattern",
+                title: "Shareholding pattern",
                 key: "shareholdingpattern",
                 data: [
                     {
