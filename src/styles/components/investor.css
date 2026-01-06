@@ -99,6 +99,10 @@
   font-size: 0.9rem;
   font-weight: 500;
 }
+#report_header_desc p{
+  white-space: normal;
+  margin-bottom: 1rem;
+}
 
 #report_filter {
   width: 100%;
