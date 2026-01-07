@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Button from "../common/Button";
 import { MdArrowOutward } from "react-icons/md";
 import { toast } from "react-hot-toast";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -23,10 +25,19 @@ const Form = () => {
     const newErrors = {};
 
     if (!form.name.trim()) newErrors.name = "Name is required";
-    if (!form.email.trim()) newErrors.email = "Email is required";
-    else if (!/^\S+@\S+\.\S+$/.test(form.email)) newErrors.email = "Invalid email";
-    if (!form.phone.trim()) newErrors.phone = "Phone is required";
-    else if (!/^\d{10}$/.test(form.phone)) newErrors.phone = "Invalid phone number";
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
+      newErrors.email = "Invalid email";
+    }
+
+    if (!form.phone.trim()) {
+      newErrors.phone = "Phone is required";
+    } else if (!/^\d{10,15}$/.test(form.phone)) {
+      newErrors.phone = "Invalid phone number";
+    }
+
     if (!form.message.trim()) newErrors.message = "Message is required";
 
     setErrors(newErrors);
@@ -37,13 +48,21 @@ const Form = () => {
     if (!validate()) return;
 
     setLoading(true);
-    console.log(form);
-    
+    console.log(
+      JSON.stringify({
+        ...form,
+        phone: `+${form.phone}`, // send with +
+      })
+    );
+
     try {
       const res = await fetch("/api/submitcontact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          phone: `+${form.phone}`, // send with +
+        }),
       });
 
       const data = await res.json();
@@ -65,6 +84,7 @@ const Form = () => {
     <form action="">
       <h5>Keep in Touch</h5>
 
+      {/* NAME */}
       <div className="form_group">
         <label htmlFor="name">Name</label>
         <input
@@ -78,6 +98,7 @@ const Form = () => {
         {errors.name && <p className="error">{errors.name}</p>}
       </div>
 
+      {/* EMAIL */}
       <div className="form_group">
         <label htmlFor="email">Email</label>
         <input
@@ -91,19 +112,45 @@ const Form = () => {
         {errors.email && <p className="error">{errors.email}</p>}
       </div>
 
+      {/* PHONE (Improved UI) */}
       <div className="form_group">
         <label htmlFor="phone">Phone</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="Your Phone"
+
+        <PhoneInput
+          country="in"
+          enableSearch
+          icon={false}
           value={form.phone}
-          onChange={handleChange}
+          onChange={(phone) => {
+            setForm({ ...form, phone });
+            setErrors({ ...errors, phone: "" });
+          }}
+          inputProps={{
+            name: "phone",
+            required: true,
+          }}
+          containerStyle={{
+            width: "100%",
+          }}
+          inputStyle={{
+            width: "100%",
+            height: "48px",
+            fontSize: "14px",
+            borderRadius: "10px",
+            border: "1px solid #00000033",
+            paddingLeft: "60px", // 🔥 THIS FIXES TEXT HIDING
+          }}
+          buttonStyle={{
+            padding: "0 5px",
+            borderRadius: "10px 0 0 10px",
+            background: "white",
+          }}
         />
+
         {errors.phone && <p className="error">{errors.phone}</p>}
       </div>
 
+      {/* MESSAGE */}
       <div className="form_group">
         <label htmlFor="message">Message</label>
         <textarea
@@ -117,12 +164,13 @@ const Form = () => {
         {errors.message && <p className="error">{errors.message}</p>}
       </div>
 
+      {/* BUTTON */}
       <Button
         title={loading ? "Submitting..." : "Submit"}
         color="blue"
         icon={<MdArrowOutward />}
         width="full"
-        onClick={handleSubmit} // ✅ onClick added
+        onClick={handleSubmit}
         disabled={loading}
       />
     </form>
