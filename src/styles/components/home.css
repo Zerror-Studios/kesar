@@ -512,6 +512,7 @@
   flex-shrink: 0;
   cursor: pointer;
   transition: all ease 0.3s;
+  text-decoration: none;
 }
 
 .product_card:hover {

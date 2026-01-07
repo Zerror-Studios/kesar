@@ -58,6 +58,7 @@ const NewsLetter = () => {
         icon={<GrFormNext />}
         onClick={handleSubmit}
         disabled={loading}
+        color="blue"
       />
     </div>
   );

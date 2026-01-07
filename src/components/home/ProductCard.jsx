@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Button from "../common/Button";
 import { GrNext } from "react-icons/gr";
+import Link from "next/link";
 
 const newTags = [
   "Production : 8000 MT / Annum",
@@ -15,7 +16,7 @@ const newTags = [
 ];
 const ProductCard = ({ product, index }) => {
   return (
-    <div className="product_card">
+    <Link href={product.slug} className="product_card">
       <div className="product_details">
         <h3 className="product_name">{product?.name}</h3>
 
@@ -53,10 +54,9 @@ const ProductCard = ({ product, index }) => {
           color={"orange"}
           width={"fit"}
           icon={<GrNext />}
-          link={`${product.slug}`}
         />
       </div>
-    </div>
+    </Link>
   );
 };
 

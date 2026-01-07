@@ -104,6 +104,9 @@ footer a {
   margin-top: 0.8rem;
   position: relative;
 }
+.newsletter .button.blue{
+  min-width: 180px !important;
+}
 .newsletter input {
   width: 65%;
   background-color: transparent;

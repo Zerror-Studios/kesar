@@ -58,7 +58,7 @@ const Footer = () => {
             <Link href="/gallery">Gallery</Link>
             {/* <Link href="/#latest-news-section">News</Link> */}
             <Link href="/contact">Contact</Link>
-            <Link href="/contact">Careers</Link>
+            {/* <Link href="/contact">Careers</Link> */}
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="footer-right">
           <p> © 2024 Kesar Petroproducts Ltd. All rights reserved.</p>
           <div>
-            <Link href="/">Terms & Conditions</Link>|
+            {/* <Link href="/">Terms & Conditions</Link>| */}
             <Link href="/privacy-policy">Privacy Policy</Link>|
             <Link href="/legal-notice">Legal Notice</Link>
           </div>
