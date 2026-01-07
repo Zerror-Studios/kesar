@@ -187,7 +187,7 @@ footer a {
     gap: 1rem;
   }
   #footer-btm .footer-right div {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
