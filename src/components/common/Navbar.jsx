@@ -19,9 +19,9 @@ const Navbar = () => {
             height={1000}
           />
         </Link>
-        <p>
+        {/* <p>
           Petroproducts
-        </p>
+        </p> */}
       </div>
       <Menu />
       <SearchBox />

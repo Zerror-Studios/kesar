@@ -30,8 +30,7 @@
 #report_section {
   width: 100%;
   height: auto;
-  padding: 0.5rem 3.5rem;
-  padding-top: 2rem;
+  padding: 2rem 3.5rem;
 }
 
 #investor_filter_wrap {
@@ -45,12 +44,10 @@
   letter-spacing: 0.5px;
   line-height: 1;
   color: #000000b3;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #0000001a;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 #investor_filter_wrap .dropdown_items.option4 {
-  height: 18rem;
+  height: 20rem;
 }
 #investor_filters {
   display: flex;
@@ -79,7 +76,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -168,6 +165,7 @@
   font-size: 1.1rem;
   font-weight: 900;
   padding: 1.2rem 0;
+  padding-top: 2rem;
 }
 .report_row {
   width: 100%;
