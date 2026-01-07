@@ -134,8 +134,8 @@ const Form = () => {
           }}
           inputStyle={{
             width: "100%",
-            height: "48px",
-            fontSize: "14px",
+            height: "42px",
+            fontSize: "0.8rem",
             borderRadius: "10px",
             border: "1px solid #00000033",
             paddingLeft: "60px", // 🔥 THIS FIXES TEXT HIDING
