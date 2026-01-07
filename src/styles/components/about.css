@@ -257,7 +257,10 @@
   letter-spacing: 0.5px;
   color: #000;
   margin-bottom: 0.1rem;
-  width: 90%;
+  width: 92%;
+}
+#read-more{
+  border-bottom: 2px solid black;
 }
 
 /* Mobile */

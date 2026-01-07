@@ -55,6 +55,7 @@ const LeaderCard = ({
             {expanded && readMore ? readMore : description}
             {readMore && (
               <span
+              id="read-more"
                 style={{ cursor: "pointer" }}
                 onClick={() => setExpanded(!expanded)}
               >
