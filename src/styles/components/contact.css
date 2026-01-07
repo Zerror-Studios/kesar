@@ -67,14 +67,6 @@
   font-weight: 400;
   resize: none;
 }
-.react-tel-input .country-list .search-emoji {
-    display: none;
-}
-.react-tel-input .country-list .search-box{
-  width: 95%;
-  margin: 0;
-  padding:.5rem 1rem !important;
-}
 #contact_section_container .form_group input::placeholder,
 #contact_section_container .form_group textarea::placeholder {
   color: #0000004d;
