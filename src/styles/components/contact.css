@@ -72,7 +72,7 @@
 }
 .react-tel-input .country-list .search-box{
   width: 95%;
-  margin: 0;
+  margin: 0 !important;
   padding:.5rem 1rem !important;
 }
 #contact_section_container .form_group input::placeholder,

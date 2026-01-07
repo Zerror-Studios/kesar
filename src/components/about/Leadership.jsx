@@ -64,29 +64,31 @@ const Leadership = () => {
           name: "Satish Chand Mathur",
           position: "Non - Executive Director DIN : 03641285",
           description: `Mr. Satish Chand Mathur is a 1981-batch
-Indian Police Service (IPS) officer. His service duration was 37 years. Read more`,
+Indian Police Service (IPS) officer. His service duration was
+37 years.`,
+readMore:<>
+Mr. Satish Chand Mathur is a 1981-batch
+Indian Police Service (IPS) officer. His service duration was
+37 years. Prior to joining the Company, he was serving as
+Maharashtra’s Director General of Police. <br />
+Moreover, he served the Central Government, i.e. the
+Central Bureau of Investigation from 1996 to 2003 and held
+the post of Director, Security, Air India, Director Vigilance
+and Executive Director, Ground Handling, Air India from
+2007 to 2012. <br />
+He has left his indelible mark on each aspect of police and
+general administration. His firm and tactful handling of
+sensitive and tricky issues has seen organisation emerge a
+winner at all times; his rigorous training at Louisiana State
+University in handling and countering explosives and
+commando training at our very own National Security
+Guard, Manesar, Haryana sowed the seeds of his success in
+handling both urban terrorism and the naxal challenge.
+</>,
           image: "/images/about/user.png",
         },
         {
           id: 2,
-          mentors: [
-            {
-              name: "Jignesh Dinesh Desai - CFO",
-              position: "Chemical Engineer, 35+ years in pigments",
-              image: "/images/about/user.png",
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "Satish Chand Mathur",
-          position: "Non - Executive Director DIN : 03641285",
-          description: `Mr. Satish Chand Mathur is a 1981-batch
-Indian Police Service (IPS) officer. His service duration was 37 years. Read more`,
-          image: "/images/about/user.png",
-        },
-        {
-          id: 4,
           mentors: [
             {
               name: "Jignesh Dinesh Desai - CFO",

@@ -6,6 +6,8 @@ import { categories } from "@/helpers/productData";
 import { toast } from "react-hot-toast";
 import { useModalStore } from "@/stores/modalStore";
 import { IoCloseSharp } from "react-icons/io5";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const RequestForm = ({ open, setOpen }) => {
   const containerRef = useRef(null);
@@ -71,26 +73,23 @@ const RequestForm = ({ open, setOpen }) => {
     }
   };
 
-  /* ================= CLOSE DROPDOWN OUTSIDE CLICK ================= */
+  /* ================= CLOSE DROPDOWN ================= */
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (
-        productDropdownOpen &&
-        !e.target.closest(".product_multiselect")
-      ) {
+      if (productDropdownOpen && !e.target.closest(".product_multiselect")) {
         setProductDropdownOpen(false);
         setProductQuery("");
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, [productDropdownOpen]);
 
-  /* ================= SEARCH FILTER (WITH MATCH INFO) ================= */
+  /* ================= FILTER ================= */
   const filteredCategories = categories
     .map((cat) => {
       const q = productQuery.toLowerCase();
-
       const categoryMatch = cat.category.toLowerCase().includes(q);
 
       const matchedProducts = cat.products
@@ -98,11 +97,8 @@ const RequestForm = ({ open, setOpen }) => {
           if (!q) return { ...p, _match: null };
 
           const nameMatch = p.name?.toLowerCase().includes(q);
-
           const matchedTag = Array.isArray(p.tags)
-            ? p.tags.find((tag) =>
-                tag.toLowerCase().includes(q)
-              )
+            ? p.tags.find((tag) => tag.toLowerCase().includes(q))
             : null;
 
           const matchedApplication = Array.isArray(p.application)
@@ -111,18 +107,10 @@ const RequestForm = ({ open, setOpen }) => {
               )
             : null;
 
-          if (nameMatch) {
-            return { ...p, _match: null };
-          }
-
-          if (matchedTag) {
-            return {
-              ...p,
-              _match: { type: "tag", value: matchedTag },
-            };
-          }
-
-          if (matchedApplication) {
+          if (nameMatch) return { ...p, _match: null };
+          if (matchedTag)
+            return { ...p, _match: { type: "tag", value: matchedTag } };
+          if (matchedApplication)
             return {
               ...p,
               _match: {
@@ -130,34 +118,25 @@ const RequestForm = ({ open, setOpen }) => {
                 value: matchedApplication.application,
               },
             };
-          }
 
           return null;
         })
         .filter(Boolean);
 
-      if (!q || categoryMatch) {
+      if (!q || categoryMatch)
         return {
           ...cat,
-          products: cat.products.map((p) => ({
-            ...p,
-            _match: null,
-          })),
+          products: cat.products.map((p) => ({ ...p, _match: null })),
         };
-      }
 
-      if (matchedProducts.length > 0) {
-        return {
-          ...cat,
-          products: matchedProducts,
-        };
-      }
+      if (matchedProducts.length > 0)
+        return { ...cat, products: matchedProducts };
 
       return null;
     })
     .filter(Boolean);
 
-  /* ================= PRODUCT SELECTION ================= */
+  /* ================= PRODUCT ================= */
   const toggleProduct = (product) => {
     if (selectedProducts.find((p) => p.slug === product.slug)) {
       setSelectedProducts(
@@ -189,7 +168,7 @@ const RequestForm = ({ open, setOpen }) => {
     else if (!/^\S+@\S+\.\S+$/.test(form.email))
       newErrors.email = "Invalid email";
     if (!form.phone.trim()) newErrors.phone = "Phone is required";
-    else if (!/^\d{10}$/.test(form.phone))
+    else if (!/^\d{10,15}$/.test(form.phone))
       newErrors.phone = "Invalid phone number";
     if (selectedProducts.length === 0)
       newErrors.products = "Select at least one product";
@@ -204,6 +183,7 @@ const RequestForm = ({ open, setOpen }) => {
     setLoading(true);
     const formData = {
       ...form,
+      phone: `+${form.phone}`,
       products: selectedProducts.map((p) => p.name),
     };
 
@@ -243,7 +223,13 @@ const RequestForm = ({ open, setOpen }) => {
       >
         <div id="form_header">
           <h2>Request Quotation</h2>
-          <span id="close_btn" onClick={() => { resetForm(); setOpen(); }}>
+          <span
+            id="close_btn"
+            onClick={() => {
+              resetForm();
+              setOpen();
+            }}
+          >
             <IoCloseSharp />
           </span>
         </div>
@@ -281,17 +267,35 @@ const RequestForm = ({ open, setOpen }) => {
         {/* PHONE */}
         <div className="input-wrapper">
           <label>Phone</label>
-          <input
-            id="phone"
+          <PhoneInput
+            country="in"
+            enableSearch
             value={form.phone}
-            onChange={handleChange}
-            placeholder="Your Phone"
+            onChange={(phone) => {
+              setForm({ ...form, phone });
+              setErrors({ ...errors, phone: "" });
+            }}
+            inputStyle={{
+              width: "100%",
+              height: "38px",
+              fontSize: "0.8rem",
+              borderRadius: "10px",
+              border: "1px solid #00000033",
+              paddingLeft: "60px",
+              
+              
+            }}
+            buttonStyle={{
+            padding: "0 5px",
+            borderRadius: "10px 0 0 10px",
+            background: "white",
+          }}
           />
           {errors.phone && <p className="error">{errors.phone}</p>}
         </div>
 
         {/* PRODUCT */}
-        <div className="input-wrapper">
+        <div className="input-wrapper select-pro-input">
           <label>Select Product</label>
           <div className="product_multiselect">
             <div
@@ -312,43 +316,28 @@ const RequestForm = ({ open, setOpen }) => {
                   onChange={(e) => setProductQuery(e.target.value)}
                 />
 
-                {filteredCategories.map((cat) => {
-                  const matchedProduct = cat.products.find(
-                    (p) => p._match
-                  );
-
-                  return (
-                    <div key={cat.category}>
-                      <strong>
-                        {cat.category}
-                        {matchedProduct?._match && (
-                          <span className="match-label">
-                            {" "}
-                            ({matchedProduct._match.value})
-                          </span>
-                        )}
-                      </strong>
-
-                      <ul>
-                        {cat.products.map((prod) => (
-                          <li
-                            key={prod.slug}
-                            onClick={() => toggleProduct(prod)}
-                            className={
-                              selectedProducts.find(
-                                (p) => p.slug === prod.slug
-                              )
-                                ? "selected"
-                                : ""
-                            }
-                          >
-                            {prod.name}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  );
-                })}
+                {filteredCategories.map((cat) => (
+                  <div key={cat.category}>
+                    <strong>{cat.category}</strong>
+                    <ul>
+                      {cat.products.map((prod) => (
+                        <li
+                          key={prod.slug}
+                          onClick={() => toggleProduct(prod)}
+                          className={
+                            selectedProducts.find(
+                              (p) => p.slug === prod.slug
+                            )
+                              ? "selected"
+                              : ""
+                          }
+                        >
+                          {prod.name}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             )}
 
@@ -358,13 +347,16 @@ const RequestForm = ({ open, setOpen }) => {
           </div>
         </div>
 
-        {/* SELECTED BADGES */}
+        {/* SELECTED */}
         {selectedProducts.length > 0 && (
           <div className="selected_products_badges">
             {selectedProducts.map((prod) => (
               <div key={prod.slug} className="badge">
                 {prod.name}
-                <span className="remove" onClick={() => removeProduct(prod.slug)}>
+                <span
+                  className="remove"
+                  onClick={() => removeProduct(prod.slug)}
+                >
                   &times;
                 </span>
               </div>
