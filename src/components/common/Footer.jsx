@@ -27,18 +27,21 @@ const Footer = () => {
             serving customers globally with integrated value chain solutions.
           </p>
           <div className="socail-footer">
-            <a href="/">
-              <PiTwitterLogoFill />
-            </a>
-            <a href="/">
-              <RiFacebookFill />
-            </a>
-            <a href="/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/kesar-petroproducts-limited/"
+            >
               <BsLinkedin />
             </a>
-            <a href="/">
-              <RiInstagramFill />
-            </a>
+          </div>
+          <div className="socail-footer">
+            <Image
+              style={{ width: "60px", height: "auto", marginTop:"20px" }}
+              width={1000}
+              height={1000}
+              src="/reach-compliance.png"
+              alt="reach-compliance"
+            />
           </div>
         </div>
         <div className="footer-right">
@@ -54,13 +57,35 @@ const Footer = () => {
             <h5>Company</h5>
             <Link href="/about">About Us</Link>
             <Link href="/about#leadership_section">Team</Link>
-            
             {/* <Link href="/investors">Investors</Link> */}
-
             <Link href="/gallery">Gallery</Link>
             {/* <Link href="/#latest-news-section">News</Link> */}
             <Link href="/contact">Contact</Link>
             {/* <Link href="/contact">Careers</Link> */}
+          </div>
+          <div>
+            <h5>Downloads</h5>
+            <a href="/footer-pdf/Kesar-Corporate-Ppt.pdf" target="_blank">
+              Corporate Presentation
+            </a>
+            <a href="/footer-pdf/E-brochure.pdf" target="_blank">
+              E Brochure
+            </a>
+            <a href="/footer-pdf/ISO-certificate.pdf" target="_blank">
+              ISO Certificate
+            </a>
+            <a
+              href="/footer-pdf/REACH registration for Phthalo Blues.pdf"
+              target="_blank"
+            >
+              REACH registration for <br /> Phthalo Blues
+            </a>
+            <a
+              href="/footer-pdf/REACH Registration for Pigment Green 7.pdf"
+              target="_blank"
+            >
+              REACH Registration for : <br /> Pigment Green 7
+            </a>
           </div>
         </div>
       </div>
@@ -72,10 +97,9 @@ const Footer = () => {
             Mumbai - 400051, Maharashtra, India
           </a>
           <div className="footer_numbers">
-            <a href="tel:+91-22-49637498">
-              <PiPhoneFill /> +91-22-49637498
+            <a href="tel:+91 (22) 6123-4567">
+              <PiPhoneFill /> +91 (22) 6123-4567
             </a>
-            |<a href="tel:+91-22-59637448">+91-22-59637448</a>
           </div>
 
           <a href="mailto:info@kesarpetroproducts.com">

@@ -240,7 +240,6 @@ handling both urban terrorism and the naxal challenge.
           mentors: [
             {
               name: "Ramjam Kadar Shaikh",
-              position: "7400055737",
               image: "/images/about/user.png",
             },
           ],
@@ -250,7 +249,6 @@ handling both urban terrorism and the naxal challenge.
           mentors: [
             {
               name: "Jignesh Dinesh Desai",
-              position: "7738004903",
               image: "/images/about/user.png",
             },
           ],
