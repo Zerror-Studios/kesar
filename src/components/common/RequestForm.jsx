@@ -66,14 +66,7 @@ const RequestForm = ({ open, setOpen }) => {
     setProductQuery("");
   };
 
-  const handleOverlayClick = (e) => {
-    if (e.target === overlayRef.current) {
-      resetForm();
-      setOpen();
-    }
-  };
-
-  /* ================= CLOSE DROPDOWN ================= */
+  /* ================= CLICK OUTSIDE ================= */
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (productDropdownOpen && !e.target.closest(".product_multiselect")) {
@@ -86,7 +79,7 @@ const RequestForm = ({ open, setOpen }) => {
       document.removeEventListener("mousedown", handleClickOutside);
   }, [productDropdownOpen]);
 
-  /* ================= FILTER ================= */
+  /* ================= FILTER (SAME AS SEARCHBOX) ================= */
   const filteredCategories = categories
     .map((cat) => {
       const q = productQuery.toLowerCase();
@@ -97,6 +90,7 @@ const RequestForm = ({ open, setOpen }) => {
           if (!q) return { ...p, _match: null };
 
           const nameMatch = p.name?.toLowerCase().includes(q);
+
           const matchedTag = Array.isArray(p.tags)
             ? p.tags.find((tag) => tag.toLowerCase().includes(q))
             : null;
@@ -108,8 +102,10 @@ const RequestForm = ({ open, setOpen }) => {
             : null;
 
           if (nameMatch) return { ...p, _match: null };
+
           if (matchedTag)
             return { ...p, _match: { type: "tag", value: matchedTag } };
+
           if (matchedApplication)
             return {
               ...p,
@@ -123,14 +119,19 @@ const RequestForm = ({ open, setOpen }) => {
         })
         .filter(Boolean);
 
-      if (!q || categoryMatch)
+      if (!q || categoryMatch) {
         return {
-          ...cat,
+          category: cat.category,
           products: cat.products.map((p) => ({ ...p, _match: null })),
         };
+      }
 
-      if (matchedProducts.length > 0)
-        return { ...cat, products: matchedProducts };
+      if (matchedProducts.length > 0) {
+        return {
+          category: cat.category,
+          products: matchedProducts,
+        };
+      }
 
       return null;
     })
@@ -168,8 +169,6 @@ const RequestForm = ({ open, setOpen }) => {
     else if (!/^\S+@\S+\.\S+$/.test(form.email))
       newErrors.email = "Invalid email";
     if (!form.phone.trim()) newErrors.phone = "Phone is required";
-    else if (!/^\d{10,15}$/.test(form.phone))
-      newErrors.phone = "Invalid phone number";
     if (selectedProducts.length === 0)
       newErrors.products = "Select at least one product";
 
@@ -181,20 +180,20 @@ const RequestForm = ({ open, setOpen }) => {
     if (!validate()) return;
 
     setLoading(true);
-    const formData = {
+    const payload = {
       ...form,
       phone: `+${form.phone}`,
       products: selectedProducts.map((p) => p.name),
     };
 
     try {
-      const response = await fetch("/api/submitEmail", {
+      const res = await fetch("/api/submitEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
-      if (response.ok) {
+      if (res.ok) {
         toast.success("Form submitted successfully!");
         resetForm();
         setOpen();
@@ -202,7 +201,7 @@ const RequestForm = ({ open, setOpen }) => {
         toast.error("Submission failed");
       }
     } catch {
-      toast.error("An error occurred.");
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
     }
@@ -214,7 +213,6 @@ const RequestForm = ({ open, setOpen }) => {
       id="request_form"
       ref={overlayRef}
       style={{ display: "none", opacity: 0 }}
-      onClick={handleOverlayClick}
     >
       <div
         id="request_form_container"
@@ -223,22 +221,10 @@ const RequestForm = ({ open, setOpen }) => {
       >
         <div id="form_header">
           <h2>Request Quotation</h2>
-          <span
-            id="close_btn"
-            onClick={() => {
-              resetForm();
-              setOpen();
-            }}
-          >
+          <span id="close_btn" onClick={() => setOpen()}>
             <IoCloseSharp />
           </span>
         </div>
-
-        <p>
-          Please fill the details below for further communication.
-          <br />
-          Our team will get back to you soon.
-        </p>
 
         {/* NAME */}
         <div className="input-wrapper">
@@ -271,10 +257,7 @@ const RequestForm = ({ open, setOpen }) => {
             country="in"
             enableSearch
             value={form.phone}
-            onChange={(phone) => {
-              setForm({ ...form, phone });
-              setErrors({ ...errors, phone: "" });
-            }}
+            onChange={(phone) => setForm({ ...form, phone })}
             inputStyle={{
               width: "100%",
               height: "38px",
@@ -282,25 +265,20 @@ const RequestForm = ({ open, setOpen }) => {
               borderRadius: "10px",
               border: "1px solid #00000033",
               paddingLeft: "60px",
-              
-              
             }}
-            buttonStyle={{
-            padding: "0 5px",
-            borderRadius: "10px 0 0 10px",
-            background: "white",
-          }}
           />
           {errors.phone && <p className="error">{errors.phone}</p>}
         </div>
 
-        {/* PRODUCT */}
+        {/* PRODUCT SELECT */}
         <div className="input-wrapper select-pro-input">
           <label>Select Product</label>
           <div className="product_multiselect">
             <div
               className="dropdown_input"
-              onClick={() => setProductDropdownOpen(!productDropdownOpen)}
+              onClick={() =>
+                setProductDropdownOpen(!productDropdownOpen)
+              }
             >
               {selectedProducts.length === 0
                 ? "Select Product(s)"
@@ -310,34 +288,48 @@ const RequestForm = ({ open, setOpen }) => {
             {productDropdownOpen && (
               <div className="dropdown_menu" data-lenis-prevent>
                 <input
-                  id="dropdown_menu_search"
                   placeholder="Search product"
                   value={productQuery}
                   onChange={(e) => setProductQuery(e.target.value)}
                 />
 
-                {filteredCategories.map((cat) => (
-                  <div key={cat.category}>
-                    <strong>{cat.category}</strong>
-                    <ul>
-                      {cat.products.map((prod) => (
-                        <li
-                          key={prod.slug}
-                          onClick={() => toggleProduct(prod)}
-                          className={
-                            selectedProducts.find(
-                              (p) => p.slug === prod.slug
-                            )
-                              ? "selected"
-                              : ""
-                          }
-                        >
-                          {prod.name}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                {filteredCategories.map((cat) => {
+                  const matchedProduct = cat.products.find(
+                    (p) => p._match
+                  );
+
+                  return (
+                    <div key={cat.category}>
+                      <strong>
+                        {cat.category}
+                        {matchedProduct?._match && (
+                          <span className="match-label">
+                            {" "}
+                            ({matchedProduct._match.value})
+                          </span>
+                        )}
+                      </strong>
+
+                      <ul>
+                        {cat.products.map((prod) => (
+                          <li
+                            key={prod.slug}
+                            onClick={() => toggleProduct(prod)}
+                            className={
+                              selectedProducts.find(
+                                (p) => p.slug === prod.slug
+                              )
+                                ? "selected"
+                                : ""
+                            }
+                          >
+                            {prod.name}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             )}
 
@@ -347,7 +339,7 @@ const RequestForm = ({ open, setOpen }) => {
           </div>
         </div>
 
-        {/* SELECTED */}
+        {/* SELECTED BADGES */}
         {selectedProducts.length > 0 && (
           <div className="selected_products_badges">
             {selectedProducts.map((prod) => (
