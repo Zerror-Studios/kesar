@@ -90,8 +90,11 @@ export const reportData = {
                     {
                         title: "2023-24",
                         reports: [
-                            { label: "SHP - 31.12.2023", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP - 31.12.2023.pdf" },
-                            { label: "SHP - 31.03.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP- 31.03.2024.pdf" },
+                            { label: "SHP-31.12.2023", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/Pages from SHP - 31.12.2023.html-.pdf" },
+                            { label: "SHP-31.03.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP- 31.03.2024--.pdf" },
+                            { label: "SHP-30.06.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-30.06.2024-.pdf" },
+                            { label: "SHP-31.03.2025", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-31.03.2025-.pdf" },
+                            { label: "SHP-31.12.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-31.12.2024-.pdf" },
                         ],
                     },
                     {
@@ -661,21 +664,21 @@ export const reportData = {
             {
                 title: "Common and Simplified Norms for processing investors service request by RTAs.",
                 key: "common",
-                 description: <p>
-            For the attention of shareholders holding shares in physical form:<br /><br />
+                description: <p>
+                    For the attention of shareholders holding shares in physical form:<br /><br />
 
-            SEBI, vide its circulars SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2021/655 dated 3rd November 2021 and SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/8 dated 25th January 2022, and subsequent notifications through SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/37 dated 16th March 2023 and SEBI/HO/MIRSD/PoD-1/P/CIR/2023/158 dated 26th September 2023, has introduced common and simplified norms for processing investors’ service requests by RTAs, which mandate furnishing the following documents to the RTA of the Company, i.e., Link Intime India Private Limited, on or before 31st December 2023:<br /><br />
+                    SEBI, vide its circulars SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2021/655 dated 3rd November 2021 and SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/8 dated 25th January 2022, and subsequent notifications through SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/37 dated 16th March 2023 and SEBI/HO/MIRSD/PoD-1/P/CIR/2023/158 dated 26th September 2023, has introduced common and simplified norms for processing investors’ service requests by RTAs, which mandate furnishing the following documents to the RTA of the Company, i.e., Link Intime India Private Limited, on or before 31st December 2023:<br /><br />
 
-            i. PAN<br />
-            ii. Nomination<br />
-            iii. Contact details including postal address with PIN code, mobile number, and e-mail address<br />
-            iv. Bank account details including bank name and branch, bank account number, and IFSC code<br />
-            v. Specimen signature<br /><br />
+                    i. PAN<br />
+                    ii. Nomination<br />
+                    iii. Contact details including postal address with PIN code, mobile number, and e-mail address<br />
+                    iv. Bank account details including bank name and branch, bank account number, and IFSC code<br />
+                    v. Specimen signature<br /><br />
 
-            Shareholders can download the requisite forms from the Company’s website.<br /><br />
+                    Shareholders can download the requisite forms from the Company’s website.<br /><br />
 
-            The circular also mandates that the security holders (holding securities in physical form) whose folio(s) do not have PAN / choice of nomination / contact details / mobile number / bank account details / specimen signature updated shall be eligible for any payment, including dividend, interest, or redemption, in respect of such folios only through electronic mode with effect from 1st April 2024, upon furnishing all the aforesaid details in entirety.
-        </p>,
+                    The circular also mandates that the security holders (holding securities in physical form) whose folio(s) do not have PAN / choice of nomination / contact details / mobile number / bank account details / specimen signature updated shall be eligible for any payment, including dividend, interest, or redemption, in respect of such folios only through electronic mode with effect from 1st April 2024, upon furnishing all the aforesaid details in entirety.
+                </p>,
                 data: [
                     {
                         reports: [
