@@ -90,11 +90,11 @@ export const reportData = {
                     {
                         title: "2023-24",
                         reports: [
-                            { label: "SHP-31.12.2023", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/Pages from SHP - 31.12.2023.html-.pdf" },
-                            { label: "SHP-31.03.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP- 31.03.2024--.pdf" },
-                            { label: "SHP-30.06.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-30.06.2024-.pdf" },
-                            { label: "SHP-31.03.2025", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-31.03.2025-.pdf" },
-                            { label: "SHP-31.12.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-31.12.2024-.pdf" },
+                            { label: "SHP - 31.12.2023", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/Pages from SHP - 31.12.2023.html-.pdf" },
+                            { label: "SHP - 31.03.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP- 31.03.2024--.pdf" },
+                            { label: "SHP - 30.06.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-30.06.2024-.pdf" },
+                            { label: "SHP - 31.03.2025", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-31.03.2025-.pdf" },
+                            { label: "SHP - 31.12.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2023-24/SHP-31.12.2024-.pdf" },
                         ],
                     },
                     {
