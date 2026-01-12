@@ -1,22 +1,27 @@
-import { google } from 'googleapis';
-import { JWT } from 'google-auth-library';
+import { sheets_v4 } from '@googleapis/sheets';
 import nodemailer from 'nodemailer';
+import { GoogleAuth } from "google-auth-library";
 import dotenv from 'dotenv';
 dotenv.config({ path: './.env' });
 
-const spreadsheetId = '1dFpeActvzfmEezP1SQxLUDlE0b1JakgNlvGacDcstyk';
-async function authenticate() {
-    const auth = new JWT({
-        email: "zerror-service-email@spartan-thunder-476511-r2.iam.gserviceaccount.com",
-        key: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCFq7veMKeJdcCn\nAbaXjT/Yn5JcOBTh4WR1bhCCUGaLOObem9kZ4AbCfeLRbow97WRNnGKwv+6Dm0xs\nmCZgJXpH6GAR1dkUYQfPLcXLnbWE7/bT5nHNlA/Zz2p9k6rcp2c8X9JgsSFyXsnd\nioBlNPA3vzQAjBtO5LFy7tKXk4Lyxwjh3MMtskHJBoiOMo8OJq6r2AnpDD3MBN/K\nJOhpcYD918FY15RJyOPWe6g4aZJqavOFE4U3bMIzDWiBgqsvuzZE9RTK9cWrS0pn\nI6P8HOqzV0wGhorTyiZBPOjcjCBT5hByT+wtBejD3x7IKM98ipIV7AKv0bN6MTHX\nFVsUiIt5AgMBAAECggEANLBHKqMh/rhX+lxeBSnLj08CyW/fp1OJHhKG1l7rtJf2\nxKtIrX7VG0e0ppm9FNHkdgUdD49v7BdETg/BHKfZJcvuRkl1OievBNaFfyeIe8B8\nmfTdScvBXbj4wEv7DuO7eRxKGAvp46OCTV2BE6OExmyLCmYvg274lRWXE+E0vg3t\nVaXmVhXjIQ8ykclEf1mT8rdbp2a7ZdaXChfq2eywADKXbsgzmzXhsfjScML6pVbt\nBzkoUyiewDOfkY3IE5jASwJWbt6l+EPzMRwrvJtJXDUFWqpQ+e0henPGJtL8EvX/\na5fWa8aCJVJ3eOAu0LHJIRmO9gVXzaZ75Opl9qf/0wKBgQC7Xjz8UV8fBV2isNX+\n/dAu0alxoywspEbMLc20ZsKvggyY3v2n7Rt7A5ENbTuQn5PB03Fb+WlLA16+9G8G\nSvAOosBspVXvRBFyKBVEOMy5qgfrD9SlantD7jQrl04KzlNJBcHbSnN9lPCHvPCQ\nfde1P6PRE6USQ56+pGl9NyUrCwKBgQC2ojqUvbDT5qxqKIpZXUsQtrTFwyD8BDrp\n/y7xwPlpXYXIKXcJmO4nBJwkpBIZ8yOOkaMd788w9LREyNNaCi5FT70E2looLm68\nGzVFt3sAyN8aVAuermoZDnMSlGg8vHWLshIuUlKecIPmqYzZzNmzoKCevjyn7BxH\nHUNK6K5WCwKBgAJmD3PPet9Dy1IU33h3OV4QExJAW4VqyPk+MN75Xc6vZIfkeuzW\nbT6i6g1484VDdbnKgi4CQGXUcjcRnAZBmVcmoD4D09jPT0Xd23/XFk/eLGHG/xrr\nBQ72krZoJnie8ZQCvduX1WirKnUiZxYCdmt8mBVKIhfcw8B/DFatCQ3HAoGBAJs6\noh4AaMaCvrLwSD8Si5XmJRod8vAhTE3NBoKWqabDxczOaY3vvSPOyERga75AqU0p\nPgJY7LrIklwQcYuLMa7ZymfQi2axqI8bdRkPjW2qTe6b1tCFoEoxvN7i4wIUkLgu\nn0Nd1zkxmvq3y67nbXY+paanPPjhN1u+ZI7L3DnnAoGAH1ZGXtmPWHKpsIgLIWpu\nVL0aJ3N2KxbV4kQ0sYoBThSxS1mrd93jIksk5xA3E2h+XdEjcsNHnlxwFjG+snIt\n4p4Gj2J6miAkoaXxAgCCW7s/8FD47bG6dKMIRX2vBUJqcWRG37Lql+KlFjIR8y8Y\nRd6D7dBgoifWynOd/eQpoLE=\n-----END PRIVATE KEY-----\n",
-        scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-    });
-    return google.sheets({ version: 'v4', auth });
-}
+const auth = new GoogleAuth({
+    credentials: {
+        client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
+        private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, "\n"),
+    },
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+});
+
+const sheets = new sheets_v4.Sheets({ auth });
+
+
+const spreadsheetId = process.env.NEXT_PUBLIC_SUBSCRIBE_SPREADSHEET_ID;
+
+
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { email} = req.body;
+        const { email } = req.body;
 
         if (!email) {
             return res.status(400).json({ error: 'All fields are required' });
@@ -28,7 +33,7 @@ export default async function handler(req, res) {
             const [datePart] = kolkataTime.split(',');
             const formattedDate = datePart.trim();
 
-            const sheets = await authenticate();
+            // const sheets = await authenticate();
 
             // Get existing rows
             const response = await sheets.spreadsheets.values.get({
@@ -79,9 +84,9 @@ export default async function handler(req, res) {
 
             const mailOptions = {
                 from: process.env.NEXT_PUBLIC_MAIL_EMAIL_ADDRESS,
-                to: ["sales@kesarpetroproducts.com"],
+                to: [process.env.NEXT_PUBLIC_RECIPENT_EMAIL_ADDRESS_SUBSCRIBE],
                 subject: `New Request Quotation – Kesar Petroproducts Ltd.`,
-               html: `
+                html: `
   <div style="font-family: Arial, sans-serif; color: #333; padding: 20px 0;">
     <h2 style="color: #000; font-size: 18px; margin-bottom: 5px;">
       New Newsletter Subscription – Kesar Petroproducts Ltd.
