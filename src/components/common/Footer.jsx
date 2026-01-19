@@ -97,8 +97,12 @@ const Footer = () => {
             Mumbai - 400051, Maharashtra, India
           </a>
           <div className="footer_numbers">
-            <a href="tel:+91 (22) 6123-4567">
-              <PiPhoneFill /> +91 (22) 6123-4567
+            <a href="tel:+91-22-49637498">
+              <PiPhoneFill /> +91-22-49637498
+            </a>
+            <span className="divider">|</span>
+            <a href="tel:+91-22-49637448">
+               +91-22-49637448
             </a>
           </div>
 
