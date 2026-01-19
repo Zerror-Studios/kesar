@@ -92,6 +92,7 @@ const Footer = () => {
       <div id="footer-mid">
         <div className="footer-left">
           <h5>CORPORATE ADDRESS:</h5>
+          Kesar Petroproducts Ltd
           <a href="/">
             404, Naman Centre, C - 31/ G Block, BKC, Bandra (East), <br />{" "}
             Mumbai - 400051, Maharashtra, India
@@ -110,9 +111,9 @@ const Footer = () => {
             <PiEnvelopeFill /> info@kesarpetroproducts.com
           </a>
           <h5 className="factory">Factory:</h5>
-          <a href="tel:+919156018271">
+          {/* <a href="tel:+919156018271">
             <PiPhoneFill /> +919156018271
-          </a>
+          </a> */}
           <a href="mailto:kesar.factory@gmail.com ">
             <PiEnvelopeFill /> kesar.factory@gmail.com
           </a>

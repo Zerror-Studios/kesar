@@ -48,7 +48,7 @@ export default Home;
 
 export async function getStaticProps() {
   const meta = {
-    title: "Kesar Petroproducts Ltd. – Leading Petrochemical & Resin Manufacturer in India",
+    title: "Kesar Petroproducts Ltd – Leading Producer of Phthalocyanine Pigments Blue and Green 7",
     description:
       "Kesar Petroproducts Ltd. is a trusted manufacturer of phthalic anhydride, plasticizers, resins, and specialty petrochemical products. Delivering high-quality industrial solutions with advanced infrastructure and global standards.",
     keywords:
