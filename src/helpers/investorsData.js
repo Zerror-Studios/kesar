@@ -105,6 +105,34 @@ export const reportData = {
                             { label: "SHP - 31.12.2024", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2024-25/SHP-31.12.2024.pdf" },
                         ],
                     },
+                    {
+                        title: "2025-26",
+                        reports: [
+                            { label: "SHP - 30.06.2025", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2025-26/SHP-30.06.2025-KESAR.pdf" },
+                            { label: "SHP - 30.09.2025", link: "https://cdn.kesarpetroproducts.com/Investors/2_Share holding pattern/2025-26/SHP-30.09.2025-KESAR--.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    moaAndAoa: {
+        title: "MOA and AOA",
+        subCategories: [
+            {
+                title: "MOA and AOA",
+                key: "moaandaoa",
+                data: [
+                    {
+                        reports: [
+                            { label: "Annual Secretarial Compliance Report - KPL 31.03.2025", link: "https://cdn.kesarpetroproducts.com/Investors/MOA and AOA/Annual Secretarial Compliance Report - KPL 31.03.2025.pdf" },
+                            { label: "Annual secretarial compliance report kesar - Signed", link: "https://cdn.kesarpetroproducts.com/Investors/MOA and AOA/Annual secretarial compliance report kesar - Signed.pdf" },
+                            { label: "Annual secretarial compliance report kesar - signed_1", link: "https://cdn.kesarpetroproducts.com/Investors/MOA and AOA/Annual secretarial compliance report kesar - signed_1.pdf" },
+                            { label: "BSE Covering letter for press release_Kesar-Signed", link: "https://cdn.kesarpetroproducts.com/Investors/MOA and AOA/BSE Covering letter for press release_Kesar-Signed.pdf" },
+                            { label: "KESAR_PETRO_SEPT 2025", link: "https://cdn.kesarpetroproducts.com/Investors/MOA and AOA/KESAR_PETRO_SEPT 2025.pdf" },
+                            { label: "New MOA and AOA", link: "https://cdn.kesarpetroproducts.com/Investors/MOA and AOA/New MOA and AOA.pdf" },
+                        ],
+                    },
                 ],
             },
         ],
@@ -170,8 +198,8 @@ export const reportData = {
                                 key: "financialresultpublication",
                                 reports: [
                                     {
-                                        label: "",
-                                        link: "",
+                                        label: "KPL newspaper march 2023",
+                                        link: "https://cdn.kesarpetroproducts.com/Investors/3_Advertisements/KPL newspaper march 2023.pdf",
                                     },
                                 ],
                             },
@@ -206,8 +234,8 @@ export const reportData = {
                                 key: "financialresultpublication",
                                 reports: [
                                     {
-                                        label: "",
-                                        link: "",
+                                        label: "KPL Newspaper Print - 27-05-24",
+                                        link: "https://cdn.kesarpetroproducts.com/Investors/3_Advertisements/Financial year 2024-2025/Financial Result Publication/KPL Newspaper Print - 27-05-24.pdf",
                                     },
                                 ],
                             },
@@ -235,6 +263,7 @@ export const reportData = {
                                         label: "BSE - Newspaper Publication",
                                         link: "https://cdn.kesarpetroproducts.com/Investors/3_Advertisements/Financial year 2025-2026/AGM/BSE - Newspaper Publication.pdf",
                                     },
+
                                 ],
                             },
                             {
@@ -242,8 +271,18 @@ export const reportData = {
                                 key: "financialresultpublication",
                                 reports: [
                                     {
-                                        label: "",
-                                        link: "",
+                                        label: "Financial Result Publication - BSE - Newspaper Publication-BSE Newspaper Publication",
+                                        link: "https://cdn.kesarpetroproducts.com/Investors/3_Advertisements/Financial Result Publication- BSE - Newspaper Publication-BSE Newspaper Publication.pdf",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Financial Result Publication",
+                                key: "financialresultpublication",
+                                reports: [
+                                    {
+                                        label: "Financial Result Publication- BSE - Newspaper Publication",
+                                        link: "https://cdn.kesarpetroproducts.com/Investors/3_Advertisements/Financial year 2025-2026/Financial Result Publication/Financial Result Publication- BSE - Newspaper Publication1.pdf",
                                     },
                                 ],
                             },
@@ -258,6 +297,27 @@ export const reportData = {
                                 ],
                             },
 
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    corporateGovernance: {
+        title: "Corporate Governance",
+        subCategories: [
+            {
+                title: "Corporate Governance",
+                key: "corporategovernance",
+                data: [
+                    {
+                        reports: [
+                            { label: "CG- 31.12.2024", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/CG- 31.12.2024-.pdf" },
+                            { label: "CG-30.06.2024", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/CG-30.06.2024-.pdf" },
+                            { label: "CG-30.09.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/CG-30.09.2025-.pdf" },
+                            { label: "CG-31.03.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/cg-31.03.2025-.pdf" },
+                            { label: "IGR-30.09.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/IGR-30.09.2025.html.pdf" },
+                            { label: "XBRL-Integrated Governance-30.06.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/XBRL-Integrated Governance-30.06.2025.html.pdf" },
                         ],
                     },
                 ],
@@ -473,6 +533,22 @@ export const reportData = {
 
                         ],
                     },
+                    {
+                        title: "Board meeting financial year 2025-2026",
+                        subCategories: [
+                            {
+                                title: "Outcome of Board Meeting",
+                                key: "outcomeboard",
+                                reports: [
+                                    {
+                                        label: "Outcome of Board Meeting KPL - 14.11.2025",
+                                        link: "https://cdn.kesarpetroproducts.com/Investors/4_ Corporate Announcements/Board meeting financial year 2024-2025/Outcome of Board Meeting KPL - 14.11.2025.pdf",
+                                    },
+                                ],
+                            },
+
+                        ],
+                    },
                 ],
             },
         ],
@@ -493,6 +569,7 @@ export const reportData = {
                             { label: "35th Annual Report 2024-25", link: "https://cdn.kesarpetroproducts.com/Investors/5_Extract of Annual Report/35th Annual Report 2024-25.pdf" },
                             { label: "Notice of EGM - 18.10.2024", link: "https://cdn.kesarpetroproducts.com/Investors/5_Extract of Annual Report/Notice of EGM - 18.10.2024.pdf" },
                             { label: "Postal Ballot Intimation - 2023", link: "https://cdn.kesarpetroproducts.com/Investors/5_Extract of Annual Report/Postal Ballot Intimation - 2023.pdf" },
+                            { label: "Annual Report-2025-26", link: "https://cdn.kesarpetroproducts.com/Investors/5_Extract of Annual Report/11.Annual Report-2025-26.pdf" },
                         ],
                     },
                 ],
@@ -590,7 +667,7 @@ export const reportData = {
                             { label: "Whistle Blower Policy", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/4_Whistle Blower Policy.pdf" },
                             { label: "Code of Conduct for Directors & Management", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/5_Code of Conduct for Directors & Management .pdf" },
                             { label: "Policy For Insider Trading Code", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/6_Policy For Insider Trading Code.pdf" },
-                            { label: "POLICY FOR DETERMINATION OF MATERIALITY OF EVENTS OR INFORMATION", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/7_POLICY FOR DETERMINATION OF MATERIALITY OF EVENTS OR INFORMATION.pdf" },
+                            { label: "POLICY FOR DETERMINATION OF MATERIALITY OF EVENTS OR INFORMATION", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/POLICY FOR DETERMINATION OF MATERIALITY OF EVENTS OR INFORMATION.pdf" },
                             { label: "CODE OF PRACTICES AND PROCEDURES FOR FAIR DISCLOSURE OF UPSI", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/8_CODE OF PRACTICES AND PROCEDURES FOR FAIR DISCLOSURE OF UPSI.pdf" },
                             { label: "Policy for Determining Material Subsidiaries", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/9_Policy for Determining Material Subsidiaries .pdf" },
                             { label: "Posh Policy", link: "https://cdn.kesarpetroproducts.com/Investors/8_Policy/10_Posh Policy.pdf" },
