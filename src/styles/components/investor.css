@@ -169,7 +169,6 @@
 }
 .report_row {
   width: 100%;
-  padding: 1.2rem 1rem;
   background-color: #0000000d;
   border-bottom: 1px solid #0000001a;
   cursor: pointer;
@@ -181,6 +180,9 @@
 .report_row a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
+  padding: 1.2rem 1rem;
+  display: inline-block;
+  width: 100%;
 }
 
 .report_row:hover a {
