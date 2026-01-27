@@ -136,7 +136,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-right">
-          <p> © 2024 Kesar Petroproducts Ltd. All rights reserved.</p>
+          <p> © {new Date().getFullYear()} Kesar Petroproducts Ltd. All rights reserved.</p>
           <div>
             {/* <Link href="/">Terms & Conditions</Link>| */}
             <Link href="/privacy-policy">Privacy Policy</Link>|
