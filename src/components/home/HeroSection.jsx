@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div id="hero_video">
         <video src="/kesar petroproducts.mp4" autoPlay playsInline loop muted></video>
       </div>
-        <h1>
+        {/* <h1>
           Pioneering <br /> Phthalocyanine Pigments. <br /> Revolutionizing
           Sustainability.
         </h1>
@@ -16,7 +16,7 @@ const HeroSection = () => {
           Green. <br /> <span> Serving customers across 40+ countries </span>{" "}
           with repeatable quality, technical support, and on‑time
           dispatch since 35 years.
-        </p>
+        </p> */}
       </div>
     </div>
   );
