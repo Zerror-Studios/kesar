@@ -137,6 +137,27 @@ export const reportData = {
             },
         ],
     },
+    policiesAndCode: {
+        title: "Policies and Codes",
+        subCategories: [
+            {
+                title: "Policies and Codes",
+                key: "policiesAndCode",
+                data: [
+                    {
+                        reports: [
+                            { label: "Terms and Conditions of Appointment of Independent Directors", link: "https://cdn.kesarpetroproducts.com/Investors/Policies-and-Codes/11_Terms And Conditions Of Appointment Of Independent Directors.pdf" },
+                            { label: "Code of Conduct of Board of Directors and Senior Management Personnel", link: "https://cdn.kesarpetroproducts.com/Investors/Policies-and-Codes/5_Code of Conduct for Directors & Management .pdf" },
+                            { label: "Vigil Mechanism / Whistle Blower Policy", link: "https://cdn.kesarpetroproducts.com/Investors/Policies-and-Codes/4_Whistle Blower Policy.pdf" },
+                            { label: "Criteria for Making Payments to Non-Executive Directors", link: "https://cdn.kesarpetroproducts.com/Investors/Policies-and-Codes/3_Criteria of making payments to Non Executive Directors.pdf" },
+                            { label: "Policy on Dealing with Related Party Transactions", link: "https://cdn.kesarpetroproducts.com/Investors/Policies-and-Codes/2_Policy on Related Party Transaction Revised on 01-04-2025.pdf" },
+                            { label: "Policy for Determining Material Subsidiaries", link: "https://cdn.kesarpetroproducts.com/Investors/Policies-and-Codes/9_Policy for Determining Material Subsidiaries .pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
     advertisements: {
         title: "Advertisements",
         subCategories: [
@@ -318,6 +339,26 @@ export const reportData = {
                             { label: "CG-31.03.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/cg-31.03.2025-.pdf" },
                             { label: "IGR-30.09.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/IGR-30.09.2025.html.pdf" },
                             { label: "XBRL-Integrated Governance-30.06.2025", link: "https://cdn.kesarpetroproducts.com/Investors/Corporate Governance/XBRL-Integrated Governance-30.06.2025.html.pdf" },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    familiarisationProgramme: {
+        title: "Familiarisation Programme",
+        subCategories: [
+            {
+                title: "Familiarisation Programme",
+                key: "familiarisationprogramme",
+                data: [
+                    {
+                        reports: [
+                            { label: "Familarization Programme-2020-21", link: "https://cdn.kesarpetroproducts.com/Investors/Familiarisation-Programme/Familarization Programme-2020-21.pdf" },
+                            { label: "Familarization Programme-2021-22", link: "https://cdn.kesarpetroproducts.com/Investors/Familiarisation-Programme/Familarization Programme-2021-22.pdf" },
+                            { label: "Familarization Programme-2022-23", link: "https://cdn.kesarpetroproducts.com/Investors/Familiarisation-Programme/Familarization Programme-2022-23.pdf" },
+                            { label: "Familarization Programme-2023-24", link: "https://cdn.kesarpetroproducts.com/Investors/Familiarisation-Programme/Familarization Programme-2023-24 .pdf" },
+                            { label: "Familarization Programme-2024-25", link: "https://cdn.kesarpetroproducts.com/Investors/Familiarisation-Programme/Familarization Programme-2024-25.pdf" },
                         ],
                     },
                 ],
